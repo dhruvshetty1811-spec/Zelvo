@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <vType id="car" vClass="passenger" length="4.5" accel="2.6" decel="4.5" sigma="0.5" minGap="2.5" maxSpeed="16.67" guiShape="passenger" />
+  <vType id="bike" vClass="motorcycle" length="2" accel="3" decel="4.5" sigma="0.5" minGap="2.5" maxSpeed="16.67" guiShape="motorcycle" />
+  <vType id="bus" vClass="bus" length="10" accel="1.3" decel="4.5" sigma="0.5" minGap="2.5" maxSpeed="16.67" guiShape="bus" />
+  <vType id="ambulance" vClass="passenger" length="5.5" accel="2.8" decel="4.5" sigma="0.5" minGap="2.5" maxSpeed="16.67" guiShape="emergency" />
+  <vehicle id="ambulance-0" type="ambulance" depart="60.0" departLane="best" departSpeed="0">
+    <route edges="-23118073#5 23076732#7 23076732#8 1471883674#0 1471883674#1 1109921770#0 1109921771#3 162697329#0 162697329#3 162697329#4 1110162618#0 1110162618#1 759364436#0 759364436#1 759364436#2 759364436#3 759364436#4 759364436#5 759364436#6 525778223#1 525778223#2 525778223#4 525778223#5 525778223#6 190144809#1 190144809#2" />
+  </vehicle>
+  <vehicle id="ambulance-1" type="ambulance" depart="68.0" departLane="best" departSpeed="0">
+    <route edges="-1429444400#0 -1109921769#2 -1109921769#1 169536731#3 162697329#3 162697329#4 1110162618#0 1110162618#1 759364436#0 759364436#1 759364436#2 759364436#3 759364436#4 759364436#5 759364436#6 525778223#1 525778223#2 525778223#4 525778223#5 525778223#6 190144809#1 190144809#2" />
+  </vehicle>
+</routes>

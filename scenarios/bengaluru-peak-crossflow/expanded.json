@@ -1,0 +1,19 @@
+{
+  "scenario_id": "bengaluru-peak-crossflow-v1",
+  "seed": 42,
+  "controller": "actuated",
+  "network_file": "district.net.xml",
+  "route_files": [
+    "expanded.rou.xml"
+  ],
+  "step_length_s": 0.1,
+  "horizon_s": 1500,
+  "wall_timeout_s": 900,
+  "backend": "libsumo",
+  "expected_journeys": [
+    {
+      "vehicle_id": "ambulance-0",
+      "scheduled_departure_s": 60
+    }
+  ]
+}

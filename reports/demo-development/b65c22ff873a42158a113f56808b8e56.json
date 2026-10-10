@@ -1,0 +1,38 @@
+{
+  "session": "b65c22ff873a42158a113f56808b8e56",
+  "source": "scenarios\\bengaluru-curated-demo\\expanded.json",
+  "settings": {
+    "density": "moderate",
+    "corridor": "expanded",
+    "seed": 42,
+    "dispatch_s": 60,
+    "observation_delay_s": 0
+  },
+  "status": "complete",
+  "finished_utc": "2026-10-10T17:07:11.098022+00:00",
+  "values": {
+    "baseline": {
+      "journey_s": 474.70000000000005,
+      "red_wait_s": 207.8999999999999,
+      "collisions": 0,
+      "teleports": 0,
+      "audit_errors": 0,
+      "ordinary_arrived": 560,
+      "wall_s": 107.09399999999732
+    },
+    "zelvo": {
+      "journey_s": 245.5,
+      "red_wait_s": 0.0,
+      "collisions": 0,
+      "teleports": 0,
+      "audit_errors": 0,
+      "ordinary_arrived": 560,
+      "wall_s": 121.78100000000268
+    }
+  },
+  "saved_percent": 48.283126184958924,
+  "paired_input_hashes_match": true,
+  "target_met": true,
+  "receipt": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\receipt.json",
+  "scope": "Curated demo development trial, not held-out population evidence"
+}

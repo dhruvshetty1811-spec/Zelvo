@@ -1,0 +1,74 @@
+{
+  "rule": "Do not join numeric OSM signal clusters with nominal cycle above 180s",
+  "excluded_joins": [],
+  "manual_geometry_patches": [],
+  "serial_join_exclusions": [
+    "570758310",
+    "9939398569",
+    "9939398599",
+    "9939407828"
+  ],
+  "serial_join_exclusion_reason": "Missing controlling detectors and observed serial-junction clearance deadlock",
+  "junction_join_exclusions": [
+    "1277414211",
+    "249137297",
+    "10026725123",
+    "10028793385",
+    "429231026",
+    "429231031"
+  ],
+  "junction_join_exclusion_reason": "Observed overlapping paths at the merged junction; retain original separate nodes",
+  "orphan_priority_crossing_control_metadata_removed": [
+    {
+      "from": ":12460885353_w1",
+      "to": ":12460885353_c0",
+      "fromLane": "0",
+      "toLane": "0",
+      "tl": "12460885353",
+      "linkIndex": "3",
+      "dir": "s",
+      "state": "M"
+    },
+    {
+      "from": ":cluster_10020571989_10693266724_w1",
+      "to": ":cluster_10020571989_10693266724_c0",
+      "fromLane": "0",
+      "toLane": "0",
+      "tl": "cluster_10020571989_10693266724",
+      "linkIndex": "4",
+      "dir": "s",
+      "state": "M"
+    },
+    {
+      "from": ":cluster_10693266723_4379017409_w1",
+      "to": ":cluster_10693266723_4379017409_c0",
+      "fromLane": "0",
+      "toLane": "0",
+      "tl": "cluster_10693266723_4379017409",
+      "linkIndex": "4",
+      "dir": "s",
+      "state": "M"
+    },
+    {
+      "from": ":cluster_10997024503_10997024504_12460885380_12460885385_w1",
+      "to": ":cluster_10997024503_10997024504_12460885380_12460885385_c0",
+      "fromLane": "0",
+      "toLane": "0",
+      "tl": "cluster_10997024503_10997024504_12460885380_12460885385",
+      "linkIndex": "5",
+      "dir": "s",
+      "state": "M"
+    },
+    {
+      "from": ":cluster_11011536010_11011536020_w1",
+      "to": ":cluster_11011536010_11011536020_c0",
+      "fromLane": "0",
+      "toLane": "0",
+      "tl": "cluster_11011536010_11011536020",
+      "linkIndex": "4",
+      "dir": "s",
+      "state": "M"
+    }
+  ],
+  "note": "Heuristic model review, not surveyed signal validation"
+}

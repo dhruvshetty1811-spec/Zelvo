@@ -1,0 +1,683 @@
+{
+  "scope": "Synthetic peak timing stress on OSM roads, not surveyed Bengaluru timings",
+  "selection": "Curated development for 45\u201355% acceptance, never population evidence",
+  "parent": "scenarios\\bengaluru-curated-city",
+  "parent_network_sha256": "68e433c8a704dcd080985d14b83dd4ace19201ca95f414f006e3972cf246a1d0",
+  "network_sha256": "5f15ac28d8da44f1909fd3699170339a84c19848a6d24e3427a28893bba392c0",
+  "nominal_target_cycle_s": 150.0,
+  "changes": [
+    {
+      "tls": "cluster_10043357422_10043357423_10120806031_10120806032_#10more",
+      "before": {
+        "duration": "36",
+        "state": "ggggrrrrrrGGGG",
+        "minDur": "7",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "64.05",
+        "state": "ggggrrrrrrGGGG",
+        "minDur": "7",
+        "maxDur": "64.05"
+      }
+    },
+    {
+      "tls": "cluster_10043357422_10043357423_10120806031_10120806032_#10more",
+      "before": {
+        "duration": "6",
+        "state": "GGGGrrrrrrrrrr",
+        "minDur": "7",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "10.68",
+        "state": "GGGGrrrrrrrrrr",
+        "minDur": "7",
+        "maxDur": "10.68"
+      }
+    },
+    {
+      "tls": "cluster_10043357422_10043357423_10120806031_10120806032_#10more",
+      "before": {
+        "duration": "35",
+        "state": "rrrrGGGGGGrrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "62.27",
+        "state": "rrrrGGGGGGrrrr",
+        "minDur": "5",
+        "maxDur": "62.27"
+      }
+    },
+    {
+      "tls": "cluster_10060658518_10148982084_1067789523_1067789550_#6more",
+      "before": {
+        "duration": "25",
+        "state": "rrrrGGGgrrGGG",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrrGGGgrrGGG",
+        "minDur": "13",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10060658518_10148982084_1067789523_1067789550_#6more",
+      "before": {
+        "duration": "25",
+        "state": "rrrrGrrrGGGrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrrGrrrGGGrr",
+        "minDur": "13",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10060658518_10148982084_1067789523_1067789550_#6more",
+      "before": {
+        "duration": "25",
+        "state": "GGGGGrrrrrrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "GGGGGrrrrrrrr",
+        "minDur": "5",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10075533187_10075533188_10075533189_10075533190_#8more",
+      "before": {
+        "duration": "36",
+        "state": "GGGrrrrrrGGGGrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "64.05",
+        "state": "GGGrrrrrrGGGGrrrrr",
+        "minDur": "13",
+        "maxDur": "64.05"
+      }
+    },
+    {
+      "tls": "cluster_10075533187_10075533188_10075533189_10075533190_#8more",
+      "before": {
+        "duration": "6",
+        "state": "rrrGrrrrrrrrrGrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "10.68",
+        "state": "rrrGrrrrrrrrrGrrrr",
+        "minDur": "13",
+        "maxDur": "10.68"
+      }
+    },
+    {
+      "tls": "cluster_10075533187_10075533188_10075533189_10075533190_#8more",
+      "before": {
+        "duration": "35",
+        "state": "rrrrGGGGgrrrrrGGGg",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "62.27",
+        "state": "rrrrGGGGgrrrrrGGGg",
+        "minDur": "13",
+        "maxDur": "62.27"
+      }
+    },
+    {
+      "tls": "cluster_10075533192_10075533193_10684915913_10684915914_#11more",
+      "before": {
+        "duration": "36",
+        "state": "GGGrGGGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "64.05",
+        "state": "GGGrGGGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "64.05"
+      }
+    },
+    {
+      "tls": "cluster_10075533192_10075533193_10684915913_10684915914_#11more",
+      "before": {
+        "duration": "6",
+        "state": "rrrGrrrrGrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "10.68",
+        "state": "rrrGrrrrGrrrrr",
+        "minDur": "13",
+        "maxDur": "10.68"
+      }
+    },
+    {
+      "tls": "cluster_10075533192_10075533193_10684915913_10684915914_#11more",
+      "before": {
+        "duration": "35",
+        "state": "GrrrrrrrrGGGGG",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "62.27",
+        "state": "GrrrrrrrrGGGGG",
+        "minDur": "13",
+        "maxDur": "62.27"
+      }
+    },
+    {
+      "tls": "cluster_10120806044_12102866552_1460720480_1851627308_#1more",
+      "before": {
+        "duration": "25",
+        "state": "rrrGGrr",
+        "minDur": "10",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrGGrr",
+        "minDur": "10",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10120806044_12102866552_1460720480_1851627308_#1more",
+      "before": {
+        "duration": "25",
+        "state": "GGGrrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "GGGrrrr",
+        "minDur": "5",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10120806044_12102866552_1460720480_1851627308_#1more",
+      "before": {
+        "duration": "25",
+        "state": "rrrrrGG",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrrrGG",
+        "minDur": "5",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10123752378_10123752379_10123752380_11464483504_#10more",
+      "before": {
+        "duration": "36",
+        "state": "GGGgrrrrGGGGg",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "64.05",
+        "state": "GGGgrrrrGGGGg",
+        "minDur": "5",
+        "maxDur": "64.05"
+      }
+    },
+    {
+      "tls": "cluster_10123752378_10123752379_10123752380_11464483504_#10more",
+      "before": {
+        "duration": "6",
+        "state": "rrrGrrrrrrrrG",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "10.68",
+        "state": "rrrGrrrrrrrrG",
+        "minDur": "5",
+        "maxDur": "10.68"
+      }
+    },
+    {
+      "tls": "cluster_10123752378_10123752379_10123752380_11464483504_#10more",
+      "before": {
+        "duration": "35",
+        "state": "rrrrGGGGGrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "62.27",
+        "state": "rrrrGGGGGrrrr",
+        "minDur": "13",
+        "maxDur": "62.27"
+      }
+    },
+    {
+      "tls": "cluster_1067789502_1067789545_12102995471_12532093585_#11more",
+      "before": {
+        "duration": "20",
+        "state": "GGGGrrrrGGGrrrrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "37.14",
+        "state": "GGGGrrrrGGGrrrrrrrr",
+        "minDur": "13",
+        "maxDur": "37.14"
+      }
+    },
+    {
+      "tls": "cluster_1067789502_1067789545_12102995471_12532093585_#11more",
+      "before": {
+        "duration": "6",
+        "state": "rrrrrrrrGGGGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "11.14",
+        "state": "rrrrrrrrGGGGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "11.14"
+      }
+    },
+    {
+      "tls": "cluster_1067789502_1067789545_12102995471_12532093585_#11more",
+      "before": {
+        "duration": "22",
+        "state": "rrrrGGggGrrrrrrrgGg",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "40.86",
+        "state": "rrrrGGggGrrrrrrrgGg",
+        "minDur": "5",
+        "maxDur": "40.86"
+      }
+    },
+    {
+      "tls": "cluster_1067789502_1067789545_12102995471_12532093585_#11more",
+      "before": {
+        "duration": "22",
+        "state": "rrrrrrrrGrrrrGGGrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "40.86",
+        "state": "rrrrrrrrGrrrrGGGrrr",
+        "minDur": "5",
+        "maxDur": "40.86"
+      }
+    },
+    {
+      "tls": "cluster_10685860710_12128921387_12128921388_12135138835_#4more",
+      "before": {
+        "duration": "25",
+        "state": "rrrrrrrrrrGGG",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrrrrrrrrGGG",
+        "minDur": "13",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10685860710_12128921387_12128921388_12135138835_#4more",
+      "before": {
+        "duration": "25",
+        "state": "rrrGGGGGGGrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrGGGGGGGrrr",
+        "minDur": "13",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10685860710_12128921387_12128921388_12135138835_#4more",
+      "before": {
+        "duration": "25",
+        "state": "GGGGrrrrrrrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "GGGGrrrrrrrrr",
+        "minDur": "5",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_11385105633_12103003015_12103003026",
+      "before": {
+        "duration": "40",
+        "state": "GgrrGG",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "GgrrGG",
+        "minDur": "5",
+        "maxDur": "70.0"
+      }
+    },
+    {
+      "tls": "cluster_11385105633_12103003015_12103003026",
+      "before": {
+        "duration": "40",
+        "state": "rrGGGr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "rrGGGr",
+        "minDur": "5",
+        "maxDur": "70.0"
+      }
+    },
+    {
+      "tls": "cluster_12067464222_12067528987_12067529006_12067529010_#1more",
+      "before": {
+        "duration": "40",
+        "state": "rrrGGG",
+        "minDur": "10",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "rrrGGG",
+        "minDur": "10",
+        "maxDur": "70.0"
+      }
+    },
+    {
+      "tls": "cluster_12067464222_12067528987_12067529006_12067529010_#1more",
+      "before": {
+        "duration": "40",
+        "state": "GGGrrr",
+        "minDur": "10",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "GGGrrr",
+        "minDur": "10",
+        "maxDur": "70.0"
+      }
+    },
+    {
+      "tls": "cluster_12067464233_12067464240_254665683",
+      "before": {
+        "duration": "40",
+        "state": "GGrrr",
+        "minDur": "10",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "GGrrr",
+        "minDur": "10",
+        "maxDur": "70.0"
+      }
+    },
+    {
+      "tls": "cluster_12067464233_12067464240_254665683",
+      "before": {
+        "duration": "40",
+        "state": "rrGGG",
+        "minDur": "10",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "rrGGG",
+        "minDur": "10",
+        "maxDur": "70.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "rrGrrrrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "rrGrrrrrrrr",
+        "minDur": "13",
+        "maxDur": "25.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "GGrGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "GGrGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "25.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "rrrrrGGrrrr",
+        "minDur": "10",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "rrrrrGGrrrr",
+        "minDur": "10",
+        "maxDur": "25.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "rrrrrrrGGGr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "rrrrrrrGGGr",
+        "minDur": "13",
+        "maxDur": "25.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "rrrrrrrrrrG",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "rrrrrrrrrrG",
+        "minDur": "13",
+        "maxDur": "25.0"
+      }
+    },
+    {
+      "tls": "joinedS_13954289420_cluster_12498576058_13954289419_1837595265_287905080_#1more",
+      "before": {
+        "duration": "40",
+        "state": "rGGr",
+        "minDur": "10",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "rGGr",
+        "minDur": "10",
+        "maxDur": "70.0"
+      }
+    },
+    {
+      "tls": "joinedS_13954289420_cluster_12498576058_13954289419_1837595265_287905080_#1more",
+      "before": {
+        "duration": "40",
+        "state": "GrrG",
+        "minDur": "10",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "GrrG",
+        "minDur": "10",
+        "maxDur": "70.0"
+      }
+    },
+    {
+      "tls": "joinedS_cluster_10020618687_10113648620_11286580549_7448812128_cluster_12121490910_1232963667_248455485_248459796",
+      "before": {
+        "duration": "16",
+        "state": "rGrrrrrrrGGrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "29.71",
+        "state": "rGrrrrrrrGGrrr",
+        "minDur": "5",
+        "maxDur": "29.71"
+      }
+    },
+    {
+      "tls": "joinedS_cluster_10020618687_10113648620_11286580549_7448812128_cluster_12121490910_1232963667_248455485_248459796",
+      "before": {
+        "duration": "18",
+        "state": "rGrrGGGGGrrrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "33.43",
+        "state": "rGrrGGGGGrrrrr",
+        "minDur": "5",
+        "maxDur": "33.43"
+      }
+    },
+    {
+      "tls": "joinedS_cluster_10020618687_10113648620_11286580549_7448812128_cluster_12121490910_1232963667_248455485_248459796",
+      "before": {
+        "duration": "18",
+        "state": "rGGGrrrrGrrGGG",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "33.43",
+        "state": "rGGGrrrrGrrGGG",
+        "minDur": "5",
+        "maxDur": "33.43"
+      }
+    },
+    {
+      "tls": "joinedS_cluster_10020618687_10113648620_11286580549_7448812128_cluster_12121490910_1232963667_248455485_248459796",
+      "before": {
+        "duration": "18",
+        "state": "GGrrrrrrGrrGGG",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "33.43",
+        "state": "GGrrrrrrGrrGGG",
+        "minDur": "5",
+        "maxDur": "33.43"
+      }
+    },
+    {
+      "tls": "joinedS_cluster_10120941852_10120941860_12460929618_12460929620_#9more_cluster_10120941856_10120941859",
+      "before": {
+        "duration": "40",
+        "state": "GGGrrrGGGgGGG",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "GGGrrrGGGgGGG",
+        "minDur": "13",
+        "maxDur": "70.0"
+      }
+    },
+    {
+      "tls": "joinedS_cluster_10120941852_10120941860_12460929618_12460929620_#9more_cluster_10120941856_10120941859",
+      "before": {
+        "duration": "40",
+        "state": "rrrGGGrrrrrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "70.0",
+        "state": "rrrGGGrrrrrrr",
+        "minDur": "5",
+        "maxDur": "70.0"
+      }
+    }
+  ],
+  "offset_seed": null,
+  "offsets": [],
+  "same_network_and_demand_for_both_policies": true,
+  "unchanged": [
+    "green minimum service times",
+    "yellow",
+    "all-red",
+    "phase order/masks",
+    "road/vehicle speeds",
+    "vehicle demand"
+  ],
+  "timing_context": "https://ops.fhwa.dot.gov/publications/fhwahop08024/chapter6.htm",
+  "limitations": "Actuated cycle length varies with demand. This timing profile is a synthetic stress condition, not a site-calibrated timing recommendation."
+}

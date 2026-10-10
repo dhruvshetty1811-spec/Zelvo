@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.0",
+  "left_controller": "actuated",
+  "right_controller": "zelvo_ai",
+  "statuses": [
+    "completed",
+    "completed"
+  ],
+  "run_ids": [
+    "run-3a12c572dd1742acb4e40459ccc0519a",
+    "run-95abe8b4098740d88cf88d73dc396bf6"
+  ],
+  "journeys": [
+    {
+      "vehicle": "ambulance-0",
+      "paired_completed": true,
+      "without_s": 144.2,
+      "with_s": 76.6,
+      "saved_s": 67.6,
+      "stopped_time_without_s": 58.800000000000566,
+      "stopped_time_with_s": 0.1,
+      "stops_without": 2,
+      "stops_with": 0
+    }
+  ],
+  "approaches": [
+    {
+      "vehicle": "ambulance-0",
+      "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+      "link": 11,
+      "without_signal_response_s": 42.39999999999999,
+      "with_signal_response_s": 8.799999999999997,
+      "without_passage_wait_s": 43.2,
+      "with_passage_wait_s": 9.799999999999997
+    },
+    {
+      "vehicle": "ambulance-0",
+      "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+      "link": 3,
+      "without_signal_response_s": 38.0,
+      "with_signal_response_s": 1.3999999999999915,
+      "without_passage_wait_s": 38.80000000000001,
+      "with_passage_wait_s": 9.299999999999997
+    },
+    {
+      "vehicle": "ambulance-0",
+      "tls": "cluster_12638024056_249086438",
+      "link": 3,
+      "without_signal_response_s": 0.0,
+      "with_signal_response_s": 0.0,
+      "without_passage_wait_s": 13.300000000000004,
+      "with_passage_wait_s": 13.100000000000001
+    }
+  ],
+  "ordinary": [
+    {
+      "inserted": 300,
+      "arrived": 300,
+      "unfinished_inserted": 0,
+      "observed_time_loss_s": 8498.28,
+      "time_loss_distribution_s": {
+        "count": 300,
+        "mean": 28.327600000000004,
+        "min": 3.68,
+        "max": 170.85,
+        "p50": 25.265,
+        "p90": 53.52100000000001,
+        "p95": 66.17850000000001,
+        "p99": 132.2995999999999
+      },
+      "waiting_distribution_s": {
+        "count": 300,
+        "mean": 5.766,
+        "min": 0.0,
+        "max": 91.4,
+        "p50": 0.0,
+        "p90": 19.120000000000005,
+        "p95": 26.105000000000004,
+        "p99": 72.7069999999999
+      },
+      "waiting_time_s": 1729.8,
+      "insertion_delay_s": 4799.2,
+      "throughput_vehicles_per_hour": 1542.857142857143,
+      "scheduled": 300,
+      "uninserted_at_end": 0,
+      "uninserted_delay_lower_bound_s": 0
+    },
+    {
+      "inserted": 300,
+      "arrived": 300,
+      "unfinished_inserted": 0,
+      "observed_time_loss_s": 8357.52,
+      "time_loss_distribution_s": {
+        "count": 300,
+        "mean": 27.858400000000003,
+        "min": 3.6,
+        "max": 170.71,
+        "p50": 25.4,
+        "p90": 52.787000000000006,
+        "p95": 67.53550000000001,
+        "p99": 124.05959999999993
+      },
+      "waiting_distribution_s": {
+        "count": 300,
+        "mean": 5.429,
+        "min": 0.0,
+        "max": 92.6,
+        "p50": 0.0,
+        "p90": 15.310000000000024,
+        "p95": 26.315000000000005,
+        "p99": 72.80499999999991
+      },
+      "waiting_time_s": 1628.7,
+      "insertion_delay_s": 5338.0,
+      "throughput_vehicles_per_hour": 1542.857142857143,
+      "scheduled": 300,
+      "uninserted_at_end": 0,
+      "uninserted_delay_lower_bound_s": 0
+    }
+  ],
+  "collisions": [
+    0,
+    0
+  ],
+  "teleports": [
+    0,
+    0
+  ],
+  "note": "Positive saved_s favours the right controller; this pair is not a statistical campaign.",
+  "stopped_on_red": {
+    "without": {
+      "seconds": 58.700000000000294,
+      "definition": "Speed below 0.1m/s, nearest upcoming signal red, within the common 150m approach zone; includes queue effects and is not a causal attribution.",
+      "per_approach": [
+        {
+          "tls": "cluster_12638024056_249086438",
+          "link": 3,
+          "seconds": 0.0
+        },
+        {
+          "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+          "link": 11,
+          "seconds": 31.500000000000178
+        },
+        {
+          "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+          "link": 3,
+          "seconds": 27.200000000000117
+        }
+      ]
+    },
+    "with": {
+      "seconds": 0.0,
+      "definition": "Speed below 0.1m/s, nearest upcoming signal red, within the common 150m approach zone; includes queue effects and is not a causal attribution.",
+      "per_approach": [
+        {
+          "tls": "cluster_12638024056_249086438",
+          "link": 3,
+          "seconds": 0.0
+        },
+        {
+          "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+          "link": 11,
+          "seconds": 0.0
+        },
+        {
+          "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+          "link": 3,
+          "seconds": 0.0
+        }
+      ]
+    }
+  },
+  "selection": {
+    "selection_rule": "Underlying hospital route selected geometrically: receiving lanes >=10m, ranked by controlled movements then path length. Demo route start, departures and cross-traffic cohorts tuned using preserved measured development trials.",
+    "background_source": "seed-42-demand-300-ev-2-od-0.rou.xml",
+    "background_source_sha256": "a599139a94171bc354b76b0fba496d8199a6084070c6ce68963095dc74ada6bb",
+    "geometry_source": "seed-42-demand-0-ev-2-od-0-storage-10.metadata.json",
+    "route_edges": [
+      "525778226#7",
+      "373574994#0",
+      "373574994#1",
+      "373574994#2",
+      "373574994#4",
+      "373574994#5",
+      "373574994#6",
+      "373574994#8",
+      "373574994#9",
+      "373574994#10",
+      "1312170204#0",
+      "525778223#1",
+      "525778223#2",
+      "525778223#4",
+      "525778223#5",
+      "525778223#6",
+      "190144809#1",
+      "190144809#2"
+    ],
+    "controlled_movements": [
+      {
+        "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+        "index": 3,
+        "incoming": "1312170204#0_0",
+        "outgoing": "525778223#1_0",
+        "via": ":cluster_11200429867_12145575442_12466459994_12466459995_#11more_3_0",
+        "from_edge": "1312170204#0",
+        "to_edge": "525778223#1",
+        "length_m": 13.22,
+        "direction": "l",
+        "protected_phases": [
+          0
+        ]
+      },
+      {
+        "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+        "index": 11,
+        "incoming": "373574994#6_0",
+        "outgoing": "373574994#8_0",
+        "via": ":cluster_10839396276_14127615263_14127615264_14127615265_#2more_11_0",
+        "from_edge": "373574994#6",
+        "to_edge": "373574994#8",
+        "length_m": 184.35,
+        "direction": "s",
+        "protected_phases": [
+          0
+        ]
+      },
+      {
+        "tls": "cluster_12638024056_249086438",
+        "index": 3,
+        "incoming": "525778226#7_0",
+        "outgoing": "373574994#0_0",
+        "via": ":cluster_12638024056_249086438_3_0",
+        "from_edge": "525778226#7",
+        "to_edge": "373574994#0",
+        "length_m": 76.2,
+        "direction": "l",
+        "protected_phases": [
+          0,
+          3
+        ]
+      }
+    ],
+    "ordinary_vehicles": 300,
+    "queue_cohort": 0,
+    "cross_traffic_cohort": 60,
+    "emergency_departure_s": 60,
+    "route_start_index": 3,
+    "second_cross_traffic_cohort": 60,
+    "second_cross_traffic_intervention": "Next N ordinary trips become cars on the second opposing left turn, departing 120+i*1.5s; identical for both controllers.",
+    "cross_traffic_intervention": "Next N ordinary trips become cars on the opposing controlled left turn, departing 60+i*1.5s; identical for both controllers.",
+    "queue_intervention": "First N saved ordinary trips become cars on the emergency corridor, departing 45+i*0.6s; identical for both controllers.",
+    "target": "Zero measured stopped-on-red seconds; a target, not a guaranteed outcome.",
+    "note": "Curated demo tuned using development trials, separate from population evaluation; OSM-derived signal plans are not field calibrated."
+  },
+  "safety_audit_errors": [
+    0,
+    0
+  ],
+  "journey_time_saved_percent": 46.87933425797503,
+  "savings_acceptance_range_percent": [
+    45.0,
+    55.0
+  ],
+  "maximum_accepted_wait_s": 2.0,
+  "demo_target_met": true
+}

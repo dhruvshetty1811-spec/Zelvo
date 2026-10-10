@@ -1,0 +1,37 @@
+{
+  "endpoint": [
+    "https://api.openstreetmap.org/api/0.6/map?bbox=77.565,12.952,77.583,12.966333333333333",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=77.583,12.952,77.601,12.966333333333333",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=77.601,12.952,77.619,12.966333333333333",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=77.565,12.966333333333333,77.583,12.980666666666666",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=77.583,12.966333333333333,77.601,12.980666666666666",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=77.601,12.966333333333333,77.619,12.980666666666666",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=77.565,12.980666666666666,77.583,12.995",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=77.583,12.980666666666666,77.601,12.995",
+    "https://api.openstreetmap.org/api/0.6/map?bbox=77.601,12.980666666666666,77.619,12.995"
+  ],
+  "query": "[out:xml][timeout:180];(way[highway](12.952,77.565,12.995,77.619);relation[type=restriction](12.952,77.565,12.995,77.619););(._;>;);out body;",
+  "bbox": [
+    12.952,
+    77.565,
+    12.995,
+    77.619
+  ],
+  "downloaded_at": "2026-10-10T06:31:59.664Z",
+  "sha256": "d4510c599dd2b00bc7372a9c3f4d2b765a70fc3ab991c18b8c3a71a507f8b98b",
+  "attribution": "\u00a9 OpenStreetMap contributors",
+  "license": "ODbL 1.0",
+  "license_url": "https://www.openstreetmap.org/copyright",
+  "original_tile_hashes": {
+    "tile-0-0.osm.xml": "a08e15f40e5c6010791732c67db7b278dc392fd8d2aaffad651575e195628e78",
+    "tile-0-1.osm.xml": "3cc9e9dae7b9f575f1a9537724429c5dd678499b94d1b54a19982c43c143bc06",
+    "tile-0-2.osm.xml": "f99a5440930f1f1c81e4d44b071815f91015659a96ea96f064d631e834c28637",
+    "tile-1-0.osm.xml": "a33d59a21d24e77effb4bf7272094771e3363d6af5a02b178f5001abe855244a",
+    "tile-1-1.osm.xml": "4c1a4db026eb9be9ddf76ff34f143de58dd3fc3c69778fe8cf3aa3677c51e2f8",
+    "tile-1-2.osm.xml": "61a30831571aefadcb05396938e0f55d8e30488649e8eb3df23af8585403b130",
+    "tile-2-0.osm.xml": "dc60402ee6b568cf5771a82ae7af6674a3ece3b75091a44f8457a4d60e6bcefb",
+    "tile-2-1.osm.xml": "fcdb5d21f9fb8eb637ce8e8d0aa635917a86f086b22d728f46c5111fc99f353c",
+    "tile-2-2.osm.xml": "cceacab9f8942c6625bfdbe56d484bdff1b26a44fe1bfc8a4ef26cdebe2b9df3"
+  },
+  "processing": "scripts/merge-osm.py: road ways, referenced nodes, complete road restrictions"
+}

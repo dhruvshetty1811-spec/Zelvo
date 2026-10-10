@@ -1,0 +1,29 @@
+{
+  "scope": "Backend engine and verification through Slice 9, large evaluation deferred; frontend/live session service deferred",
+  "engine_sha256": "81c93e10039f746c333b4efbd561924bb4bdf5e6ba51a663652aa642b77879f1",
+  "tests": {
+    "passed": 86,
+    "wall_s": 560.94,
+    "log": "reports/backend-final-tests.txt"
+  },
+  "demo": {
+    "saved_percent": 46.87933425797503,
+    "without_s": 144.2,
+    "with_s": 76.6,
+    "curated_not_population": true,
+    "report": "results/backend-delivery-v3/verification.json"
+  },
+  "policy_parity_passed": true,
+  "portable_validation_passed": true,
+  "archive": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\dist\\zelvo-backend-v2.zip",
+  "archive_sha256": "009893e8df614834c37de73c3127c8d54fe9744138cb80ca4b9c1dc8d4b8920e",
+  "archive_bytes": 6167062,
+  "large_campaign": {
+    "paused": true,
+    "recorded_attempts": 4,
+    "planned_executions": 20000,
+    "target_established": false
+  },
+  "hardware": "Emulator only; no physical signals connected"
+}
+

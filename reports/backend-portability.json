@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "archive_sha256": "465ce9409beb60595ff2b67cafe9ff15c403872415fa410a59d84c3cd48d5a64",
+  "engine_source_sha256": "81c93e10039f746c333b4efbd561924bb4bdf5e6ba51a663652aa642b77879f1",
+  "checks": {
+    "actuated": {
+      "result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\dist\\verification-extract\\results\\actuated\\run-0dbd5e6550a943c1acc331198e74a210\\result.json",
+      "same_journeys": true,
+      "same_approaches": true,
+      "journey_s": [
+        144.2
+      ]
+    },
+    "zelvo_ai": {
+      "result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\dist\\verification-extract\\results\\zelvo_ai\\run-3f165d8734b3442faeea2855cac40835\\result.json",
+      "same_journeys": true,
+      "same_approaches": true,
+      "journey_s": [
+        76.6
+      ]
+    }
+  },
+  "scope": "Fresh extracted directory and relative inputs, using the existing installed dependencies/SUMO; not a fresh-machine installation test",
+  "final_archive": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\dist\\zelvo-backend-v2.zip",
+  "final_archive_sha256": "009893e8df614834c37de73c3127c8d54fe9744138cb80ca4b9c1dc8d4b8920e",
+  "final_members_verified": 126,
+  "final_demo_engine_model_equivalent_to_executed_bundle": true,
+  "portable_ablation_inputs_verified": true,
+  "final_validation_scope": "Both policies executed from the initial extracted archive; final v2 source/model/demo fingerprints identical, all v2 members checked, added ablation configuration and input hashes reconciled. Existing environment, not a clean-machine installation."
+}
+

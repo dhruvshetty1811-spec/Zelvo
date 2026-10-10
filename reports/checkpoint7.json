@@ -1,0 +1,2649 @@
+{
+  "schema_version": "1.0",
+  "checkpoint": "engine slices 1-7",
+  "runs": [
+    {
+      "run_id": "run-48bb8120e5f945289bdc900b9a879473",
+      "seed": 42,
+      "controller": "zelvo_analytical",
+      "status": "completed",
+      "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\checkpoint7\\run-48bb8120e5f945289bdc900b9a879473\\result.json",
+      "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+      "wall_s": 66.84399999999732,
+      "simulated_s": 700.0,
+      "journeys": [
+        {
+          "vehicle_id": "ambulance-0",
+          "scheduled_departure_s": 60.0,
+          "actual_departure_s": 60.0,
+          "arrival_s": 274.7,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 214.7,
+          "scheduled_start_to_arrival_s": 214.7,
+          "stopped_time_s": 35.00000000000023,
+          "stops": 4
+        },
+        {
+          "vehicle_id": "ambulance-1",
+          "scheduled_departure_s": 68.0,
+          "actual_departure_s": 68.0,
+          "arrival_s": 227.7,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 159.7,
+          "scheduled_start_to_arrival_s": 159.7,
+          "stopped_time_s": 16.09999999999996,
+          "stops": 2
+        }
+      ],
+      "tripinfo_verified_ambulances": [
+        "ambulance-0",
+        "ambulance-1"
+      ],
+      "collisions": 0,
+      "teleports": 0,
+      "safety_audit_errors": 0,
+      "ordinary": {
+        "inserted": 300,
+        "arrived": 300,
+        "unfinished_inserted": 0,
+        "observed_time_loss_s": 12004.06,
+        "waiting_time_s": 2512.4,
+        "insertion_delay_s": 15.0,
+        "throughput_vehicles_per_hour": 1542.857142857143,
+        "scheduled": 300,
+        "uninserted_at_end": 0,
+        "uninserted_delay_lower_bound_s": 0
+      },
+      "event_counts": {
+        "run_started": 1,
+        "phase_transition": 5530,
+        "ambulance_departed": 2,
+        "corridor_blocked": 161,
+        "approach_detected": 10,
+        "approach_green": 10,
+        "stopline_crossed": 10,
+        "all_red_occupied_hold": 24,
+        "priority_requested": 27,
+        "priority_released": 4,
+        "priority_hold": 36,
+        "ambulance_arrived": 2,
+        "run_finished": 1
+      },
+      "training_labels": {
+        "complete_labels": 0,
+        "censored_labels": 0
+      },
+      "planner_latency_ms": {
+        "samples": 350,
+        "max": 2.6901999990514014,
+        "mean": 0.25735885720808127
+      },
+      "learned_forecast_count": 0,
+      "learned_eta_different_from_analytical": 0,
+      "unavailable_metrics": [
+        "district_calibrated_pedestrian_demand",
+        "physical_controller_measurements",
+        "calibrated_contiguous_queue_extent",
+        "full_intersection_box_occupancy"
+      ]
+    },
+    {
+      "run_id": "run-5a58d50b986648a2838e111a0834be5a",
+      "seed": 42,
+      "controller": "zelvo_ai",
+      "status": "completed",
+      "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\checkpoint7\\run-5a58d50b986648a2838e111a0834be5a\\result.json",
+      "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+      "wall_s": 85.0470000000023,
+      "simulated_s": 700.0,
+      "journeys": [
+        {
+          "vehicle_id": "ambulance-0",
+          "scheduled_departure_s": 60.0,
+          "actual_departure_s": 60.0,
+          "arrival_s": 274.8,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 214.8,
+          "scheduled_start_to_arrival_s": 214.8,
+          "stopped_time_s": 35.00000000000023,
+          "stops": 4
+        },
+        {
+          "vehicle_id": "ambulance-1",
+          "scheduled_departure_s": 68.0,
+          "actual_departure_s": 68.0,
+          "arrival_s": 227.7,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 159.7,
+          "scheduled_start_to_arrival_s": 159.7,
+          "stopped_time_s": 16.09999999999996,
+          "stops": 2
+        }
+      ],
+      "tripinfo_verified_ambulances": [
+        "ambulance-0",
+        "ambulance-1"
+      ],
+      "collisions": 0,
+      "teleports": 0,
+      "safety_audit_errors": 0,
+      "ordinary": {
+        "inserted": 300,
+        "arrived": 300,
+        "unfinished_inserted": 0,
+        "observed_time_loss_s": 12119.4,
+        "waiting_time_s": 2610.0,
+        "insertion_delay_s": 14.8,
+        "throughput_vehicles_per_hour": 1542.857142857143,
+        "scheduled": 300,
+        "uninserted_at_end": 0,
+        "uninserted_delay_lower_bound_s": 0
+      },
+      "event_counts": {
+        "run_started": 1,
+        "phase_transition": 5531,
+        "ambulance_departed": 2,
+        "corridor_blocked": 161,
+        "approach_detected": 10,
+        "approach_green": 10,
+        "stopline_crossed": 10,
+        "all_red_occupied_hold": 24,
+        "priority_requested": 34,
+        "priority_released": 4,
+        "priority_hold": 37,
+        "ambulance_arrived": 2,
+        "run_finished": 1
+      },
+      "training_labels": {
+        "complete_labels": 0,
+        "censored_labels": 0
+      },
+      "planner_latency_ms": {
+        "samples": 350,
+        "max": 303.4754000000248,
+        "mean": 21.481297142994922
+      },
+      "learned_forecast_count": 461,
+      "learned_eta_different_from_analytical": 461,
+      "unavailable_metrics": [
+        "district_calibrated_pedestrian_demand",
+        "physical_controller_measurements",
+        "calibrated_contiguous_queue_extent",
+        "full_intersection_box_occupancy"
+      ]
+    },
+    {
+      "run_id": "run-75859c00584c4988bc87dc910037d329",
+      "seed": 42,
+      "controller": "fixed_time",
+      "status": "incomplete",
+      "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\checkpoint7\\run-75859c00584c4988bc87dc910037d329\\result.json",
+      "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+      "wall_s": 115.34400000000096,
+      "simulated_s": 700.0,
+      "journeys": [
+        {
+          "vehicle_id": "ambulance-0",
+          "scheduled_departure_s": 60.0,
+          "actual_departure_s": 60.0,
+          "arrival_s": 406.0,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 346.0,
+          "scheduled_start_to_arrival_s": 346.0,
+          "stopped_time_s": 161.39999999999512,
+          "stops": 4
+        },
+        {
+          "vehicle_id": "ambulance-1",
+          "scheduled_departure_s": 68.0,
+          "actual_departure_s": 68.0,
+          "arrival_s": 313.7,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 245.7,
+          "scheduled_start_to_arrival_s": 245.7,
+          "stopped_time_s": 93.29999999999897,
+          "stops": 3
+        }
+      ],
+      "tripinfo_verified_ambulances": [
+        "ambulance-0",
+        "ambulance-1"
+      ],
+      "collisions": 0,
+      "teleports": 0,
+      "safety_audit_errors": 0,
+      "ordinary": {
+        "inserted": 300,
+        "arrived": 288,
+        "unfinished_inserted": 12,
+        "observed_time_loss_s": 18327.15,
+        "waiting_time_s": 8573.2,
+        "insertion_delay_s": 13.1,
+        "throughput_vehicles_per_hour": 1481.142857142857,
+        "scheduled": 300,
+        "uninserted_at_end": 0,
+        "uninserted_delay_lower_bound_s": 0
+      },
+      "event_counts": {
+        "run_started": 1,
+        "phase_transition": 1611,
+        "ambulance_departed": 2,
+        "approach_detected": 10,
+        "approach_green": 10,
+        "stopline_crossed": 10,
+        "all_red_occupied_hold": 16,
+        "ambulance_arrived": 2,
+        "run_finished": 1
+      },
+      "training_labels": {
+        "complete_labels": 0,
+        "censored_labels": 0
+      },
+      "planner_latency_ms": {
+        "samples": 350,
+        "max": 7.571199999802047,
+        "mean": 0.5539428572124702
+      },
+      "learned_forecast_count": 0,
+      "learned_eta_different_from_analytical": 0,
+      "unavailable_metrics": [
+        "district_calibrated_pedestrian_demand",
+        "physical_controller_measurements",
+        "calibrated_contiguous_queue_extent",
+        "full_intersection_box_occupancy"
+      ]
+    },
+    {
+      "run_id": "run-af528a613ff24b3185c5bd2c64403c17",
+      "seed": 42,
+      "controller": "actuated",
+      "status": "completed",
+      "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\checkpoint7\\run-af528a613ff24b3185c5bd2c64403c17\\result.json",
+      "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+      "wall_s": 98.48500000000058,
+      "simulated_s": 700.0,
+      "journeys": [
+        {
+          "vehicle_id": "ambulance-0",
+          "scheduled_departure_s": 60.0,
+          "actual_departure_s": 60.0,
+          "arrival_s": 283.3,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 223.3,
+          "scheduled_start_to_arrival_s": 223.3,
+          "stopped_time_s": 40.1000000000003,
+          "stops": 5
+        },
+        {
+          "vehicle_id": "ambulance-1",
+          "scheduled_departure_s": 68.0,
+          "actual_departure_s": 68.0,
+          "arrival_s": 243.1,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 175.1,
+          "scheduled_start_to_arrival_s": 175.1,
+          "stopped_time_s": 27.300000000000118,
+          "stops": 3
+        }
+      ],
+      "tripinfo_verified_ambulances": [
+        "ambulance-0",
+        "ambulance-1"
+      ],
+      "collisions": 0,
+      "teleports": 0,
+      "safety_audit_errors": 0,
+      "ordinary": {
+        "inserted": 300,
+        "arrived": 300,
+        "unfinished_inserted": 0,
+        "observed_time_loss_s": 12003.42,
+        "waiting_time_s": 2496.8,
+        "insertion_delay_s": 18.0,
+        "throughput_vehicles_per_hour": 1542.857142857143,
+        "scheduled": 300,
+        "uninserted_at_end": 0,
+        "uninserted_delay_lower_bound_s": 0
+      },
+      "event_counts": {
+        "run_started": 1,
+        "phase_transition": 5535,
+        "ambulance_departed": 2,
+        "approach_detected": 10,
+        "approach_green": 10,
+        "stopline_crossed": 10,
+        "all_red_occupied_hold": 24,
+        "ambulance_arrived": 2,
+        "run_finished": 1
+      },
+      "training_labels": {
+        "complete_labels": 0,
+        "censored_labels": 0
+      },
+      "planner_latency_ms": {
+        "samples": 350,
+        "max": 36.702699999295874,
+        "mean": 0.4537005715246778
+      },
+      "learned_forecast_count": 0,
+      "learned_eta_different_from_analytical": 0,
+      "unavailable_metrics": [
+        "district_calibrated_pedestrian_demand",
+        "physical_controller_measurements",
+        "calibrated_contiguous_queue_extent",
+        "full_intersection_box_occupancy"
+      ]
+    },
+    {
+      "run_id": "run-df638d73be4b4470a15ee4d554104c43",
+      "seed": 42,
+      "controller": "local_preemption",
+      "status": "completed",
+      "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\checkpoint7\\run-df638d73be4b4470a15ee4d554104c43\\result.json",
+      "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+      "wall_s": 109.7029999999977,
+      "simulated_s": 700.0,
+      "journeys": [
+        {
+          "vehicle_id": "ambulance-0",
+          "scheduled_departure_s": 60.0,
+          "actual_departure_s": 60.0,
+          "arrival_s": 274.8,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 214.8,
+          "scheduled_start_to_arrival_s": 214.8,
+          "stopped_time_s": 35.00000000000023,
+          "stops": 4
+        },
+        {
+          "vehicle_id": "ambulance-1",
+          "scheduled_departure_s": 68.0,
+          "actual_departure_s": 68.0,
+          "arrival_s": 227.7,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 159.7,
+          "scheduled_start_to_arrival_s": 159.7,
+          "stopped_time_s": 16.09999999999996,
+          "stops": 2
+        }
+      ],
+      "tripinfo_verified_ambulances": [
+        "ambulance-0",
+        "ambulance-1"
+      ],
+      "collisions": 0,
+      "teleports": 0,
+      "safety_audit_errors": 0,
+      "ordinary": {
+        "inserted": 300,
+        "arrived": 300,
+        "unfinished_inserted": 0,
+        "observed_time_loss_s": 12119.4,
+        "waiting_time_s": 2610.0,
+        "insertion_delay_s": 14.8,
+        "throughput_vehicles_per_hour": 1542.857142857143,
+        "scheduled": 300,
+        "uninserted_at_end": 0,
+        "uninserted_delay_lower_bound_s": 0
+      },
+      "event_counts": {
+        "run_started": 1,
+        "phase_transition": 5531,
+        "ambulance_departed": 2,
+        "approach_detected": 10,
+        "approach_green": 10,
+        "stopline_crossed": 10,
+        "all_red_occupied_hold": 24,
+        "priority_requested": 53,
+        "priority_budget_exhausted": 1,
+        "priority_hold": 37,
+        "priority_released": 3,
+        "ambulance_arrived": 2,
+        "run_finished": 1
+      },
+      "training_labels": {
+        "complete_labels": 0,
+        "censored_labels": 0
+      },
+      "planner_latency_ms": {
+        "samples": 350,
+        "max": 9.329900000011548,
+        "mean": 0.3887934286051729
+      },
+      "learned_forecast_count": 0,
+      "learned_eta_different_from_analytical": 0,
+      "unavailable_metrics": [
+        "district_calibrated_pedestrian_demand",
+        "physical_controller_measurements",
+        "calibrated_contiguous_queue_extent",
+        "full_intersection_box_occupancy"
+      ]
+    }
+  ],
+  "pedestrian_checks": [
+    {
+      "run_id": "run-3a36c94efd3445e880b01b3da90f6bd2",
+      "seed": 42,
+      "controller": "zelvo_analytical",
+      "status": "completed",
+      "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\pedestrian-check\\run-3a36c94efd3445e880b01b3da90f6bd2\\result.json",
+      "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+      "wall_s": 70.06300000000192,
+      "simulated_s": 700.0,
+      "journeys": [
+        {
+          "vehicle_id": "ambulance-0",
+          "scheduled_departure_s": 60.0,
+          "actual_departure_s": 60.0,
+          "arrival_s": 285.2,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 225.2,
+          "scheduled_start_to_arrival_s": 225.2,
+          "stopped_time_s": 22.700000000000053,
+          "stops": 4
+        },
+        {
+          "vehicle_id": "ambulance-1",
+          "scheduled_departure_s": 68.0,
+          "actual_departure_s": 68.0,
+          "arrival_s": 283.2,
+          "completed": true,
+          "departure_delay_s": 0.0,
+          "journey_time_s": 215.2,
+          "scheduled_start_to_arrival_s": 215.2,
+          "stopped_time_s": 60.100000000000584,
+          "stops": 5
+        }
+      ],
+      "tripinfo_verified_ambulances": [
+        "ambulance-0",
+        "ambulance-1"
+      ],
+      "collisions": 0,
+      "teleports": 0,
+      "safety_audit_errors": 0,
+      "ordinary": {
+        "inserted": 300,
+        "arrived": 300,
+        "unfinished_inserted": 0,
+        "observed_time_loss_s": 13727.24,
+        "waiting_time_s": 2830.2,
+        "insertion_delay_s": 19.7,
+        "throughput_vehicles_per_hour": 1542.857142857143,
+        "scheduled": 300,
+        "uninserted_at_end": 0,
+        "uninserted_delay_lower_bound_s": 0
+      },
+      "event_counts": {
+        "run_started": 1,
+        "phase_transition": 5539,
+        "ambulance_departed": 2,
+        "corridor_blocked": 209,
+        "approach_detected": 10,
+        "approach_green": 10,
+        "stopline_crossed": 10,
+        "all_red_occupied_hold": 20,
+        "priority_requested": 36,
+        "priority_released": 2,
+        "priority_rejected": 7,
+        "ambulance_arrived": 2,
+        "run_finished": 1
+      },
+      "training_labels": {
+        "complete_labels": 0,
+        "censored_labels": 0
+      },
+      "planner_latency_ms": {
+        "samples": 350,
+        "max": 3.9060000017343555,
+        "mean": 0.26808828567612053
+      },
+      "learned_forecast_count": 0,
+      "learned_eta_different_from_analytical": 0,
+      "unavailable_metrics": [
+        "district_calibrated_pedestrian_demand",
+        "physical_controller_measurements",
+        "calibrated_contiguous_queue_extent",
+        "full_intersection_box_occupancy"
+      ],
+      "pedestrian": {
+        "observed_people": 60,
+        "observed_stopped_person_seconds": 20.30000000000002,
+        "maximum_observed_continuous_wait_s": 3.7
+      }
+    }
+  ],
+  "development": {
+    "recorded_runs": 24,
+    "statuses": {
+      "incomplete": 18,
+      "completed": 6
+    },
+    "engine_hashes": [
+      "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32"
+    ],
+    "seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007
+    ],
+    "collision_or_audit_failing_runs": [],
+    "runs": [
+      {
+        "run_id": "run-0e90f87e62a347bfb5983a6db967aa63",
+        "seed": 1000,
+        "controller": "zelvo_analytical",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-0e90f87e62a347bfb5983a6db967aa63\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 92.42199999999866,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 283.3,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 223.3,
+            "scheduled_start_to_arrival_s": 223.3,
+            "stopped_time_s": 57.00000000000054,
+            "stops": 5
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 300,
+          "arrived": 289,
+          "unfinished_inserted": 11,
+          "observed_time_loss_s": 15868.86,
+          "waiting_time_s": 6521.1,
+          "insertion_delay_s": 9.2,
+          "throughput_vehicles_per_hour": 1486.2857142857142,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5519,
+          "ambulance_departed": 1,
+          "corridor_blocked": 111,
+          "approach_detected": 5,
+          "approach_green": 5,
+          "stopline_crossed": 5,
+          "all_red_occupied_hold": 13,
+          "priority_requested": 19,
+          "priority_released": 2,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 290,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 7.210700001451187,
+          "mean": 0.28224057159345
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-19b14bd9f3864bae8740b77606dbf8b9",
+        "seed": 1000,
+        "controller": "local_preemption",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-19b14bd9f3864bae8740b77606dbf8b9\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 95.125,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 261.2,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 201.2,
+            "scheduled_start_to_arrival_s": 201.2,
+            "stopped_time_s": 43.80000000000035,
+            "stops": 3
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 300,
+          "arrived": 289,
+          "unfinished_inserted": 11,
+          "observed_time_loss_s": 15765.710000000001,
+          "waiting_time_s": 6407.9,
+          "insertion_delay_s": 8.0,
+          "throughput_vehicles_per_hour": 1486.2857142857142,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5513,
+          "ambulance_departed": 1,
+          "approach_detected": 5,
+          "approach_green": 5,
+          "stopline_crossed": 5,
+          "priority_requested": 23,
+          "priority_hold": 47,
+          "all_red_occupied_hold": 13,
+          "priority_budget_exhausted": 1,
+          "priority_released": 1,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 273,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 5.086999997729436,
+          "mean": 0.2778614285177485
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-217c63882f6042c8acfc99b71cde7a2b",
+        "seed": 1005,
+        "controller": "actuated",
+        "status": "completed",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-217c63882f6042c8acfc99b71cde7a2b\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 40.51599999999962,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 277.9,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 217.89999999999998,
+            "scheduled_start_to_arrival_s": 217.89999999999998,
+            "stopped_time_s": 35.30000000000023,
+            "stops": 5
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 275.9,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 207.89999999999998,
+            "scheduled_start_to_arrival_s": 207.89999999999998,
+            "stopped_time_s": 43.70000000000035,
+            "stops": 4
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 200,
+          "arrived": 200,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 8010.33,
+          "waiting_time_s": 1858.9,
+          "insertion_delay_s": 7.8,
+          "throughput_vehicles_per_hour": 1028.5714285714287,
+          "scheduled": 200,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5533,
+          "ambulance_departed": 2,
+          "approach_detected": 10,
+          "approach_green": 10,
+          "stopline_crossed": 10,
+          "all_red_occupied_hold": 16,
+          "ambulance_arrived": 2,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 559,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.5144999997573905,
+          "mean": 0.1531600000141355
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-2d0777f085f147a4836b0c42d5885616",
+        "seed": 1002,
+        "controller": "zelvo_analytical",
+        "status": "completed",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-2d0777f085f147a4836b0c42d5885616\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 79.78099999999904,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 225.5,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 165.5,
+            "scheduled_start_to_arrival_s": 165.5,
+            "stopped_time_s": 13.199999999999969,
+            "stops": 2
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 200,
+          "arrived": 200,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 7576.07,
+          "waiting_time_s": 1493.1000000000001,
+          "insertion_delay_s": 4.5,
+          "throughput_vehicles_per_hour": 1028.5714285714287,
+          "scheduled": 200,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5542,
+          "ambulance_departed": 1,
+          "corridor_blocked": 60,
+          "approach_detected": 5,
+          "approach_green": 5,
+          "stopline_crossed": 5,
+          "all_red_occupied_hold": 12,
+          "priority_requested": 12,
+          "priority_released": 2,
+          "priority_hold": 16,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 191,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 11.172800001077121,
+          "mean": 0.21668857126704616
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-2de17661b5074d6585f437a86a6d0fb0",
+        "seed": 1005,
+        "controller": "zelvo_analytical",
+        "status": "completed",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-2de17661b5074d6585f437a86a6d0fb0\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 44.06199999999808,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 277.9,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 217.89999999999998,
+            "scheduled_start_to_arrival_s": 217.89999999999998,
+            "stopped_time_s": 35.30000000000023,
+            "stops": 5
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 275.9,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 207.89999999999998,
+            "scheduled_start_to_arrival_s": 207.89999999999998,
+            "stopped_time_s": 43.70000000000035,
+            "stops": 4
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 200,
+          "arrived": 200,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 8010.33,
+          "waiting_time_s": 1858.9,
+          "insertion_delay_s": 7.8,
+          "throughput_vehicles_per_hour": 1028.5714285714287,
+          "scheduled": 200,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5533,
+          "ambulance_departed": 2,
+          "corridor_blocked": 203,
+          "approach_detected": 10,
+          "approach_green": 10,
+          "stopline_crossed": 10,
+          "all_red_occupied_hold": 16,
+          "priority_requested": 30,
+          "priority_released": 2,
+          "ambulance_arrived": 2,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 559,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.9317000005685259,
+          "mean": 0.2638419999441664
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-331a6a9117554bf194ddd9e9da93cf63",
+        "seed": 1001,
+        "controller": "local_preemption",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-331a6a9117554bf194ddd9e9da93cf63\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 80.84400000000096,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 285.0,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 225.0,
+            "scheduled_start_to_arrival_s": 225.0,
+            "stopped_time_s": 0.1,
+            "stops": 0
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 247.8,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 179.8,
+            "scheduled_start_to_arrival_s": 179.8,
+            "stopped_time_s": 7.099999999999991,
+            "stops": 2
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 400,
+          "arrived": 378,
+          "unfinished_inserted": 22,
+          "observed_time_loss_s": 24214.38,
+          "waiting_time_s": 11772.3,
+          "insertion_delay_s": 25.6,
+          "throughput_vehicles_per_hour": 1944.0,
+          "scheduled": 400,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5526,
+          "ambulance_departed": 2,
+          "approach_detected": 8,
+          "approach_green": 8,
+          "stopline_crossed": 8,
+          "priority_requested": 48,
+          "priority_rejected": 48,
+          "priority_hold": 1,
+          "priority_budget_exhausted": 1,
+          "priority_released": 3,
+          "ambulance_arrived": 2,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 494,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 2.341899999009911,
+          "mean": 0.2100151428956971
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-36d7656e8d6548c2922c3bf4cf5d2363",
+        "seed": 1006,
+        "controller": "zelvo_analytical",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-36d7656e8d6548c2922c3bf4cf5d2363\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 49.81200000000172,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 240.5,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 180.5,
+            "scheduled_start_to_arrival_s": 180.5,
+            "stopped_time_s": 28.000000000000128,
+            "stops": 3
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 300,
+          "arrived": 287,
+          "unfinished_inserted": 13,
+          "observed_time_loss_s": 16540.91,
+          "waiting_time_s": 7403.8,
+          "insertion_delay_s": 33.3,
+          "throughput_vehicles_per_hour": 1476.0,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5531,
+          "ambulance_departed": 1,
+          "corridor_blocked": 57,
+          "approach_detected": 5,
+          "approach_green": 5,
+          "stopline_crossed": 5,
+          "all_red_occupied_hold": 38,
+          "priority_requested": 15,
+          "priority_released": 1,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 196,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.495799999247538,
+          "mean": 0.11177857153857726
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-410cbb509d89405d939a1959c08cde0b",
+        "seed": 1007,
+        "controller": "zelvo_analytical",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-410cbb509d89405d939a1959c08cde0b\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 63.59300000000076,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 285.5,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 225.5,
+            "scheduled_start_to_arrival_s": 225.5,
+            "stopped_time_s": 3.0000000000000013,
+            "stops": 1
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 330.1,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 262.1,
+            "scheduled_start_to_arrival_s": 262.1,
+            "stopped_time_s": 22.700000000000053,
+            "stops": 3
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 400,
+          "arrived": 366,
+          "unfinished_inserted": 34,
+          "observed_time_loss_s": 33228.98,
+          "waiting_time_s": 19936.2,
+          "insertion_delay_s": 31.8,
+          "throughput_vehicles_per_hour": 1882.2857142857142,
+          "scheduled": 400,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5509,
+          "ambulance_departed": 2,
+          "corridor_blocked": 259,
+          "approach_detected": 8,
+          "approach_green": 8,
+          "stopline_crossed": 8,
+          "all_red_occupied_hold": 21,
+          "priority_requested": 28,
+          "priority_rejected": 41,
+          "priority_released": 3,
+          "ambulance_arrived": 2,
+          "priority_hold": 12,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 653,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.9322000007377937,
+          "mean": 0.24781914273002517
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-4425a8969d1b433cad39a6dc5bb6aa98",
+        "seed": 1004,
+        "controller": "local_preemption",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-4425a8969d1b433cad39a6dc5bb6aa98\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 84.98500000000058,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 276.7,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 216.7,
+            "scheduled_start_to_arrival_s": 216.7,
+            "stopped_time_s": 6.999999999999991,
+            "stops": 1
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 400,
+          "arrived": 375,
+          "unfinished_inserted": 25,
+          "observed_time_loss_s": 28007.02,
+          "waiting_time_s": 14877.7,
+          "insertion_delay_s": 22.9,
+          "throughput_vehicles_per_hour": 1928.5714285714287,
+          "scheduled": 400,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5515,
+          "ambulance_departed": 1,
+          "all_red_occupied_hold": 4,
+          "approach_detected": 4,
+          "approach_green": 4,
+          "stopline_crossed": 4,
+          "priority_requested": 22,
+          "priority_released": 2,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 288,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.5982000004441943,
+          "mean": 0.1701794286054792
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-62bf41ed4d594b8fa3548b66c421a4e7",
+        "seed": 1003,
+        "controller": "actuated",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-62bf41ed4d594b8fa3548b66c421a4e7\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 89.68699999999808,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 245.3,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 185.3,
+            "scheduled_start_to_arrival_s": 185.3,
+            "stopped_time_s": 13.999999999999966,
+            "stops": 1
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 242.3,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 174.3,
+            "scheduled_start_to_arrival_s": 174.3,
+            "stopped_time_s": 32.60000000000019,
+            "stops": 2
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 300,
+          "arrived": 287,
+          "unfinished_inserted": 13,
+          "observed_time_loss_s": 17602.95,
+          "waiting_time_s": 7954.2,
+          "insertion_delay_s": 23.1,
+          "throughput_vehicles_per_hour": 1476.0,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5528,
+          "ambulance_departed": 2,
+          "approach_detected": 9,
+          "approach_green": 9,
+          "stopline_crossed": 9,
+          "all_red_occupied_hold": 3,
+          "ambulance_arrived": 2,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 358,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 5.543499999475898,
+          "mean": 0.23550000004304042
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-63ca94ea13ac4e61862854d1242c0491",
+        "seed": 1003,
+        "controller": "local_preemption",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-63ca94ea13ac4e61862854d1242c0491\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 82.92199999999866,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 241.7,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 181.7,
+            "scheduled_start_to_arrival_s": 181.7,
+            "stopped_time_s": 13.999999999999966,
+            "stops": 1
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 206.3,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 138.3,
+            "scheduled_start_to_arrival_s": 138.3,
+            "stopped_time_s": 2.2000000000000006,
+            "stops": 1
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 300,
+          "arrived": 287,
+          "unfinished_inserted": 13,
+          "observed_time_loss_s": 17558.53,
+          "waiting_time_s": 7914.9,
+          "insertion_delay_s": 22.8,
+          "throughput_vehicles_per_hour": 1476.0,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5527,
+          "ambulance_departed": 2,
+          "approach_detected": 9,
+          "approach_green": 9,
+          "stopline_crossed": 9,
+          "priority_requested": 47,
+          "priority_hold": 13,
+          "priority_released": 4,
+          "ambulance_arrived": 2,
+          "all_red_occupied_hold": 3,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 323,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 17.907500001456356,
+          "mean": 0.26427314288282233
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-6ef98c99518e43b1b4d986c1b4b1f2fa",
+        "seed": 1001,
+        "controller": "actuated",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-6ef98c99518e43b1b4d986c1b4b1f2fa\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 62.46900000000096,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 287.4,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 227.39999999999998,
+            "scheduled_start_to_arrival_s": 227.39999999999998,
+            "stopped_time_s": 0.1,
+            "stops": 0
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 247.9,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 179.9,
+            "scheduled_start_to_arrival_s": 179.9,
+            "stopped_time_s": 7.099999999999991,
+            "stops": 2
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 400,
+          "arrived": 378,
+          "unfinished_inserted": 22,
+          "observed_time_loss_s": 24144.23,
+          "waiting_time_s": 11704.9,
+          "insertion_delay_s": 29.5,
+          "throughput_vehicles_per_hour": 1944.0,
+          "scheduled": 400,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5525,
+          "ambulance_departed": 2,
+          "approach_detected": 8,
+          "approach_green": 8,
+          "stopline_crossed": 8,
+          "ambulance_arrived": 2,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 496,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.1750000012398232,
+          "mean": 0.15887885734887927
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-74c0a84144fc442cbdefb2db5f1a6d3e",
+        "seed": 1002,
+        "controller": "actuated",
+        "status": "completed",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-74c0a84144fc442cbdefb2db5f1a6d3e\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 68.56200000000172,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 243.4,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 183.4,
+            "scheduled_start_to_arrival_s": 183.4,
+            "stopped_time_s": 26.80000000000011,
+            "stops": 3
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 200,
+          "arrived": 200,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 7547.2,
+          "waiting_time_s": 1484.5,
+          "insertion_delay_s": 3.0,
+          "throughput_vehicles_per_hour": 1028.5714285714287,
+          "scheduled": 200,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5540,
+          "ambulance_departed": 1,
+          "approach_detected": 5,
+          "approach_green": 5,
+          "stopline_crossed": 5,
+          "all_red_occupied_hold": 12,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 199,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 3.436599999986356,
+          "mean": 0.1445734285828491
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-7825969c38a24d2e9b63eceb7880b279",
+        "seed": 1002,
+        "controller": "local_preemption",
+        "status": "completed",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-7825969c38a24d2e9b63eceb7880b279\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 63.07800000000134,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 225.5,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 165.5,
+            "scheduled_start_to_arrival_s": 165.5,
+            "stopped_time_s": 13.199999999999969,
+            "stops": 2
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 200,
+          "arrived": 200,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 7576.07,
+          "waiting_time_s": 1493.1000000000001,
+          "insertion_delay_s": 4.5,
+          "throughput_vehicles_per_hour": 1028.5714285714287,
+          "scheduled": 200,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5542,
+          "ambulance_departed": 1,
+          "approach_detected": 5,
+          "approach_green": 5,
+          "stopline_crossed": 5,
+          "all_red_occupied_hold": 12,
+          "priority_requested": 23,
+          "priority_released": 2,
+          "priority_hold": 16,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 191,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 2.3729999993520323,
+          "mean": 0.1566811430010213
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-85809aaaa4e44996ac812cf799345de7",
+        "seed": 1000,
+        "controller": "actuated",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-85809aaaa4e44996ac812cf799345de7\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 101.01600000000326,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 283.3,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 223.3,
+            "scheduled_start_to_arrival_s": 223.3,
+            "stopped_time_s": 57.00000000000054,
+            "stops": 5
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 300,
+          "arrived": 289,
+          "unfinished_inserted": 11,
+          "observed_time_loss_s": 15868.86,
+          "waiting_time_s": 6521.1,
+          "insertion_delay_s": 9.2,
+          "throughput_vehicles_per_hour": 1486.2857142857142,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5519,
+          "ambulance_departed": 1,
+          "approach_detected": 5,
+          "approach_green": 5,
+          "stopline_crossed": 5,
+          "all_red_occupied_hold": 13,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 290,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 9.799200000998098,
+          "mean": 0.21746799995266233
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-8826b3bc184a4b148f60029808a4083f",
+        "seed": 1006,
+        "controller": "actuated",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-8826b3bc184a4b148f60029808a4083f\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 63.56300000000192,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 240.5,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 180.5,
+            "scheduled_start_to_arrival_s": 180.5,
+            "stopped_time_s": 28.000000000000128,
+            "stops": 3
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 300,
+          "arrived": 287,
+          "unfinished_inserted": 13,
+          "observed_time_loss_s": 16540.91,
+          "waiting_time_s": 7403.8,
+          "insertion_delay_s": 33.3,
+          "throughput_vehicles_per_hour": 1476.0,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5531,
+          "ambulance_departed": 1,
+          "approach_detected": 5,
+          "approach_green": 5,
+          "stopline_crossed": 5,
+          "all_red_occupied_hold": 38,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 196,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.1455999992904253,
+          "mean": 0.11381428558836758
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-8e6c5adcdd3b436a8654d0299330d88a",
+        "seed": 1004,
+        "controller": "zelvo_analytical",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-8e6c5adcdd3b436a8654d0299330d88a\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 72.46900000000096,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 276.7,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 216.7,
+            "scheduled_start_to_arrival_s": 216.7,
+            "stopped_time_s": 6.999999999999991,
+            "stops": 1
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 400,
+          "arrived": 375,
+          "unfinished_inserted": 25,
+          "observed_time_loss_s": 28007.02,
+          "waiting_time_s": 14877.7,
+          "insertion_delay_s": 22.9,
+          "throughput_vehicles_per_hour": 1928.5714285714287,
+          "scheduled": 400,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5515,
+          "ambulance_departed": 1,
+          "corridor_blocked": 110,
+          "all_red_occupied_hold": 4,
+          "approach_detected": 4,
+          "approach_green": 4,
+          "stopline_crossed": 4,
+          "priority_requested": 12,
+          "priority_released": 2,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 288,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 4.18329999956768,
+          "mean": 0.17731599993047503
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-9c304168136e458da1d4a96baf995d11",
+        "seed": 1003,
+        "controller": "zelvo_analytical",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-9c304168136e458da1d4a96baf995d11\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 58.21900000000096,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 245.3,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 185.3,
+            "scheduled_start_to_arrival_s": 185.3,
+            "stopped_time_s": 14.199999999999966,
+            "stops": 2
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 242.2,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 174.2,
+            "scheduled_start_to_arrival_s": 174.2,
+            "stopped_time_s": 32.60000000000019,
+            "stops": 2
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 300,
+          "arrived": 287,
+          "unfinished_inserted": 13,
+          "observed_time_loss_s": 17636.1,
+          "waiting_time_s": 7995.6,
+          "insertion_delay_s": 23.3,
+          "throughput_vehicles_per_hour": 1476.0,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5528,
+          "ambulance_departed": 2,
+          "corridor_blocked": 82,
+          "approach_detected": 9,
+          "approach_green": 9,
+          "stopline_crossed": 9,
+          "priority_requested": 43,
+          "priority_advance": 1,
+          "priority_rejected": 16,
+          "priority_budget_exhausted": 1,
+          "all_red_occupied_hold": 3,
+          "priority_released": 1,
+          "ambulance_arrived": 2,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 356,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 2.1268999989842996,
+          "mean": 0.21096085701304088
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-a8da0172cfa44ef6bdb5929de308dda5",
+        "seed": 1005,
+        "controller": "local_preemption",
+        "status": "completed",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-a8da0172cfa44ef6bdb5929de308dda5\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 43.03200000000288,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 265.7,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 205.7,
+            "scheduled_start_to_arrival_s": 205.7,
+            "stopped_time_s": 35.20000000000023,
+            "stops": 4
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 263.3,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 195.3,
+            "scheduled_start_to_arrival_s": 195.3,
+            "stopped_time_s": 41.00000000000031,
+            "stops": 3
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 200,
+          "arrived": 200,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 7948.86,
+          "waiting_time_s": 1800.4,
+          "insertion_delay_s": 7.8,
+          "throughput_vehicles_per_hour": 1028.5714285714287,
+          "scheduled": 200,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5526,
+          "ambulance_departed": 2,
+          "approach_detected": 10,
+          "approach_green": 10,
+          "stopline_crossed": 10,
+          "all_red_occupied_hold": 16,
+          "priority_requested": 46,
+          "priority_hold": 73,
+          "priority_budget_exhausted": 1,
+          "priority_rejected": 2,
+          "priority_released": 1,
+          "ambulance_arrived": 2,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 536,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.9623000007413793,
+          "mean": 0.20760571424034424
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-af53df2894db43289a12188fde81bb1b",
+        "seed": 1004,
+        "controller": "actuated",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-af53df2894db43289a12188fde81bb1b\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 96.45300000000134,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 276.7,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 216.7,
+            "scheduled_start_to_arrival_s": 216.7,
+            "stopped_time_s": 6.999999999999991,
+            "stops": 1
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 400,
+          "arrived": 375,
+          "unfinished_inserted": 25,
+          "observed_time_loss_s": 28007.02,
+          "waiting_time_s": 14877.7,
+          "insertion_delay_s": 22.9,
+          "throughput_vehicles_per_hour": 1928.5714285714287,
+          "scheduled": 400,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5515,
+          "ambulance_departed": 1,
+          "all_red_occupied_hold": 4,
+          "approach_detected": 4,
+          "approach_green": 4,
+          "stopline_crossed": 4,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 288,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 5.63710000278661,
+          "mean": 0.1920771427830914
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-daa470f11deb46b39baf57d43ab89408",
+        "seed": 1001,
+        "controller": "zelvo_analytical",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-daa470f11deb46b39baf57d43ab89408\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 81.51599999999962,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 287.4,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 227.39999999999998,
+            "scheduled_start_to_arrival_s": 227.39999999999998,
+            "stopped_time_s": 0.1,
+            "stops": 0
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 247.9,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 179.9,
+            "scheduled_start_to_arrival_s": 179.9,
+            "stopped_time_s": 7.099999999999991,
+            "stops": 2
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 400,
+          "arrived": 378,
+          "unfinished_inserted": 22,
+          "observed_time_loss_s": 24073.85,
+          "waiting_time_s": 11652.7,
+          "insertion_delay_s": 29.7,
+          "throughput_vehicles_per_hour": 1944.0,
+          "scheduled": 400,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5527,
+          "ambulance_departed": 2,
+          "corridor_blocked": 189,
+          "approach_detected": 8,
+          "approach_green": 8,
+          "stopline_crossed": 8,
+          "priority_requested": 22,
+          "priority_hold": 5,
+          "priority_released": 3,
+          "priority_rejected": 12,
+          "all_red_receiving_hold": 1,
+          "ambulance_arrived": 2,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 496,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 3.51310000041849,
+          "mean": 0.2871834284971036
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-e19679a9f5e0458c800a4150f2d9431c",
+        "seed": 1007,
+        "controller": "actuated",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-e19679a9f5e0458c800a4150f2d9431c\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 79.6720000000023,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 285.5,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 225.5,
+            "scheduled_start_to_arrival_s": 225.5,
+            "stopped_time_s": 3.0000000000000013,
+            "stops": 1
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 351.3,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 283.3,
+            "scheduled_start_to_arrival_s": 283.3,
+            "stopped_time_s": 36.300000000000246,
+            "stops": 4
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 400,
+          "arrived": 366,
+          "unfinished_inserted": 34,
+          "observed_time_loss_s": 33252.98,
+          "waiting_time_s": 19914.7,
+          "insertion_delay_s": 31.8,
+          "throughput_vehicles_per_hour": 1882.2857142857142,
+          "scheduled": 400,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5509,
+          "ambulance_departed": 2,
+          "approach_detected": 8,
+          "approach_green": 8,
+          "stopline_crossed": 8,
+          "all_red_occupied_hold": 21,
+          "ambulance_arrived": 2,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 663,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 12.530700001661899,
+          "mean": 0.269440571449065
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-e45a73f870df4ee7b9b45172b530e973",
+        "seed": 1007,
+        "controller": "local_preemption",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-e45a73f870df4ee7b9b45172b530e973\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 66.125,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 285.5,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 225.5,
+            "scheduled_start_to_arrival_s": 225.5,
+            "stopped_time_s": 3.0000000000000013,
+            "stops": 1
+          },
+          {
+            "vehicle_id": "ambulance-1",
+            "scheduled_departure_s": 68.0,
+            "actual_departure_s": 68.0,
+            "arrival_s": 330.1,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 262.1,
+            "scheduled_start_to_arrival_s": 262.1,
+            "stopped_time_s": 22.700000000000053,
+            "stops": 3
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0",
+          "ambulance-1"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 400,
+          "arrived": 366,
+          "unfinished_inserted": 34,
+          "observed_time_loss_s": 33228.98,
+          "waiting_time_s": 19936.2,
+          "insertion_delay_s": 31.8,
+          "throughput_vehicles_per_hour": 1882.2857142857142,
+          "scheduled": 400,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5509,
+          "ambulance_departed": 2,
+          "approach_detected": 8,
+          "approach_green": 8,
+          "stopline_crossed": 8,
+          "all_red_occupied_hold": 21,
+          "priority_requested": 46,
+          "priority_rejected": 69,
+          "priority_budget_exhausted": 1,
+          "priority_released": 3,
+          "ambulance_arrived": 2,
+          "priority_hold": 12,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 653,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.984999998967396,
+          "mean": 0.22901857151217492
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      },
+      {
+        "run_id": "run-f6240069bfac4b7093efcb0174e28a04",
+        "seed": 1006,
+        "controller": "local_preemption",
+        "status": "incomplete",
+        "source_result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-f6240069bfac4b7093efcb0174e28a04\\result.json",
+        "engine_sha256": "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32",
+        "wall_s": 50.26499999999942,
+        "simulated_s": 700.0,
+        "journeys": [
+          {
+            "vehicle_id": "ambulance-0",
+            "scheduled_departure_s": 60.0,
+            "actual_departure_s": 60.0,
+            "arrival_s": 228.2,
+            "completed": true,
+            "departure_delay_s": 0.0,
+            "journey_time_s": 168.2,
+            "scheduled_start_to_arrival_s": 168.2,
+            "stopped_time_s": 20.30000000000002,
+            "stops": 2
+          }
+        ],
+        "tripinfo_verified_ambulances": [
+          "ambulance-0"
+        ],
+        "collisions": 0,
+        "teleports": 0,
+        "safety_audit_errors": 0,
+        "ordinary": {
+          "inserted": 300,
+          "arrived": 287,
+          "unfinished_inserted": 13,
+          "observed_time_loss_s": 16604.64,
+          "waiting_time_s": 7449.5,
+          "insertion_delay_s": 34.7,
+          "throughput_vehicles_per_hour": 1476.0,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 5531,
+          "ambulance_departed": 1,
+          "approach_detected": 5,
+          "approach_green": 5,
+          "stopline_crossed": 5,
+          "all_red_occupied_hold": 38,
+          "priority_requested": 23,
+          "priority_advance": 1,
+          "priority_released": 2,
+          "priority_hold": 25,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "training_labels": {
+          "complete_labels": 191,
+          "censored_labels": 0
+        },
+        "planner_latency_ms": {
+          "samples": 350,
+          "max": 1.1338000003888737,
+          "mean": 0.09132371430626206
+        },
+        "learned_forecast_count": 0,
+        "learned_eta_different_from_analytical": 0,
+        "unavailable_metrics": [
+          "district_calibrated_pedestrian_demand",
+          "physical_controller_measurements",
+          "calibrated_contiguous_queue_extent",
+          "full_intersection_box_occupancy"
+        ]
+      }
+    ]
+  },
+  "model": {
+    "schema_version": "1.0",
+    "features": [
+      "distance_m",
+      "speed_mps",
+      "queue_ahead",
+      "downstream_queue",
+      "queue_extent_m",
+      "entry_space_m",
+      "lane_length_m",
+      "green",
+      "action_hold",
+      "arrival_rate",
+      "discharge_rate"
+    ],
+    "sklearn_version": "1.7.2",
+    "rows": 9027,
+    "groups": {
+      "train": [
+        1000,
+        1002,
+        1004,
+        1006
+      ],
+      "validation": [
+        1003,
+        1007
+      ],
+      "test": [
+        1001,
+        1005
+      ]
+    },
+    "metrics": {
+      "train": {
+        "rows": 2881,
+        "eta_analytical_mae_s": 40.60224170898883,
+        "eta_learned_mae_s": 5.093527453454391,
+        "queue_persistence_mae_vehicles": 0.011454356126345018,
+        "queue_learned_mae_vehicles": 0.000546538177049058,
+        "eta_interval_coverage": 0.8208955223880597
+      },
+      "validation": {
+        "rows": 3006,
+        "eta_analytical_mae_s": 42.191991507261775,
+        "eta_learned_mae_s": 12.439793557283807,
+        "queue_persistence_mae_vehicles": 0.0,
+        "queue_learned_mae_vehicles": 0.00023017949612015684,
+        "eta_interval_coverage": 0.6290751829673985
+      },
+      "test": {
+        "rows": 3140,
+        "eta_analytical_mae_s": 40.488959645715106,
+        "eta_learned_mae_s": 7.43146482140325,
+        "queue_persistence_mae_vehicles": 0.034394904458598725,
+        "queue_learned_mae_vehicles": 0.02762621778355275,
+        "eta_interval_coverage": 0.7232484076433121
+      }
+    },
+    "source_hashes": {
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-0e90f87e62a347bfb5983a6db967aa63\\training.jsonl": "4b6a88f95a45e7f26da545e378a4a8f845f105348bfd2ad682381a5f5fd9af6f",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-19b14bd9f3864bae8740b77606dbf8b9\\training.jsonl": "edf089d9fcfc483264f5d2d54b3f0efa178d68b57675f18b5f2afff125f86b57",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-217c63882f6042c8acfc99b71cde7a2b\\training.jsonl": "467f0146576b58b1d27ced54d51abe9d50c33ee5e92a76f747dd3fa1df967e23",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-2d0777f085f147a4836b0c42d5885616\\training.jsonl": "8d3102f1f1ee54affc05012721f96b7733dd7c52da5942717a42ef3a3b11e476",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-2de17661b5074d6585f437a86a6d0fb0\\training.jsonl": "922029e1e3af6a57aa1d5b4ebc923f10e3abbf02aa3c58fd989b6619f1d0c84e",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-331a6a9117554bf194ddd9e9da93cf63\\training.jsonl": "4be272db2f2fef23a9b8317219cad68ff4ea3ef40ecdb23cf9e13d3f0544d7e2",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-36d7656e8d6548c2922c3bf4cf5d2363\\training.jsonl": "90859197957395fc2e9752f57a227a18fa37bc7183f4b4a8be010f0a7f1d669a",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-410cbb509d89405d939a1959c08cde0b\\training.jsonl": "073d6e3cc5c7470a3f92987a18506954041ee0767c5dbf63a80d007e2c55b6bd",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-4425a8969d1b433cad39a6dc5bb6aa98\\training.jsonl": "122b7daab8851282712c29ca5c5d9cd6ee852ebc6bb215a23324f079eb5978e7",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-62bf41ed4d594b8fa3548b66c421a4e7\\training.jsonl": "9698cf25a9660dc0a14d93a4be597304c75fc4c4c228fdadd85420415fe2ac2a",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-63ca94ea13ac4e61862854d1242c0491\\training.jsonl": "4b0c5c21ad586ea569e8324b89f808aa793a86c2d0e2b2afdc61206a48c3b37a",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-6ef98c99518e43b1b4d986c1b4b1f2fa\\training.jsonl": "66a8a8371315fcdfeb21386ca19a4a2cda13d1c4f78979e51430cd0b9fbe4479",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-74c0a84144fc442cbdefb2db5f1a6d3e\\training.jsonl": "c1a75274c8f43c9dd4613179d2753d05a999117281d17b4d85efb57d33af0c1b",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-7825969c38a24d2e9b63eceb7880b279\\training.jsonl": "f405f3ab996515e2be9ffba04bcf1082ce492d56d19eabd4476546a9049014b6",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-85809aaaa4e44996ac812cf799345de7\\training.jsonl": "30d590f6cedf14be475be4ddbb2c340726f7319495b3179ad00ad8c04bf47d1b",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-8826b3bc184a4b148f60029808a4083f\\training.jsonl": "5dc6ffddecc831196d3dc298682a0211ed2b46ba0fd7ab18a8855c9bfb081764",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-8e6c5adcdd3b436a8654d0299330d88a\\training.jsonl": "80d78b44739d65a47da7c922856ec3074612ee4496fb3a4a99bbe06e6c625d59",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-9c304168136e458da1d4a96baf995d11\\training.jsonl": "054d8f64df77681162747736f300134ec096a17168effb84b2fc55333ec160e1",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-a8da0172cfa44ef6bdb5929de308dda5\\training.jsonl": "19f0cc14c1fc8c687986ef981d6c345f01bf7f938af0b5dcd5303c5d587e1e47",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-af53df2894db43289a12188fde81bb1b\\training.jsonl": "c87f3b105589bb44a919e4fb344d91375e73f26a18aa2a642ef123b6c7dc199a",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-daa470f11deb46b39baf57d43ab89408\\training.jsonl": "a3d535e9fa05c437fd6bc9fd417fcf24c6c9c0e550d91feae95f23e2971fbbd1",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-e19679a9f5e0458c800a4150f2d9431c\\training.jsonl": "0302c6b4cad172dfe0fb08a3435a4d5c042442b087852ac97cb8c97e6dc06e61",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-e45a73f870df4ee7b9b45172b530e973\\training.jsonl": "8e7fc48b04e1a081b280bf06a35164556b6d798e1a9faad45a7e315ab5dfa4d1",
+      "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-f6240069bfac4b7093efcb0174e28a04\\training.jsonl": "81451eddb0973de87b17f65db86f5c5c648c77f1bb60463ca95240e0b4473b13"
+    },
+    "training_wall_s": 1.5196434999998019,
+    "engine_hashes": [
+      "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32"
+    ],
+    "excluded_unsafe_rows": 0,
+    "excluded_censored_rows": 0,
+    "action_definition": "current priority request/hold indicator; future policy remains observational",
+    "limitations": [
+      "Observational policy data does not identify causal action effects",
+      "Bounds fallback checks feature ranges, not all distribution shifts",
+      "Seed holdout does not establish unseen-city or unseen-route generalization",
+      "Prediction improvement alone does not establish faster ambulance journeys"
+    ],
+    "model_sha256": "394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7"
+  },
+  "model_decision_audit": {
+    "prediction_source": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\checkpoint7\\run-5a58d50b986648a2838e111a0834be5a\\predictions.jsonl",
+    "model": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\models\\predictor.joblib",
+    "planning_ticks_replayed": 97,
+    "inference_calls": 461,
+    "inference_fallbacks": 0,
+    "ticks_with_changed_requests": 7,
+    "changes": [
+      {
+        "time_s": 164.1,
+        "analytical_requests": [],
+        "learned_requests": [
+          [
+            "ambulance-1",
+            "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+            11,
+            true
+          ]
+        ]
+      },
+      {
+        "time_s": 166.1,
+        "analytical_requests": [],
+        "learned_requests": [
+          [
+            "ambulance-1",
+            "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+            11,
+            true
+          ]
+        ]
+      },
+      {
+        "time_s": 168.1,
+        "analytical_requests": [],
+        "learned_requests": [
+          [
+            "ambulance-1",
+            "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+            11,
+            true
+          ]
+        ]
+      },
+      {
+        "time_s": 170.1,
+        "analytical_requests": [],
+        "learned_requests": [
+          [
+            "ambulance-1",
+            "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+            11,
+            true
+          ]
+        ]
+      },
+      {
+        "time_s": 194.1,
+        "analytical_requests": [],
+        "learned_requests": [
+          [
+            "ambulance-1",
+            "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+            3,
+            true
+          ]
+        ]
+      },
+      {
+        "time_s": 212.1,
+        "analytical_requests": [],
+        "learned_requests": [
+          [
+            "ambulance-0",
+            "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+            11,
+            true
+          ]
+        ]
+      },
+      {
+        "time_s": 240.1,
+        "analytical_requests": [],
+        "learned_requests": [
+          [
+            "ambulance-0",
+            "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+            3,
+            true
+          ]
+        ]
+      }
+    ],
+    "limitation": "Same observed AI trajectory; request differences do not establish causal travel-time benefit."
+  },
+  "evaluation_campaign_runs": 0,
+  "limitations": [
+    "Development runs and a single matched example are not a population benchmark.",
+    "Actuated baseline uses the common corridor occupancy guard; it has no priority requests.",
+    "OSM signals and geometry are inferred; no field-calibrated pedestrian demand.",
+    "The controller adapter is an emulator; no physical signals are connected."
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "scope": "Curated simulation, not a population benchmark or physical deployment",
+  "source": "results/backend-delivery-v3/verification.json",
+  "engine_source_sha256": "81c93e10039f746c333b4efbd561924bb4bdf5e6ba51a663652aa642b77879f1",
+  "verified": {
+    "accepted": true,
+    "comparison": {
+      "schema_version": "1.0",
+      "left_controller": "actuated",
+      "right_controller": "zelvo_ai",
+      "statuses": [
+        "completed",
+        "completed"
+      ],
+      "run_ids": [
+        "run-343f8e68bf764c27b30b0e5c4685cd77",
+        "run-89e517396c3d4146af18825dd869cbfc"
+      ],
+      "journeys": [
+        {
+          "vehicle": "ambulance-0",
+          "paired_completed": true,
+          "without_s": 144.2,
+          "with_s": 76.6,
+          "saved_s": 67.6,
+          "stopped_time_without_s": 58.800000000000566,
+          "stopped_time_with_s": 0.1,
+          "stops_without": 2,
+          "stops_with": 0
+        }
+      ],
+      "approaches": [
+        {
+          "vehicle": "ambulance-0",
+          "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+          "link": 11,
+          "without_signal_response_s": 42.39999999999999,
+          "with_signal_response_s": 8.799999999999997,
+          "without_passage_wait_s": 43.2,
+          "with_passage_wait_s": 9.799999999999997
+        },
+        {
+          "vehicle": "ambulance-0",
+          "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+          "link": 3,
+          "without_signal_response_s": 38.0,
+          "with_signal_response_s": 1.3999999999999915,
+          "without_passage_wait_s": 38.80000000000001,
+          "with_passage_wait_s": 9.299999999999997
+        },
+        {
+          "vehicle": "ambulance-0",
+          "tls": "cluster_12638024056_249086438",
+          "link": 3,
+          "without_signal_response_s": 0.0,
+          "with_signal_response_s": 0.0,
+          "without_passage_wait_s": 13.300000000000004,
+          "with_passage_wait_s": 13.100000000000001
+        }
+      ],
+      "ordinary": [
+        {
+          "inserted": 300,
+          "arrived": 300,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 8498.28,
+          "time_loss_distribution_s": {
+            "count": 300,
+            "mean": 28.327600000000004,
+            "min": 3.68,
+            "max": 170.85,
+            "p50": 25.265,
+            "p90": 53.52100000000001,
+            "p95": 66.17850000000001,
+            "p99": 132.2995999999999
+          },
+          "waiting_distribution_s": {
+            "count": 300,
+            "mean": 5.766,
+            "min": 0.0,
+            "max": 91.4,
+            "p50": 0.0,
+            "p90": 19.120000000000005,
+            "p95": 26.105000000000004,
+            "p99": 72.7069999999999
+          },
+          "waiting_time_s": 1729.8,
+          "insertion_delay_s": 4799.2,
+          "throughput_vehicles_per_hour": 1542.857142857143,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        {
+          "inserted": 300,
+          "arrived": 300,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 8357.52,
+          "time_loss_distribution_s": {
+            "count": 300,
+            "mean": 27.858400000000003,
+            "min": 3.6,
+            "max": 170.71,
+            "p50": 25.4,
+            "p90": 52.787000000000006,
+            "p95": 67.53550000000001,
+            "p99": 124.05959999999993
+          },
+          "waiting_distribution_s": {
+            "count": 300,
+            "mean": 5.429,
+            "min": 0.0,
+            "max": 92.6,
+            "p50": 0.0,
+            "p90": 15.310000000000024,
+            "p95": 26.315000000000005,
+            "p99": 72.80499999999991
+          },
+          "waiting_time_s": 1628.7,
+          "insertion_delay_s": 5338.0,
+          "throughput_vehicles_per_hour": 1542.857142857143,
+          "scheduled": 300,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        }
+      ],
+      "collisions": [
+        0,
+        0
+      ],
+      "teleports": [
+        0,
+        0
+      ],
+      "note": "Positive saved_s favours the right controller; this pair is not a statistical campaign."
+    },
+    "journey_time_saved_percent": 46.87933425797503,
+    "stopped_on_red_s": {
+      "actuated": 58.700000000000294,
+      "zelvo_ai": 0.0
+    },
+    "raw_tripinfo_reconciled": true,
+    "engine_source_sha256": "81c93e10039f746c333b4efbd561924bb4bdf5e6ba51a663652aa642b77879f1",
+    "frozen_engine": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\backend-checkpoint-v3\\engine\\zelvo",
+    "results": {
+      "actuated": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\backend-delivery-v3\\actuated\\run-343f8e68bf764c27b30b0e5c4685cd77\\result.json",
+      "zelvo_ai": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\backend-delivery-v3\\zelvo_ai\\run-89e517396c3d4146af18825dd869cbfc\\result.json"
+    },
+    "selection": {
+      "name": "demo-long-links-cross-60-start-3-second-60-second-at-120",
+      "config": "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.json",
+      "comparison": "reports\\demo-long-links-cross-60-start-3-second-60-second-at-120.json",
+      "replay": "reports\\demo-target-replay.json",
+      "target_met": true,
+      "acceptance": {
+        "journey_time_saved_percent": [
+          45,
+          55
+        ],
+        "maximum_wait_s": 2
+      },
+      "measured": {
+        "journey_time_saved_percent": 46.87933425797503,
+        "red_stop_without_s": 58.700000000000294,
+        "red_stop_with_s": 0.0
+      },
+      "curated_demo_not_population_benchmark": true,
+      "engine_source_sha256": "d963b616e8d39d9fe7a655706c7699bae89431d9457891a049dfa141a3480807",
+      "sha256": {
+        "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.json": "53a144f4f965197427b51f6658ee1d3ba0a7bb7d5289f6e9283d817d374d0066",
+        "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.rou.xml": "ddda1abec8ce3a72d9a968f33827c0a72fdcb960479824d4f59a3720c8a7be14",
+        "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.metadata.json": "67824d8dbc25b960fb31b2b539d3ba6547e82fdb8f33c7ff7056783292c7b7ce",
+        "scenarios\\bengaluru-hospital\\district.net.xml": "ea0b09ba2f8054caad51dd400ec32e43fc12f3a878bd050ad198911ae9f2a487",
+        "models\\predictor.joblib": "394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7",
+        "models\\predictor.json": "46c073c501234b2e838e954203d8f89c2a63824141570fc78614d8f7b0b813be"
+      }
+    },
+    "note": "Fresh full SUMO replay of a curated three-signal corridor; excluded from the paused large campaign. No population or isolated causal ML-benefit claim."
+  },
+  "selection": {
+    "name": "demo-long-links-cross-60-start-3-second-60-second-at-120",
+    "config": "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.json",
+    "comparison": "reports\\demo-long-links-cross-60-start-3-second-60-second-at-120.json",
+    "replay": "reports\\demo-target-replay.json",
+    "target_met": true,
+    "acceptance": {
+      "journey_time_saved_percent": [
+        45,
+        55
+      ],
+      "maximum_wait_s": 2
+    },
+    "measured": {
+      "journey_time_saved_percent": 46.87933425797503,
+      "red_stop_without_s": 58.700000000000294,
+      "red_stop_with_s": 0.0
+    },
+    "curated_demo_not_population_benchmark": true,
+    "engine_source_sha256": "d963b616e8d39d9fe7a655706c7699bae89431d9457891a049dfa141a3480807",
+    "sha256": {
+      "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.json": "53a144f4f965197427b51f6658ee1d3ba0a7bb7d5289f6e9283d817d374d0066",
+      "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.rou.xml": "ddda1abec8ce3a72d9a968f33827c0a72fdcb960479824d4f59a3720c8a7be14",
+      "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.metadata.json": "67824d8dbc25b960fb31b2b539d3ba6547e82fdb8f33c7ff7056783292c7b7ce",
+      "scenarios\\bengaluru-hospital\\district.net.xml": "ea0b09ba2f8054caad51dd400ec32e43fc12f3a878bd050ad198911ae9f2a487",
+      "models\\predictor.joblib": "394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7",
+      "models\\predictor.json": "46c073c501234b2e838e954203d8f89c2a63824141570fc78614d8f7b0b813be"
+    }
+  }
+}

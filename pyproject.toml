@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zelvo"
+version = "0.1.0"
+description = "Predictive emergency traffic-signal coordination and reproducible evaluation"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pydantic>=2.10,<3",
+    "traci==1.26.0",
+    "sumolib==1.26.0",
+    "scikit-learn==1.7.2",
+    "scipy==1.16.2",
+    "numpy==2.3.3",
+    "joblib==1.5.2",
+    "pyproj==3.7.2",
+    "libsumo==1.26.0",
+    "sumo-data==1.26.0",
+    "fastapi>=0.115,<1",
+    "uvicorn[standard]>=0.34,<1",
+]
+
+[project.scripts]
+zelvo = "zelvo.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "httpx>=0.28,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: launches the installed SUMO binaries"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/zelvo"]

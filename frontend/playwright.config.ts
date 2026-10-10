@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test';
+export default defineConfig({testDir:'./tests',timeout:300_000,expect:{timeout:15_000},workers:1,reporter:[['list'],['json',{outputFile:'../reports/ui-browser-tests.json'}]],use:{extraHTTPHeaders:process.env.ZELVO_TEST_ORIGIN?{Origin:process.env.ZELVO_TEST_ORIGIN}:undefined,baseURL:process.env.ZELVO_TEST_BASE_URL || 'http://127.0.0.1:8000',channel:'msedge',headless:true,viewport:{width:1440,height:1080},screenshot:'only-on-failure',trace:'retain-on-failure'},outputDir:'../results/ui-browser'});

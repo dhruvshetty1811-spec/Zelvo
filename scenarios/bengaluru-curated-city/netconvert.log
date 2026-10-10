@@ -1,0 +1,50 @@
+Success.
+Warning: Ambiguity in turnarounds computation at junction '10839366277'.
+Warning: Ambiguity in turnarounds computation at junction 'cluster_10001166461_10026487871_12153021259_12628234620_#3more'.
+Warning: Ambiguity in turnarounds computation at junction 'cluster_10017310826_10017310829_13455343636_13455343638'.
+Warning: Ambiguity in turnarounds computation at junction 'cluster_10020557896_10043935986_13455343583_13455343587'.
+Warning: Ambiguity in turnarounds computation at junction 'cluster_10020557899_10043935985_13455343582_13455343588'.
+Warning: Found sharp turn with radius 7.68 at the start of edge '-1013704525#2'.
+Warning: Found sharp turn with radius 4.48 at the start of edge '-1094450058#0'.
+Warning: Found sharp turn with radius 4.35 at the end of edge '-1094450058#0'.
+Warning: Found sharp turn with radius 8.87 at the start of edge '-1094450062'.
+Warning: Found sharp turn with radius 3.80 at the start of edge '-1098770383#0'.
+Warning: Shape for junction '13462560548' has distance 27.24 to its given position.
+Warning: Edge '-1098776713#1' is not connected to outgoing edges at junction '12119647585'.
+Warning: Edge '-1119219546' is not connected to outgoing edges at junction '10236050042'.
+Warning: Edge '-112657835#9' is not connected to outgoing edges at junction 'cluster_12119558761_3735584792'.
+Warning: Edge '-1217769078' is not connected to outgoing edges at junction '11283443507'.
+Warning: Edge '-1343003782#0' is not connected to outgoing edges at junction '12146209009'.
+Warning: Lane '-1343003782#0_0' is not connected from any incoming edge at junction 'cluster_12425958281_13449411766'.
+Warning: Lane '-1347249224_0' is not connected from any incoming edge at junction '12460929679'.
+Warning: Lane '-1379232589#24_0' is not connected from any incoming edge at junction 'cluster_11885833156_12102875183_459752716'.
+Warning: Lane '-37763921#4_0' is not connected from any incoming edge at junction '7088811690'.
+Warning: Lane '-685242649#12_0' is not connected from any incoming edge at junction '12462447302'.
+Warning: Invalid pedestrian topology at junction 'cluster_12119558761_3735584792'; crossing ':cluster_12119558761_3735584792_c0' starts and ends at walkingarea ':cluster_12119558761_3735584792_w0'.
+Warning: Minor green from edge '1154162811#0' to edge '1109914958#0' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '1150927563#0' to edge '544761382#1' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '705023783#1' to edge '1150927562#1' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '688883748#6' to edge '525778223#1' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '1312170204#0' to edge '1314809289#2' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Speed of straight connection '1092038675#1_0->1110192330_0' reduced by 10.98 due to turning radius of 35.72 (length=8.83, angle=29.49).
+Warning: Speed of straight connection '-175392024#0_0->-1098770383#1_0' reduced by 5.04 due to turning radius of 14.25 (length=16.93, angle=87.13).
+Warning: Speed of straight connection '1092038675#0_0->1092038675#1_0' reduced by 8.72 due to turning radius of 33.15 (length=5.07, angle=23.98).
+Warning: Speed of straight connection '1165381325#0_0->-1165376282_0' reduced by 6.57 due to turning radius of 9.74 (length=11.94, angle=91.50).
+Warning: Speed of straight connection '1311251843_0->688824223#4_1' reduced by 14.71 due to turning radius of 19.25 (length=7.73, angle=39.02).
+Warning: Intersecting left turns at junction '3806347067' from lane '377262076#0_0' and lane '-385361398#1_0' (increase junction radius to avoid this).
+Warning: Intersecting left turns at junction '442972778' from lane '37763924#4_0' and lane '377261619#3_0' (increase junction radius to avoid this).
+Warning: Intersecting left turns at junction '442972778' from lane '37763917#7_0' and lane '-385361398#0_0' (increase junction radius to avoid this).
+Warning: Intersecting left turns at junction 'cluster_10020650913_442972806' from lane '37763925#1_0' and lane '1435936210#1_0' (increase junction radius to avoid this).
+Warning: Connection '-1098787296#3_0->1119219536_0' is only 0.08m short.
+Warning: Intersecting left turns at junction 'cluster_10060658556_459752726' from lane '38762869#2_0' and lane '-38762869#4_0' (increase junction radius to avoid this).
+Warning: Unused state in tlLogic 'cluster_10060658437_10168918040_11496183622_11496183627_#5more', program '0' at tl-index 2
+Warning: Unused state in tlLogic 'cluster_11283487998_11286429140_11286429145_11854316017_#11more', program '0' at tl-index 2
+Warning: Unused state in tlLogic 'cluster_11459019883_12077162815_12139050231_13927939570_#3more', program '0' at tl-index 1
+Warning: Unused state in tlLogic 'cluster_3268824710_4044110261', program '0' at tl-index 0
+Warning: 30 total messages of type: Ambiguity in turnarounds computation at junction '%'.
+Warning: 18 total messages of type: Edge '%' is not connected to outgoing edges at junction '%'.
+Warning: 25 total messages of type: Found sharp turn with radius % at the % of edge '%'.
+Warning: 7 total messages of type: Intersecting left turns at junction '%' from lane '%' and lane '%' (increase junction radius to avoid this).
+Warning: 20 total messages of type: Lane '%' is not connected from any incoming edge at junction '%'.
+Warning: 8 total messages of type: Minor green from edge '%' to edge '%' exceeds %m/s. Maybe a left-turn lane is missing.
+Warning: 23 total messages of type: Speed of % connection '%' reduced by % due to turning radius of % (length=%, angle=%).

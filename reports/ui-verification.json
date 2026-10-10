@@ -1,0 +1,60 @@
+{
+  "verified_at_utc": "2026-10-10T13:13:58.966648+00:00",
+  "scope": "Local web UI and two actual SUMO workers; separate from evaluation campaign",
+  "build": "TypeScript check and Vite production build passed",
+  "backend_tests": {
+    "passed": 21,
+    "duration_s": 279.41,
+    "log": "reports/ui-backend-tests-final.txt",
+    "note": "Final checks with normal local process/socket access; sandbox socket-launch failures retained in reports/ui-backend-tests.txt"
+  },
+  "browser_tests": {
+    "startTime": "2026-10-10T13:07:12.070Z",
+    "duration": 267482.402,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "browser": "Microsoft Edge via Playwright",
+  "viewports_px": [
+    1440,
+    390,
+    360
+  ],
+  "live_session_id": "74ac29f724f64de9b496d7755bfeff6a",
+  "receipt_path": "results/live/74ac29f724f64de9b496d7755bfeff6a/receipt.json",
+  "measured": {
+    "without_s": 144.2,
+    "with_s": 76.6,
+    "saved_s": 67.6,
+    "saved_percent": 46.87933425797504,
+    "red_wait_without_s": 58.7,
+    "red_wait_with_s": 0
+  },
+  "engine_source_sha256": "91c7fda232a196c42013060d0affca4a65d31f58b6f0e17702c1710fc68388fa",
+  "same_engine_both_policies": true,
+  "same_input_demand_sha256": "ddda1abec8ce3a72d9a968f33827c0a72fdcb960479824d4f59a3720c8a7be14",
+  "ordinary_completed": [
+    300,
+    300
+  ],
+  "frames": {
+    "baseline": 724,
+    "zelvo": 386
+  },
+  "worker_exit_codes": {
+    "baseline": 0,
+    "zelvo": 0
+  },
+  "cancelled_scenario_receipt": "results/live/9dbee17deeec426297c7e0dd50afd455/receipt.json",
+  "evaluation_campaign_still_paused": true,
+  "no_paid_services": true,
+  "screenshots": [
+    "reports/ui-landing-desktop.png",
+    "reports/ui-landing-mobile.png",
+    "reports/ui-demo-complete.png",
+    "reports/ui-demo-mobile-390.png",
+    "reports/ui-demo-mobile-360.png"
+  ]
+}

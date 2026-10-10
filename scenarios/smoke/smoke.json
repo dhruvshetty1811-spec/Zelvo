@@ -1,0 +1,12 @@
+{
+  "scenario_id": "slice0-smoke",
+  "seed": 42,
+  "controller": "actuated",
+  "network_file": "generated.net.xml",
+  "route_files": ["smoke.rou.xml"],
+  "build": {"nodes_file": "smoke.nod.xml", "edges_file": "smoke.edg.xml"},
+  "step_length_s": 0.1,
+  "horizon_s": 120,
+  "wall_timeout_s": 60,
+  "expected_journeys": [{"vehicle_id": "ambulance-0", "scheduled_departure_s": 0}]
+}

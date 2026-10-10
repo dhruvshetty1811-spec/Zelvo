@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "left_controller": "actuated",
+  "right_controller": "local_preemption",
+  "statuses": [
+    "completed",
+    "completed"
+  ],
+  "run_ids": [
+    "run-af528a613ff24b3185c5bd2c64403c17",
+    "run-df638d73be4b4470a15ee4d554104c43"
+  ],
+  "journeys": [
+    {
+      "vehicle": "ambulance-0",
+      "paired_completed": true,
+      "without_s": 223.3,
+      "with_s": 214.8,
+      "saved_s": 8.5,
+      "stopped_time_without_s": 40.1000000000003,
+      "stopped_time_with_s": 35.00000000000023,
+      "stops_without": 5,
+      "stops_with": 4
+    },
+    {
+      "vehicle": "ambulance-1",
+      "paired_completed": true,
+      "without_s": 175.1,
+      "with_s": 159.7,
+      "saved_s": 15.400000000000006,
+      "stopped_time_without_s": 27.300000000000118,
+      "stopped_time_with_s": 16.09999999999996,
+      "stops_without": 3,
+      "stops_with": 2
+    }
+  ],
+  "approaches": [
+    {
+      "vehicle": "ambulance-0",
+      "tls": "570758310",
+      "link": 1,
+      "without_signal_response_s": 21.5,
+      "with_signal_response_s": 21.5,
+      "without_passage_wait_s": 22.299999999999997,
+      "with_passage_wait_s": 22.299999999999997
+    },
+    {
+      "vehicle": "ambulance-0",
+      "tls": "9939398569",
+      "link": 4,
+      "without_signal_response_s": 0.0,
+      "with_signal_response_s": 0.0,
+      "without_passage_wait_s": 33.5,
+      "with_passage_wait_s": 33.5
+    },
+    {
+      "vehicle": "ambulance-0",
+      "tls": "9939398599",
+      "link": 0,
+      "without_signal_response_s": 11.699999999999989,
+      "with_signal_response_s": 11.699999999999989,
+      "without_passage_wait_s": 47.900000000000006,
+      "with_passage_wait_s": 47.900000000000006
+    },
+    {
+      "vehicle": "ambulance-0",
+      "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+      "link": 11,
+      "without_signal_response_s": 20.19999999999999,
+      "with_signal_response_s": 20.19999999999999,
+      "without_passage_wait_s": 21.0,
+      "with_passage_wait_s": 21.0
+    },
+    {
+      "vehicle": "ambulance-0",
+      "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+      "link": 3,
+      "without_signal_response_s": 16.00000000000003,
+      "with_signal_response_s": 0.0,
+      "without_passage_wait_s": 16.799999999999983,
+      "with_passage_wait_s": 9.400000000000006
+    },
+    {
+      "vehicle": "ambulance-1",
+      "tls": "570758310",
+      "link": 1,
+      "without_signal_response_s": 0.0,
+      "with_signal_response_s": 0.0,
+      "without_passage_wait_s": 12.5,
+      "with_passage_wait_s": 12.5
+    },
+    {
+      "vehicle": "ambulance-1",
+      "tls": "9939398569",
+      "link": 4,
+      "without_signal_response_s": 12.699999999999989,
+      "with_signal_response_s": 12.699999999999989,
+      "without_passage_wait_s": 16.0,
+      "with_passage_wait_s": 16.0
+    },
+    {
+      "vehicle": "ambulance-1",
+      "tls": "9939398599",
+      "link": 0,
+      "without_signal_response_s": 0.0,
+      "with_signal_response_s": 0.0,
+      "without_passage_wait_s": 30.69999999999999,
+      "with_passage_wait_s": 30.69999999999999
+    },
+    {
+      "vehicle": "ambulance-1",
+      "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+      "link": 11,
+      "without_signal_response_s": 16.19999999999999,
+      "with_signal_response_s": 16.19999999999999,
+      "without_passage_wait_s": 17.0,
+      "with_passage_wait_s": 17.0
+    },
+    {
+      "vehicle": "ambulance-1",
+      "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+      "link": 3,
+      "without_signal_response_s": 22.099999999999994,
+      "with_signal_response_s": 0.0,
+      "without_passage_wait_s": 22.900000000000006,
+      "with_passage_wait_s": 9.300000000000011
+    }
+  ],
+  "ordinary": [
+    {
+      "inserted": 300,
+      "arrived": 300,
+      "unfinished_inserted": 0,
+      "observed_time_loss_s": 12003.42,
+      "waiting_time_s": 2496.8,
+      "insertion_delay_s": 18.0,
+      "throughput_vehicles_per_hour": 1542.857142857143,
+      "scheduled": 300,
+      "uninserted_at_end": 0,
+      "uninserted_delay_lower_bound_s": 0
+    },
+    {
+      "inserted": 300,
+      "arrived": 300,
+      "unfinished_inserted": 0,
+      "observed_time_loss_s": 12119.4,
+      "waiting_time_s": 2610.0,
+      "insertion_delay_s": 14.8,
+      "throughput_vehicles_per_hour": 1542.857142857143,
+      "scheduled": 300,
+      "uninserted_at_end": 0,
+      "uninserted_delay_lower_bound_s": 0
+    }
+  ],
+  "collisions": [
+    0,
+    0
+  ],
+  "teleports": [
+    0,
+    0
+  ],
+  "note": "Positive saved_s favours the right controller; this pair is not a statistical campaign."
+}

@@ -1,0 +1,731 @@
+{
+  "session": "f026ec93743b473d8e2fad401985f7d1",
+  "saved_percent": 48.283126184958924,
+  "inputs": {
+    "schema_version": "1.0",
+    "settings": {
+      "density": "moderate",
+      "corridor": "curated",
+      "seed": 42,
+      "dispatch_s": 60,
+      "observation_delay_s": 0
+    },
+    "created_at_utc": "2026-10-10T17:18:17.997184+00:00",
+    "ordinary_vehicle_count": 560,
+    "demand_sha256": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc",
+    "network_sha256": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+    "model_sha256": "394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7",
+    "source_demo_sha256": "29f86f2678592db1971872a1e7f8b1dc0ed24e89a29ba815d947bbe563b15a6d",
+    "comparison": "Identical demand, network, seed and vehicle parameters; ordinary actuated signals versus ZELVO AI",
+    "evaluation_campaign": false,
+    "curated_corridor": true
+  },
+  "results": {
+    "baseline": {
+      "schema_version": "1.0",
+      "run_id": "run-badf9a5223f146a38054e1131f56ab3a",
+      "scenario_id": "bengaluru-curated-demo-v1",
+      "seed": 42,
+      "controller": "actuated",
+      "status": "completed",
+      "simulated_duration_s": 1500,
+      "wall_duration_s": 131.63999999999942,
+      "journeys": [
+        {
+          "vehicle_id": "ambulance-0",
+          "scheduled_departure_s": 60,
+          "actual_departure_s": 60,
+          "arrival_s": 534.7,
+          "completed": true,
+          "departure_delay_s": 0,
+          "journey_time_s": 474.70000000000005,
+          "scheduled_start_to_arrival_s": 474.70000000000005,
+          "stopped_time_s": 207.99999999999247,
+          "stops": 6
+        }
+      ],
+      "runtime_versions": {
+        "python": "3.12.12",
+        "sumo": "1.26.0",
+        "netconvert": "1.26.0",
+        "traci": "1.26.0",
+        "sumolib": "1.26.0",
+        "pydantic": "2.14.0",
+        "libsumo": "1.26.0"
+      },
+      "input_hashes": {
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\scenario.json": "ceac8b93e955e05794755ba96de26580a61cd029222cc6eaed39c01f9034249f",
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\demand.rou.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc",
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\scenarios\\bengaluru-curated-demo\\district.net.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+        "engine_source_sha256": "b738978c931685df31c168142c4162d4185a5613ef9262ccdbecd540ada1aa27",
+        "dependency_lock_sha256": "aec60a8e605f0c3cfca0cf3683c014772143c2fa23f712b55358f3114291790f",
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\inputs\\66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\inputs\\d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc"
+      },
+      "artifacts": {
+        "result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\result.json",
+        "events": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\events.jsonl",
+        "tripinfo": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\tripinfo.xml",
+        "config": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\config.json",
+        "aggregate": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\aggregate.jsonl",
+        "predictions": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\predictions.jsonl",
+        "training": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\training.jsonl",
+        "sumo_log": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\sumo.log",
+        "sumo_errors": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\sumo-errors.log",
+        "network_build_log": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\netconvert.log",
+        "planning_latency": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\baseline\\run-badf9a5223f146a38054e1131f56ab3a\\planning-latency.json"
+      },
+      "collision_events": 0,
+      "teleport_events": 0,
+      "unavailable_metrics": [
+        "district_calibrated_pedestrian_demand",
+        "physical_controller_measurements",
+        "calibrated_contiguous_queue_extent",
+        "full_intersection_box_occupancy"
+      ],
+      "failure": null,
+      "metrics": {
+        "arrival_source": "SUMO tripinfo; approach/crossing timestamps are step observations",
+        "network_congestion": {
+          "potential_spillback_lane_seconds": 240.00000000000003,
+          "maximum_slow_vehicle_extent_m": 647.5799999999999,
+          "definition": "1s sampling; vehicles below 2m/s; extent is not a calibrated contiguous queue"
+        },
+        "approaches": [
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10075533192_10075533193_10684915913_10684915914_#11more",
+            "link": 3,
+            "detected_s": 74,
+            "first_green_s": 145.1,
+            "crossed_s": 145.9,
+            "stopped_on_red_s": 60.200000000000585,
+            "candidate_exit_edges": [
+              "763290544#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10075533192_10075533193_10684915913_10684915914_#11more_3"
+            ],
+            "signal_response_s": 71.1,
+            "passage_wait_s": 71.9
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_12067464222_12067528987_12067529006_12067529010_#1more",
+            "link": 5,
+            "detected_s": 150,
+            "first_green_s": 150,
+            "crossed_s": 250.9,
+            "stopped_on_red_s": 88.79999999999923,
+            "candidate_exit_edges": [
+              "107215077#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_12067464222_12067528987_12067529006_12067529010_#1more_5"
+            ],
+            "signal_response_s": 0,
+            "passage_wait_s": 100.9
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_12067464233_12067464240_254665683",
+            "link": 3,
+            "detected_s": 156.8,
+            "first_green_s": 165.1,
+            "crossed_s": 260.2,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "107215077#3"
+            ],
+            "candidate_via_edges": [
+              ":cluster_12067464233_12067464240_254665683_2"
+            ],
+            "signal_response_s": 8.299999999999983,
+            "passage_wait_s": 103.39999999999998
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "joinedS_13954289420_cluster_12498576058_13954289419_1837595265_287905080_#1more",
+            "link": 2,
+            "detected_s": 273,
+            "first_green_s": 273,
+            "crossed_s": 282.2,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "172920283#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_12498576058_13954289419_1837595265_287905080_#1more_1"
+            ],
+            "signal_response_s": 0,
+            "passage_wait_s": 9.199999999999989
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10075533187_10075533188_10075533189_10075533190_#8more",
+            "link": 13,
+            "detected_s": 298.8,
+            "first_green_s": 305.1,
+            "crossed_s": 307.8,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "705023782#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10075533187_10075533188_10075533189_10075533190_#8more_13"
+            ],
+            "signal_response_s": 6.300000000000011,
+            "passage_wait_s": 9
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10123752378_10123752379_10123752380_11464483504_#10more",
+            "link": 6,
+            "detected_s": 314,
+            "first_green_s": null,
+            "crossed_s": 340.9,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "1125542419#0"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10123752378_10123752379_10123752380_11464483504_#10more_5"
+            ],
+            "signal_response_s": null,
+            "passage_wait_s": 26.899999999999977
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10123752378_10123752379_10123752380_11464483504_#10more",
+            "link": 5,
+            "detected_s": 323.3,
+            "first_green_s": 340.1,
+            "crossed_s": 340.9,
+            "stopped_on_red_s": 15.299999999999962,
+            "candidate_exit_edges": [
+              "1125542419#0"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10123752378_10123752379_10123752380_11464483504_#10more_5"
+            ],
+            "signal_response_s": 16.80000000000001,
+            "passage_wait_s": 17.599999999999966
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "joinedS_cluster_10020618687_10113648620_11286580549_7448812128_cluster_12121490910_1232963667_248455485_248459796",
+            "link": 5,
+            "detected_s": 365.8,
+            "first_green_s": 370.1,
+            "crossed_s": 410.9,
+            "stopped_on_red_s": 27.200000000000117,
+            "candidate_exit_edges": [
+              "764406991#0"
+            ],
+            "candidate_via_edges": [
+              ":cluster_12121490910_1232963667_248455485_248459796_1"
+            ],
+            "signal_response_s": 4.300000000000011,
+            "passage_wait_s": 45.099999999999966
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "joinedS_cluster_10120941852_10120941860_12460929618_12460929620_#9more_cluster_10120941856_10120941859",
+            "link": 8,
+            "detected_s": 430.6,
+            "first_green_s": 430.6,
+            "crossed_s": 448.9,
+            "stopped_on_red_s": 6.699999999999992,
+            "candidate_exit_edges": [
+              "239572011#2"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10120941852_10120941860_12460929618_12460929620_#9more_6"
+            ],
+            "signal_response_s": 0,
+            "passage_wait_s": 18.299999999999955
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10043357422_10043357423_10120806031_10120806032_#10more",
+            "link": 13,
+            "detected_s": 457,
+            "first_green_s": 467.1,
+            "crossed_s": 467.6,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "171887405#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10043357422_10043357423_10120806031_10120806032_#10more_13"
+            ],
+            "signal_response_s": 10.100000000000023,
+            "passage_wait_s": 10.600000000000023
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10120806044_12102866552_1460720480_1851627308_#1more",
+            "link": 2,
+            "detected_s": 482,
+            "first_green_s": null,
+            "crossed_s": 505.9,
+            "stopped_on_red_s": 0.30000000000000004,
+            "candidate_exit_edges": [
+              "171887405#13"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10120806044_12102866552_1460720480_1851627308_#1more_0"
+            ],
+            "signal_response_s": null,
+            "passage_wait_s": 23.899999999999977
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10120806044_12102866552_1460720480_1851627308_#1more",
+            "link": 1,
+            "detected_s": 495.7,
+            "first_green_s": null,
+            "crossed_s": 505.9,
+            "stopped_on_red_s": 5.099999999999998,
+            "candidate_exit_edges": [
+              "171887405#13"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10120806044_12102866552_1460720480_1851627308_#1more_0"
+            ],
+            "signal_response_s": null,
+            "passage_wait_s": 10.199999999999989
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10120806044_12102866552_1460720480_1851627308_#1more",
+            "link": 0,
+            "detected_s": 500.8,
+            "first_green_s": 505.1,
+            "crossed_s": 505.9,
+            "stopped_on_red_s": 4.300000000000001,
+            "candidate_exit_edges": [
+              "171887405#13"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10120806044_12102866552_1460720480_1851627308_#1more_0"
+            ],
+            "signal_response_s": 4.300000000000011,
+            "passage_wait_s": 5.099999999999966
+          }
+        ],
+        "ordinary": {
+          "inserted": 560,
+          "arrived": 560,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 7339.92,
+          "time_loss_distribution_s": {
+            "count": 560,
+            "mean": 13.107,
+            "min": 2.08,
+            "max": 71.22,
+            "p50": 5.880000000000001,
+            "p90": 39.251000000000005,
+            "p95": 43.841,
+            "p99": 47.936099999999996
+          },
+          "waiting_distribution_s": {
+            "count": 560,
+            "mean": 4.590892857142857,
+            "min": 0,
+            "max": 47.8,
+            "p50": 0,
+            "p90": 23.21,
+            "p95": 29.40999999999999,
+            "p99": 36.332999999999956
+          },
+          "waiting_time_s": 2570.9,
+          "insertion_delay_s": 18287,
+          "throughput_vehicles_per_hour": 1344,
+          "scheduled": 560,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "pedestrian": {
+          "observed_people": 0,
+          "observed_stopped_person_seconds": null,
+          "maximum_observed_continuous_wait_s": null
+        },
+        "safety_audit_errors": 0,
+        "collision_records": 0,
+        "unique_collision_pairs": 0,
+        "collision_count_definition": "New contact episodes per vehicle pair; raw per-step collision records also retained",
+        "measurement_resolution_s": 0.1,
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 15403,
+          "ambulance_departed": 1,
+          "approach_detected": 13,
+          "approach_green": 10,
+          "stopline_crossed": 13,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "sampled_corridor_blocked_lane_seconds": 0,
+        "planner_latency_ms": {
+          "samples": 750,
+          "max": 78.87209999898914,
+          "mean": 0.8037822666228749,
+          "distribution": {
+            "count": 750,
+            "mean": 0.8037822666228749,
+            "min": 0.011299998732283711,
+            "max": 78.87209999898914,
+            "p50": 0.042150000808760524,
+            "p90": 2.4525300010282085,
+            "p95": 3.2656599978508876,
+            "p99": 6.27854400292561
+          }
+        },
+        "signal_policy": "ordinary unmodified cycling; audit only",
+        "pending_insertions_at_end": 0,
+        "expected_remaining": 0,
+        "training": {
+          "complete_labels": 0,
+          "censored_labels": 0
+        },
+        "internal_lane_occupancy_coverage": {
+          "scope": "observed emergency corridors",
+          "monitored_lanes": 108
+        }
+      }
+    },
+    "zelvo": {
+      "schema_version": "1.0",
+      "run_id": "run-4780d9ce11a947d1bf8653e08a92098c",
+      "scenario_id": "bengaluru-curated-demo-v1",
+      "seed": 42,
+      "controller": "zelvo_ai",
+      "status": "completed",
+      "simulated_duration_s": 1500,
+      "wall_duration_s": 154.09399999999732,
+      "journeys": [
+        {
+          "vehicle_id": "ambulance-0",
+          "scheduled_departure_s": 60,
+          "actual_departure_s": 60,
+          "arrival_s": 305.5,
+          "completed": true,
+          "departure_delay_s": 0,
+          "journey_time_s": 245.5,
+          "scheduled_start_to_arrival_s": 245.5,
+          "stopped_time_s": 0.1,
+          "stops": 0
+        }
+      ],
+      "runtime_versions": {
+        "python": "3.12.12",
+        "sumo": "1.26.0",
+        "netconvert": "1.26.0",
+        "traci": "1.26.0",
+        "sumolib": "1.26.0",
+        "pydantic": "2.14.0",
+        "libsumo": "1.26.0"
+      },
+      "input_hashes": {
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\scenario.json": "ceac8b93e955e05794755ba96de26580a61cd029222cc6eaed39c01f9034249f",
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\demand.rou.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc",
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\scenarios\\bengaluru-curated-demo\\district.net.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+        "engine_source_sha256": "b738978c931685df31c168142c4162d4185a5613ef9262ccdbecd540ada1aa27",
+        "dependency_lock_sha256": "aec60a8e605f0c3cfca0cf3683c014772143c2fa23f712b55358f3114291790f",
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\models\\predictor.joblib": "394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7",
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\inputs\\66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+        "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\inputs\\d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc"
+      },
+      "artifacts": {
+        "result": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\result.json",
+        "events": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\events.jsonl",
+        "tripinfo": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\tripinfo.xml",
+        "config": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\config.json",
+        "aggregate": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\aggregate.jsonl",
+        "predictions": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\predictions.jsonl",
+        "training": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\training.jsonl",
+        "sumo_log": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\sumo.log",
+        "sumo_errors": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\sumo-errors.log",
+        "network_build_log": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\netconvert.log",
+        "planning_latency": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\zelvo\\run-4780d9ce11a947d1bf8653e08a92098c\\planning-latency.json",
+        "model": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\inputs\\394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7.joblib"
+      },
+      "collision_events": 0,
+      "teleport_events": 0,
+      "unavailable_metrics": [
+        "district_calibrated_pedestrian_demand",
+        "physical_controller_measurements",
+        "calibrated_contiguous_queue_extent",
+        "full_intersection_box_occupancy"
+      ],
+      "failure": null,
+      "metrics": {
+        "arrival_source": "SUMO tripinfo; approach/crossing timestamps are step observations",
+        "network_congestion": {
+          "potential_spillback_lane_seconds": 317,
+          "maximum_slow_vehicle_extent_m": 647.5799999999999,
+          "definition": "1s sampling; vehicles below 2m/s; extent is not a calibrated contiguous queue"
+        },
+        "approaches": [
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10075533192_10075533193_10684915913_10684915914_#11more",
+            "link": 3,
+            "detected_s": 74,
+            "first_green_s": 74,
+            "crossed_s": 83.2,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "763290544#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10075533192_10075533193_10684915913_10684915914_#11more_3"
+            ],
+            "signal_response_s": 0,
+            "passage_wait_s": 9.200000000000003
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_12067464222_12067528987_12067529006_12067529010_#1more",
+            "link": 5,
+            "detected_s": 85.2,
+            "first_green_s": 85.3,
+            "crossed_s": 95.2,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "107215077#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_12067464222_12067528987_12067529006_12067529010_#1more_5"
+            ],
+            "signal_response_s": 0.09999999999999432,
+            "passage_wait_s": 10
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_12067464233_12067464240_254665683",
+            "link": 3,
+            "detected_s": 91.9,
+            "first_green_s": 105.1,
+            "crossed_s": 105.6,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "107215077#3"
+            ],
+            "candidate_via_edges": [
+              ":cluster_12067464233_12067464240_254665683_2"
+            ],
+            "signal_response_s": 13.199999999999989,
+            "passage_wait_s": 13.699999999999989
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "joinedS_13954289420_cluster_12498576058_13954289419_1837595265_287905080_#1more",
+            "link": 2,
+            "detected_s": 121,
+            "first_green_s": 121,
+            "crossed_s": 130.2,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "172920283#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_12498576058_13954289419_1837595265_287905080_#1more_1"
+            ],
+            "signal_response_s": 0,
+            "passage_wait_s": 9.199999999999989
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10075533187_10075533188_10075533189_10075533190_#8more",
+            "link": 13,
+            "detected_s": 146.8,
+            "first_green_s": 146.8,
+            "crossed_s": 155.8,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "705023782#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10075533187_10075533188_10075533189_10075533190_#8more_13"
+            ],
+            "signal_response_s": 0,
+            "passage_wait_s": 9
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10123752378_10123752379_10123752380_11464483504_#10more",
+            "link": 6,
+            "detected_s": 162,
+            "first_green_s": 165.2,
+            "crossed_s": 171,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "1125542419#0"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10123752378_10123752379_10123752380_11464483504_#10more_5"
+            ],
+            "signal_response_s": 3.1999999999999886,
+            "passage_wait_s": 9
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "joinedS_cluster_10020618687_10113648620_11286580549_7448812128_cluster_12121490910_1232963667_248455485_248459796",
+            "link": 5,
+            "detected_s": 193.3,
+            "first_green_s": 210.1,
+            "crossed_s": 210.6,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "764406991#0"
+            ],
+            "candidate_via_edges": [
+              ":cluster_12121490910_1232963667_248455485_248459796_1"
+            ],
+            "signal_response_s": 16.799999999999983,
+            "passage_wait_s": 17.299999999999983
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "joinedS_cluster_10120941852_10120941860_12460929618_12460929620_#9more_cluster_10120941856_10120941859",
+            "link": 8,
+            "detected_s": 229.8,
+            "first_green_s": 229.8,
+            "crossed_s": 238.9,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "239572011#2"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10120941852_10120941860_12460929618_12460929620_#9more_6"
+            ],
+            "signal_response_s": 0,
+            "passage_wait_s": 9.099999999999994
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10043357422_10043357423_10120806031_10120806032_#10more",
+            "link": 13,
+            "detected_s": 244,
+            "first_green_s": 245.3,
+            "crossed_s": 253.2,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "171887405#1"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10043357422_10043357423_10120806031_10120806032_#10more_13"
+            ],
+            "signal_response_s": 1.3000000000000114,
+            "passage_wait_s": 9.199999999999989
+          },
+          {
+            "vehicle": "ambulance-0",
+            "tls": "cluster_10120806044_12102866552_1460720480_1851627308_#1more",
+            "link": 2,
+            "detected_s": 266.6,
+            "first_green_s": 266.6,
+            "crossed_s": 278.7,
+            "stopped_on_red_s": 0,
+            "candidate_exit_edges": [
+              "171887405#13"
+            ],
+            "candidate_via_edges": [
+              ":cluster_10120806044_12102866552_1460720480_1851627308_#1more_0"
+            ],
+            "signal_response_s": 0,
+            "passage_wait_s": 12.099999999999966
+          }
+        ],
+        "ordinary": {
+          "inserted": 560,
+          "arrived": 560,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 8206.75,
+          "time_loss_distribution_s": {
+            "count": 560,
+            "mean": 14.654910714285714,
+            "min": 2.18,
+            "max": 48.98,
+            "p50": 8.7,
+            "p90": 37.998000000000005,
+            "p95": 43.64549999999999,
+            "p99": 47.89249999999999
+          },
+          "waiting_distribution_s": {
+            "count": 560,
+            "mean": 4.8516071428571435,
+            "min": 0,
+            "max": 39.3,
+            "p50": 0,
+            "p90": 22.720000000000002,
+            "p95": 29.204999999999995,
+            "p99": 36.02299999999999
+          },
+          "waiting_time_s": 2716.9,
+          "insertion_delay_s": 18887.8,
+          "throughput_vehicles_per_hour": 1344,
+          "scheduled": 560,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "pedestrian": {
+          "observed_people": 0,
+          "observed_stopped_person_seconds": null,
+          "maximum_observed_continuous_wait_s": null
+        },
+        "safety_audit_errors": 0,
+        "collision_records": 0,
+        "unique_collision_pairs": 0,
+        "collision_count_definition": "New contact episodes per vehicle pair; raw per-step collision records also retained",
+        "measurement_resolution_s": 0.1,
+        "event_counts": {
+          "run_started": 1,
+          "phase_transition": 15404,
+          "ambulance_departed": 1,
+          "planner_fallback": 62,
+          "priority_requested": 101,
+          "priority_advance": 5,
+          "approach_detected": 10,
+          "approach_green": 10,
+          "stopline_crossed": 10,
+          "priority_released": 10,
+          "priority_hold": 47,
+          "ambulance_arrived": 1,
+          "run_finished": 1
+        },
+        "sampled_corridor_blocked_lane_seconds": 0,
+        "planner_latency_ms": {
+          "samples": 750,
+          "max": 243.58570000185864,
+          "mean": 10.65252600001016,
+          "distribution": {
+            "count": 750,
+            "mean": 10.65252600001016,
+            "min": 0.014200006262399256,
+            "max": 243.58570000185864,
+            "p50": 0.04624999928637408,
+            "p90": 57.091349994880176,
+            "p95": 84.12544500133659,
+            "p99": 114.86767300091738
+          }
+        },
+        "signal_policy": "priority with corridor occupancy guard",
+        "pending_insertions_at_end": 0,
+        "expected_remaining": 0,
+        "training": {
+          "complete_labels": 0,
+          "censored_labels": 0
+        },
+        "internal_lane_occupancy_coverage": {
+          "scope": "observed emergency corridors",
+          "monitored_lanes": 108
+        }
+      }
+    }
+  },
+  "finished_at_utc": "2026-10-10T17:21:13.088432+00:00",
+  "scope": "Independent browser replay of a curated development preset; not population evidence"
+}

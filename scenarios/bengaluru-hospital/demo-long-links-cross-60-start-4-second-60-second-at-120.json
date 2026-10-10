@@ -1,0 +1,19 @@
+{
+  "scenario_id": "demo-long-links-cross-60-start-4-second-60-second-at-120",
+  "seed": 42,
+  "controller": "actuated",
+  "network_file": "district.net.xml",
+  "route_files": [
+    "demo-long-links-cross-60-start-4-second-60-second-at-120.rou.xml"
+  ],
+  "step_length_s": 0.1,
+  "horizon_s": 700,
+  "wall_timeout_s": 600,
+  "backend": "libsumo",
+  "expected_journeys": [
+    {
+      "vehicle_id": "ambulance-0",
+      "scheduled_departure_s": 60
+    }
+  ]
+}

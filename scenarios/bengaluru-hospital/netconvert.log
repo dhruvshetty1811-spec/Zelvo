@@ -1,0 +1,119 @@
+Success.
+Warning: Value of key 'maxspeed:type' is not numeric ('urban') in edge '27946101'.
+Warning: Using default width for edge '36926678' as value '20'' could not be parsed.
+Warning: Value of key 'maxspeed:type' is not numeric ('urban') in edge '124316968'.
+Warning: Value of key 'maxspeed:type' is not numeric ('urban') in edge '323813903'.
+Warning: Value of key 'maxspeed:type' is not numeric ('urban') in edge '325833345'.
+Warning: Value of key 'maxspeed:type' is not numeric ('urban') in edge '401908499'.
+Warning: Value of key 'maxspeed:type' is not numeric ('urban') in edge '1148434866'.
+Warning: Value of key 'maxspeed:type' is not numeric ('urban') in edge '1166571294'.
+Warning: Discarding unknown compound 'cycleway.lane' in type 'cycleway.lane|highway.primary' (first occurrence for edge '23443806').
+Warning: Discarding unknown compound 'psv' in type 'highway.primary|psv' (first occurrence for edge '28631881').
+Warning: Discarding unknown compound 'cycleway.lane' in type 'cycleway.lane|highway.tertiary' (first occurrence for edge '91890608').
+Warning: Discarding unknown compound 'psv' in type 'highway.primary_link|psv' (first occurrence for edge '431281013').
+Warning: Discarding unknown compound 'psv' in type 'highway.secondary|psv' (first occurrence for edge '544759837').
+Warning: Removing pt stop '10006930129' on non existing edge '454013131#0'.
+Warning: Removing pt stop '10038561237' on non existing edge '36913434#8'.
+Warning: Removing pt stop '10295411732' on non existing edge '1368125926#0'.
+Warning: Removing pt stop '10761493346' on non existing edge '458439815#0'.
+Warning: Removing pt stop '10833947202' on non existing edge '343205961#1'.
+Warning: from-edge '1471883676' of restriction relation could not be determined
+Warning: Ignoring restriction relation '20145604'.
+Warning: direction of restriction relation could not be determined
+Warning: Ignoring restriction relation '20701738'.
+Warning: direction of restriction relation could not be determined
+Warning: Ignoring restriction relation '20710925'.
+Warning: direction of restriction relation could not be determined
+Warning: Ignoring restriction relation '20710926'.
+Warning: direction of restriction relation could not be determined
+Warning: Ignoring restriction relation '20710927'.
+Warning: direction of restriction relation could not be determined
+Warning: from-edge '1542813132' of restriction relation could not be determined
+Warning: from-edge '1565486927' of restriction relation could not be determined
+Warning: Ignoring restriction relation '3544420' with unknown from-way.
+Warning: Ignoring restriction relation '3544420' with unknown to-way.
+Warning: from-edge '1452617368' of restriction relation could not be determined
+Warning: from-edge '1379232590' of restriction relation could not be determined
+Warning: Removed a road without junctions: -1096187516#3.
+Warning: Removed a road without junctions: -1165353586.
+Warning: Removed a road without junctions: -1504411598.
+Warning: Removed a road without junctions: -213032021#1.
+Warning: Removed a road without junctions: 1096187516#3.
+Warning: Could not find corresponding edge or compatible lane for free-floating pt stop '60952264' (St. Joseph's College). Thus, it will be removed!
+Warning: Could not find corresponding edge or compatible lane for free-floating pt stop '247991562' (Anepalya). Thus, it will be removed!
+Warning: Could not find corresponding edge or compatible lane for free-floating pt stop '249082241' (Naga Talkies). Thus, it will be removed!
+Warning: Could not find corresponding edge or compatible lane for free-floating pt stop '249141343' (Sajjan Rao Circle). Thus, it will be removed!
+Warning: Could not find corresponding edge or compatible lane for free-floating pt stop '347295628' (Platform 28A). Thus, it will be removed!
+Warning: Reducing junction cluster 10023365608,10023395320,10023395321 (parallel incoming -1094409779#1,-1094409780#0).
+Warning: Not joining junctions 10023395356,429001102 (parallel incoming -1094409786,-1156579115#0).
+Warning: Reducing junction cluster 10023395359,10024129632,10024129649,429001101 (7 incoming edges).
+Warning: Reducing junction cluster 10023395366,10023395372,456181125 (parallel incoming 1094409787#2,1094409789#1).
+Warning: Not joining junctions 10023395371,10023395373,10023395377 (parallel incoming -1094409789#1,-1094409791).
+Warning: Reducing junction cluster 10023395376,4126165247,456181183,456181203 (6 incoming edges).
+Warning: Not joining junctions 10023395383,10023395390,10023395395,456181127 (6 incoming edges).
+Warning: Not joining junctions 10023395384,10023395385,456181147 (parallel incoming -38541489#1,38541492#1).
+Warning: Reducing junction cluster 10023395387,10023395404,4128254812,456181145,456181148 (7 incoming edges).
+Warning: Not joining junctions 10023444225,10023444228,10023444231 (after reduction).
+Warning: Ambiguity in turnarounds computation at junction 'cluster_10026223307_10814598053'.
+Warning: Ambiguity in turnarounds computation at junction 'cluster_10026223313_10814598054'.
+Warning: Ambiguity in turnarounds computation at junction 'cluster_10038553663_10044013434'.
+Warning: Ambiguity in turnarounds computation at junction 'cluster_10044013428_665065731'.
+Warning: Ambiguity in turnarounds computation at junction 'cluster_10044013433_1631109061'.
+Warning: Found sharp turn with radius 4.56 at the start of edge '-1094450058#0'.
+Warning: Found sharp turn with radius 4.35 at the end of edge '-1094450058#0'.
+Warning: Found sharp turn with radius 8.89 at the start of edge '-1094450062'.
+Warning: Found sharp turn with radius 7.55 at the end of edge '-1094468220'.
+Warning: Found angle of 100.42 degrees at edge '-1094696313', segment 0.
+Warning: Found sharp turn with radius 3.19 at the start of edge '-1094696327#0'.
+Warning: Found angle of 99.55 degrees at edge '-768239885#0', segment 0.
+Warning: Found angle of 100.42 degrees at edge '1094696313', segment 0.
+Warning: Found angle of 99.55 degrees at edge '768239885#0', segment 1.
+Warning: Lane '-1092889947_0' is not connected from any incoming edge at junction '3309317502'.
+Warning: Lane '-1094460071_0' is not connected from any incoming edge at junction '10024065108'.
+Warning: Lane '-1095834107_0' is not connected from any incoming edge at junction '10035790745'.
+Warning: Edge '-1095876892#1' is not connected to outgoing edges at junction '12134088457'.
+Warning: Edge '-1167942776' is not connected to outgoing edges at junction '11378925082'.
+Warning: Edge '-1199335501' is not connected to outgoing edges at junction '10009011554'.
+Warning: Edge '-1466162872#0' is not connected to outgoing edges at junction '11521945872'.
+Warning: Lane '-1562132279_0' is not connected from any incoming edge at junction '14213711432'.
+Warning: Lane '-23082237#6_0' is not connected from any incoming edge at junction '11200429878'.
+Warning: Edge '1092889947' is not connected to outgoing edges at junction '3309317502'.
+Warning: The traffic light '10121158806' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '10121158806'
+Warning: The traffic light '12609390302' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '12609390302'
+Warning: The traffic light '13472659201' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '13472659201'
+Warning: The traffic light '429230963' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '429230963'
+Warning: Minor green from edge '191031652#8' to edge '36907507#12' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '1148450697' to edge '172937188#1' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '190144810#3' to edge '373574995#1' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '190144810#3' to edge '1165356441' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '373574994#6' to edge '1312793727#2' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Speed of straight connection '111879319#0_0->111879319#1_0' reduced by 6.02 due to turning radius of 11.26 (length=13.05, angle=86.45).
+Warning: Speed of straight connection '-111879319#1_0->-111879319#0_0' reduced by 6.29 due to turning radius of 10.49 (length=12.09, angle=86.45).
+Warning: Speed of straight connection '111867000#0_0->111867000#1_0' reduced by 7.20 due to turning radius of 8.13 (length=10.01, angle=93.24).
+Warning: Speed of straight connection '-1094745003#1_0->-1094745003#0_0' reduced by 6.70 due to turning radius of 9.39 (length=10.88, angle=87.60).
+Warning: Speed of straight connection '1094745003#0_0->1094745003#1_0' reduced by 7.10 due to turning radius of 8.38 (length=9.60, angle=87.60).
+Warning: Intersecting left turns at junction '1273593949' from lane '1095071195_0' and lane '-38541470#0_0' (increase junction radius to avoid this).
+Warning: Intersecting left turns at junction 'cluster_10026312560_10026312561' from lane '1094696331_0' and lane '-1094696332_0' (increase junction radius to avoid this).
+Warning: Intersecting left turns at junction 'cluster_10026312565_456181305' from lane '1492978839_0' and lane '1094696333_0' (increase junction radius to avoid this).
+Warning: Intersecting left turns at junction 'cluster_10026604858_456181500' from lane '38541563_0' and lane '-38541565#0_0' (increase junction radius to avoid this).
+Warning: Intersecting left turns at junction 'cluster_10028793399_456181518' from lane '38541558#8_0' and lane '-38541558#10_0' (increase junction radius to avoid this).
+Warning: 11 total messages of type: Ambiguity in turnarounds computation at junction '%'.
+Warning: 237 total messages of type: Could not find corresponding edge or compatible lane for free-floating pt stop '%' (%). Thus, it will be removed!
+Warning: 8 total messages of type: Discarding unknown compound '%' in type '%' (first occurrence for edge '%').
+Warning: 12 total messages of type: Edge '%' is not connected to outgoing edges at junction '%'.
+Warning: 37 total messages of type: Found sharp turn with radius % at the % of edge '%'.
+Warning: 43 total messages of type: Ignoring restriction relation '%'.
+Warning: 9 total messages of type: Intersecting left turns at junction '%' from lane '%' and lane '%' (increase junction radius to avoid this).
+Warning: 8 total messages of type: Lane '%' is not connected from any incoming edge at junction '%'.
+Warning: 27 total messages of type: Minor green from edge '%' to edge '%' exceeds %m/s. Maybe a left-turn lane is missing.
+Warning: 108 total messages of type: Not joining junctions % (%).
+Warning: 120 total messages of type: Reducing junction cluster % (%).
+Warning: 16 total messages of type: Removed a road without junctions: %.
+Warning: 226 total messages of type: Removing pt stop '%' on non existing edge '%'.
+Warning: 45 total messages of type: Speed of % connection '%' reduced by % due to turning radius of % (length=%, angle=%).
+Warning: 24 total messages of type: direction of restriction relation could not be determined%
+Warning: 19 total messages of type: from-edge '%' of restriction relation could not be determined

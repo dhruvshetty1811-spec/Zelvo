@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <vType id="car" vClass="passenger" length="4.5" accel="2.6" decel="4.5" sigma="0.5" minGap="2.5" maxSpeed="16.67" guiShape="passenger" />
+  <vType id="bike" vClass="motorcycle" length="2" accel="3" decel="4.5" sigma="0.5" minGap="2.5" maxSpeed="16.67" guiShape="motorcycle" />
+  <vType id="bus" vClass="bus" length="10" accel="1.3" decel="4.5" sigma="0.5" minGap="2.5" maxSpeed="16.67" guiShape="bus" />
+  <vType id="ambulance" vClass="passenger" length="5.5" accel="2.8" decel="4.5" sigma="0.5" minGap="2.5" maxSpeed="16.67" guiShape="emergency" />
+  <vehicle id="ambulance-0" type="ambulance" depart="60" departLane="best" departSpeed="0">
+    <route edges="91894181#1 91894181#2 1452617366 1452617367 1352261231 627144178#0 627144178#1 627144178#2 736430942#0 132191814#0 132191814#1 132191814#2 132191814#4 132191814#5 132191814#6 132191814#7 132191814#8 132191814#9 1347255637 763175325#0 763175325#1 763175325#2 38758709#0 38758714#0 38758714#1 113287091#3 182196323#2 182196323#3 182196323#4 182196323#5 182196323#6 182196323#7 182196323#9 182196323#10 182196323#11 -36907508#2 23081473#6 23081473#7 462585105#1 462585105#2 462585105#3 1159908816#0 1159908816#1 1159912087#3 1159912087#4 1159912087#5 23076886#0 23076886#1 1159907080#0 1159907080#1 1159907080#2 1159907080#3 23076891#1 1352260810 -1352260811#1 -1352260811#0 -23076897#3 -23076897#2 -765195597#4 -765195599#2 -765195599#1 -765195599#0 190144809#2" />
+  </vehicle>
+  <vehicle id="cross-0" type="car" depart="169.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-1" type="car" depart="170.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-2" type="car" depart="172.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-3" type="car" depart="173.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-4" type="car" depart="175.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-5" type="car" depart="176.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-6" type="car" depart="178.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-7" type="car" depart="179.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-8" type="car" depart="181.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-9" type="car" depart="182.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-10" type="car" depart="184.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-11" type="car" depart="185.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-12" type="car" depart="187.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-13" type="car" depart="188.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-14" type="car" depart="190.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-15" type="car" depart="191.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-16" type="car" depart="193.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-17" type="car" depart="194.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-18" type="car" depart="196.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-19" type="car" depart="197.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-20" type="car" depart="199.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-21" type="car" depart="200.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-22" type="car" depart="202.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-23" type="car" depart="203.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-24" type="car" depart="205.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-25" type="car" depart="206.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-26" type="car" depart="208.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-27" type="car" depart="209.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-28" type="car" depart="211.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-29" type="car" depart="212.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-30" type="car" depart="214.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-31" type="car" depart="215.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-32" type="car" depart="217.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-33" type="car" depart="218.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-34" type="car" depart="220.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-35" type="car" depart="221.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-36" type="car" depart="223.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-37" type="car" depart="224.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-38" type="car" depart="226.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-39" type="car" depart="227.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-40" type="car" depart="229.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-41" type="car" depart="230.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-42" type="car" depart="232.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-43" type="car" depart="233.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-44" type="car" depart="235.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-45" type="car" depart="236.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-46" type="car" depart="238.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-47" type="car" depart="239.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-48" type="car" depart="241.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-49" type="car" depart="242.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-50" type="car" depart="244.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-51" type="car" depart="245.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-52" type="car" depart="247.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-53" type="car" depart="248.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-54" type="car" depart="250.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-55" type="car" depart="251.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-56" type="car" depart="253.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-57" type="car" depart="254.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-58" type="car" depart="256.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-59" type="car" depart="257.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-60" type="car" depart="259.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-61" type="car" depart="260.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-62" type="car" depart="262.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-63" type="car" depart="263.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-64" type="car" depart="265.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-65" type="car" depart="266.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-66" type="car" depart="268.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-67" type="car" depart="269.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-68" type="car" depart="271.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-69" type="car" depart="272.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-70" type="car" depart="274.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-71" type="car" depart="275.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-72" type="car" depart="277.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-73" type="car" depart="278.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-74" type="car" depart="280.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-75" type="car" depart="281.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-76" type="car" depart="283.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-77" type="car" depart="284.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-78" type="car" depart="286.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-79" type="car" depart="287.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-80" type="car" depart="289.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-81" type="car" depart="290.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-82" type="car" depart="292.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-83" type="car" depart="293.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-84" type="car" depart="295.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-85" type="car" depart="296.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-86" type="car" depart="298.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-87" type="car" depart="299.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-88" type="car" depart="301.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-89" type="car" depart="302.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-90" type="car" depart="304.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-91" type="car" depart="305.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-92" type="car" depart="307.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-93" type="car" depart="308.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-94" type="car" depart="310.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-95" type="car" depart="311.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-96" type="car" depart="313.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-97" type="car" depart="314.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-98" type="car" depart="316.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-99" type="car" depart="317.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-100" type="car" depart="319.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-101" type="car" depart="320.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-102" type="car" depart="322.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-103" type="car" depart="323.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-104" type="car" depart="325.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-105" type="car" depart="326.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-106" type="car" depart="328.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-107" type="car" depart="329.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-108" type="car" depart="331.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-109" type="car" depart="332.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-110" type="car" depart="334.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-111" type="car" depart="335.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-112" type="car" depart="337.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-113" type="car" depart="338.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-114" type="car" depart="340.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-115" type="car" depart="341.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-116" type="car" depart="343.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-117" type="car" depart="344.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-118" type="car" depart="346.2" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+  <vehicle id="cross-119" type="car" depart="347.7" departLane="best" departSpeed="0">
+    <route edges="36907508#2 763175324#1" />
+  </vehicle>
+</routes>

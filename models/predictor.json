@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "features": [
+    "distance_m",
+    "speed_mps",
+    "queue_ahead",
+    "downstream_queue",
+    "queue_extent_m",
+    "entry_space_m",
+    "lane_length_m",
+    "green",
+    "action_hold",
+    "arrival_rate",
+    "discharge_rate"
+  ],
+  "sklearn_version": "1.7.2",
+  "rows": 9027,
+  "groups": {
+    "train": [
+      1000,
+      1002,
+      1004,
+      1006
+    ],
+    "validation": [
+      1003,
+      1007
+    ],
+    "test": [
+      1001,
+      1005
+    ]
+  },
+  "metrics": {
+    "train": {
+      "rows": 2881,
+      "eta_analytical_mae_s": 40.60224170898883,
+      "eta_learned_mae_s": 5.093527453454391,
+      "queue_persistence_mae_vehicles": 0.011454356126345018,
+      "queue_learned_mae_vehicles": 0.000546538177049058,
+      "eta_interval_coverage": 0.8208955223880597
+    },
+    "validation": {
+      "rows": 3006,
+      "eta_analytical_mae_s": 42.191991507261775,
+      "eta_learned_mae_s": 12.439793557283807,
+      "queue_persistence_mae_vehicles": 0.0,
+      "queue_learned_mae_vehicles": 0.00023017949612015684,
+      "eta_interval_coverage": 0.6290751829673985
+    },
+    "test": {
+      "rows": 3140,
+      "eta_analytical_mae_s": 40.488959645715106,
+      "eta_learned_mae_s": 7.43146482140325,
+      "queue_persistence_mae_vehicles": 0.034394904458598725,
+      "queue_learned_mae_vehicles": 0.02762621778355275,
+      "eta_interval_coverage": 0.7232484076433121
+    }
+  },
+  "source_hashes": {
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-0e90f87e62a347bfb5983a6db967aa63\\training.jsonl": "4b6a88f95a45e7f26da545e378a4a8f845f105348bfd2ad682381a5f5fd9af6f",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-19b14bd9f3864bae8740b77606dbf8b9\\training.jsonl": "edf089d9fcfc483264f5d2d54b3f0efa178d68b57675f18b5f2afff125f86b57",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-217c63882f6042c8acfc99b71cde7a2b\\training.jsonl": "467f0146576b58b1d27ced54d51abe9d50c33ee5e92a76f747dd3fa1df967e23",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-2d0777f085f147a4836b0c42d5885616\\training.jsonl": "8d3102f1f1ee54affc05012721f96b7733dd7c52da5942717a42ef3a3b11e476",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-2de17661b5074d6585f437a86a6d0fb0\\training.jsonl": "922029e1e3af6a57aa1d5b4ebc923f10e3abbf02aa3c58fd989b6619f1d0c84e",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-331a6a9117554bf194ddd9e9da93cf63\\training.jsonl": "4be272db2f2fef23a9b8317219cad68ff4ea3ef40ecdb23cf9e13d3f0544d7e2",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-36d7656e8d6548c2922c3bf4cf5d2363\\training.jsonl": "90859197957395fc2e9752f57a227a18fa37bc7183f4b4a8be010f0a7f1d669a",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-410cbb509d89405d939a1959c08cde0b\\training.jsonl": "073d6e3cc5c7470a3f92987a18506954041ee0767c5dbf63a80d007e2c55b6bd",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-4425a8969d1b433cad39a6dc5bb6aa98\\training.jsonl": "122b7daab8851282712c29ca5c5d9cd6ee852ebc6bb215a23324f079eb5978e7",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-62bf41ed4d594b8fa3548b66c421a4e7\\training.jsonl": "9698cf25a9660dc0a14d93a4be597304c75fc4c4c228fdadd85420415fe2ac2a",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-63ca94ea13ac4e61862854d1242c0491\\training.jsonl": "4b0c5c21ad586ea569e8324b89f808aa793a86c2d0e2b2afdc61206a48c3b37a",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-6ef98c99518e43b1b4d986c1b4b1f2fa\\training.jsonl": "66a8a8371315fcdfeb21386ca19a4a2cda13d1c4f78979e51430cd0b9fbe4479",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-74c0a84144fc442cbdefb2db5f1a6d3e\\training.jsonl": "c1a75274c8f43c9dd4613179d2753d05a999117281d17b4d85efb57d33af0c1b",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-7825969c38a24d2e9b63eceb7880b279\\training.jsonl": "f405f3ab996515e2be9ffba04bcf1082ce492d56d19eabd4476546a9049014b6",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-85809aaaa4e44996ac812cf799345de7\\training.jsonl": "30d590f6cedf14be475be4ddbb2c340726f7319495b3179ad00ad8c04bf47d1b",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-8826b3bc184a4b148f60029808a4083f\\training.jsonl": "5dc6ffddecc831196d3dc298682a0211ed2b46ba0fd7ab18a8855c9bfb081764",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-8e6c5adcdd3b436a8654d0299330d88a\\training.jsonl": "80d78b44739d65a47da7c922856ec3074612ee4496fb3a4a99bbe06e6c625d59",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-9c304168136e458da1d4a96baf995d11\\training.jsonl": "054d8f64df77681162747736f300134ec096a17168effb84b2fc55333ec160e1",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-a8da0172cfa44ef6bdb5929de308dda5\\training.jsonl": "19f0cc14c1fc8c687986ef981d6c345f01bf7f938af0b5dcd5303c5d587e1e47",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-af53df2894db43289a12188fde81bb1b\\training.jsonl": "c87f3b105589bb44a919e4fb344d91375e73f26a18aa2a642ef123b6c7dc199a",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-daa470f11deb46b39baf57d43ab89408\\training.jsonl": "a3d535e9fa05c437fd6bc9fd417fcf24c6c9c0e550d91feae95f23e2971fbbd1",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-e19679a9f5e0458c800a4150f2d9431c\\training.jsonl": "0302c6b4cad172dfe0fb08a3435a4d5c042442b087852ac97cb8c97e6dc06e61",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-e45a73f870df4ee7b9b45172b530e973\\training.jsonl": "8e7fc48b04e1a081b280bf06a35164556b6d798e1a9faad45a7e315ab5dfa4d1",
+    "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\training-v3\\run-f6240069bfac4b7093efcb0174e28a04\\training.jsonl": "81451eddb0973de87b17f65db86f5c5c648c77f1bb60463ca95240e0b4473b13"
+  },
+  "training_wall_s": 1.5196434999998019,
+  "engine_hashes": [
+    "0a75ecaa682c1f56a1d1bdd66533f6f26fbeb79ce401a5a263c68588da0ced32"
+  ],
+  "excluded_unsafe_rows": 0,
+  "excluded_censored_rows": 0,
+  "action_definition": "current priority request/hold indicator; future policy remains observational",
+  "limitations": [
+    "Observational policy data does not identify causal action effects",
+    "Bounds fallback checks feature ranges, not all distribution shifts",
+    "Seed holdout does not establish unseen-city or unseen-route generalization",
+    "Prediction improvement alone does not establish faster ambulance journeys"
+  ],
+  "model_sha256": "394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7"
+}

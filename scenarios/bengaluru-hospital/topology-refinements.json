@@ -1,0 +1,23 @@
+{
+  "rule": "Do not join numeric OSM signal clusters with nominal cycle above 180s",
+  "excluded_joins": [],
+  "manual_geometry_patches": [],
+  "serial_join_exclusions": [
+    "570758310",
+    "9939398569",
+    "9939398599",
+    "9939407828"
+  ],
+  "serial_join_exclusion_reason": "Missing controlling detectors and observed serial-junction clearance deadlock",
+  "junction_join_exclusions": [
+    "1277414211",
+    "249137297",
+    "10026725123",
+    "10028793385",
+    "429231026",
+    "429231031"
+  ],
+  "junction_join_exclusion_reason": "Observed overlapping paths at the merged junction; retain original separate nodes",
+  "orphan_priority_crossing_control_metadata_removed": [],
+  "note": "Heuristic model review, not surveyed signal validation"
+}

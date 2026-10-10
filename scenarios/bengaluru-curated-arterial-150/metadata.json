@@ -1,0 +1,308 @@
+{
+  "scope": "Synthetic peak timing stress on OSM roads, not surveyed Bengaluru timings",
+  "selection": "Curated development for 45\u201355% acceptance, never population evidence",
+  "parent": "scenarios\\bengaluru-curated-arterial",
+  "parent_network_sha256": "d8f788c7f02c0073f0304fa04c2f53f3719221d6378e1e802a1e48ad192e1b26",
+  "network_sha256": "b0f76d6263c9d9644af581370c491e7a7dfeeb25e1ac91ea5a604f12b0a4cdc0",
+  "nominal_target_cycle_s": 150.0,
+  "changes": [
+    {
+      "tls": "3641923615",
+      "before": {
+        "duration": "85",
+        "state": "GG",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "145.0",
+        "state": "GG",
+        "minDur": "5",
+        "maxDur": "145.0"
+      }
+    },
+    {
+      "tls": "cluster_10060658518_10148982084_1067789523_1067789550_#6more",
+      "before": {
+        "duration": "25",
+        "state": "rrrrGGGgrrGGG",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrrGGGgrrGGG",
+        "minDur": "13",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10060658518_10148982084_1067789523_1067789550_#6more",
+      "before": {
+        "duration": "25",
+        "state": "rrrrGrrrGGGrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrrGrrrGGGrr",
+        "minDur": "13",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10060658518_10148982084_1067789523_1067789550_#6more",
+      "before": {
+        "duration": "25",
+        "state": "GGGGGrrrrrrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "GGGGGrrrrrrrr",
+        "minDur": "5",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_1067781030_12096409168_12462400284_12462417401_#1more",
+      "before": {
+        "duration": "25",
+        "state": "GrGrrrG",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "GrGrrrG",
+        "minDur": "5",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_1067781030_12096409168_12462400284_12462417401_#1more",
+      "before": {
+        "duration": "25",
+        "state": "rrGGGGr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrGGGGr",
+        "minDur": "5",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_1067781030_12096409168_12462400284_12462417401_#1more",
+      "before": {
+        "duration": "25",
+        "state": "GGGrrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "GGGrrrr",
+        "minDur": "5",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_1067789502_1067789545_12102995471_12532093585_#11more",
+      "before": {
+        "duration": "20",
+        "state": "GGGGrrrrGGGrrrrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "37.14",
+        "state": "GGGGrrrrGGGrrrrrrrr",
+        "minDur": "13",
+        "maxDur": "37.14"
+      }
+    },
+    {
+      "tls": "cluster_1067789502_1067789545_12102995471_12532093585_#11more",
+      "before": {
+        "duration": "6",
+        "state": "rrrrrrrrGGGGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "11.14",
+        "state": "rrrrrrrrGGGGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "11.14"
+      }
+    },
+    {
+      "tls": "cluster_1067789502_1067789545_12102995471_12532093585_#11more",
+      "before": {
+        "duration": "22",
+        "state": "rrrrGGggGrrrrrrrgGg",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "40.86",
+        "state": "rrrrGGggGrrrrrrrgGg",
+        "minDur": "5",
+        "maxDur": "40.86"
+      }
+    },
+    {
+      "tls": "cluster_1067789502_1067789545_12102995471_12532093585_#11more",
+      "before": {
+        "duration": "22",
+        "state": "rrrrrrrrGrrrrGGGrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "40.86",
+        "state": "rrrrrrrrGrrrrGGGrrr",
+        "minDur": "5",
+        "maxDur": "40.86"
+      }
+    },
+    {
+      "tls": "cluster_10685860710_12128921387_12128921388_12135138835_#4more",
+      "before": {
+        "duration": "25",
+        "state": "rrrrrrrrrrGGG",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrrrrrrrrGGG",
+        "minDur": "13",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10685860710_12128921387_12128921388_12135138835_#4more",
+      "before": {
+        "duration": "25",
+        "state": "rrrGGGGGGGrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "rrrGGGGGGGrrr",
+        "minDur": "13",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "cluster_10685860710_12128921387_12128921388_12135138835_#4more",
+      "before": {
+        "duration": "25",
+        "state": "GGGGrrrrrrrrr",
+        "minDur": "5",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "45.0",
+        "state": "GGGGrrrrrrrrr",
+        "minDur": "5",
+        "maxDur": "45.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "rrGrrrrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "rrGrrrrrrrr",
+        "minDur": "13",
+        "maxDur": "25.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "GGrGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "GGrGGrrrrrr",
+        "minDur": "13",
+        "maxDur": "25.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "rrrrrGGrrrr",
+        "minDur": "10",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "rrrrrGGrrrr",
+        "minDur": "10",
+        "maxDur": "25.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "rrrrrrrGGGr",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "rrrrrrrGGGr",
+        "minDur": "13",
+        "maxDur": "25.0"
+      }
+    },
+    {
+      "tls": "joinedS_12145344725_12466459952_12466459959_cluster_12145344727_12145344730_12466459977_12466460042_#1more",
+      "before": {
+        "duration": "13",
+        "state": "rrrrrrrrrrG",
+        "minDur": "13",
+        "maxDur": "50"
+      },
+      "after": {
+        "duration": "25.0",
+        "state": "rrrrrrrrrrG",
+        "minDur": "13",
+        "maxDur": "25.0"
+      }
+    }
+  ],
+  "offset_seed": null,
+  "offsets": [],
+  "same_network_and_demand_for_both_policies": true,
+  "unchanged": [
+    "green minimum service times",
+    "yellow",
+    "all-red",
+    "phase order/masks",
+    "road/vehicle speeds",
+    "vehicle demand"
+  ],
+  "timing_context": "https://ops.fhwa.dot.gov/publications/fhwahop08024/chapter6.htm",
+  "limitations": "Actuated cycle length varies with demand. This timing profile is a synthetic stress condition, not a site-calibrated timing recommendation."
+}

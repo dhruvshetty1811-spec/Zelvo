@@ -1,0 +1,248 @@
+{
+  "acceptance_target_percent": [
+    45,
+    55
+  ],
+  "target_met": true,
+  "scope": "One openly curated synthetic peak-traffic preset, selected during development; not population evidence or an isolated causal ML-benefit claim.",
+  "route_length_m": 2442.08,
+  "route_controllers": 10,
+  "destination": "Simulated hospital destination on real OSM roads; not a surveyed medical facility",
+  "preset": {
+    "corridor": "curated",
+    "density": "moderate",
+    "seed": 42,
+    "dispatch_s": 60,
+    "observation_delay_s": 0
+  },
+  "raw_tripinfo_reconciled": true,
+  "paired_network_demand_and_engine_hashes_checked": true,
+  "runs": [
+    {
+      "session": "b65c22ff873a42158a113f56808b8e56",
+      "receipt": "results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\receipt.json",
+      "created_at_utc": "2026-10-10T17:04:53.957978+00:00",
+      "finished_at_utc": "2026-10-10T17:07:11.098022+00:00",
+      "journey_s": {
+        "baseline": 474.70000000000005,
+        "zelvo": 245.5
+      },
+      "red_wait_s": {
+        "baseline": 207.8999999999999,
+        "zelvo": 0.0
+      },
+      "saved_percent": 48.283126184958924,
+      "ordinary_completed_each": 560,
+      "collisions_each": 0,
+      "teleports_each": 0,
+      "signal_audit_errors_each": 0,
+      "input_hashes": {
+        "baseline": {
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\scenario.json": "7adf57c1c54b84ca75b78f8043f9b5b30f5085c6c2009cbe1367b55f569f7415",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\demand.rou.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\scenarios\\bengaluru-curated-demo\\district.net.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+          "engine_source_sha256": "d5d43b3684b69ec6f5e1859ad3bbcee988624cbfef9018f6555bde56868dc607",
+          "dependency_lock_sha256": "aec60a8e605f0c3cfca0cf3683c014772143c2fa23f712b55358f3114291790f",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\inputs\\66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\inputs\\d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc"
+        },
+        "zelvo": {
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\scenario.json": "7adf57c1c54b84ca75b78f8043f9b5b30f5085c6c2009cbe1367b55f569f7415",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\demand.rou.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\scenarios\\bengaluru-curated-demo\\district.net.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+          "engine_source_sha256": "d5d43b3684b69ec6f5e1859ad3bbcee988624cbfef9018f6555bde56868dc607",
+          "dependency_lock_sha256": "aec60a8e605f0c3cfca0cf3683c014772143c2fa23f712b55358f3114291790f",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\models\\predictor.joblib": "394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\inputs\\66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-development\\b65c22ff873a42158a113f56808b8e56\\inputs\\d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc"
+        }
+      },
+      "ordinary_metrics": {
+        "baseline": {
+          "inserted": 560,
+          "arrived": 560,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 7339.92,
+          "time_loss_distribution_s": {
+            "count": 560,
+            "mean": 13.107,
+            "min": 2.08,
+            "max": 71.22,
+            "p50": 5.880000000000001,
+            "p90": 39.251000000000005,
+            "p95": 43.841,
+            "p99": 47.936099999999996
+          },
+          "waiting_distribution_s": {
+            "count": 560,
+            "mean": 4.590892857142857,
+            "min": 0.0,
+            "max": 47.8,
+            "p50": 0.0,
+            "p90": 23.21,
+            "p95": 29.40999999999999,
+            "p99": 36.332999999999956
+          },
+          "waiting_time_s": 2570.9,
+          "insertion_delay_s": 18287.0,
+          "throughput_vehicles_per_hour": 1344.0,
+          "scheduled": 560,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "zelvo": {
+          "inserted": 560,
+          "arrived": 560,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 8206.75,
+          "time_loss_distribution_s": {
+            "count": 560,
+            "mean": 14.654910714285714,
+            "min": 2.18,
+            "max": 48.98,
+            "p50": 8.7,
+            "p90": 37.998000000000005,
+            "p95": 43.64549999999999,
+            "p99": 47.89249999999999
+          },
+          "waiting_distribution_s": {
+            "count": 560,
+            "mean": 4.8516071428571435,
+            "min": 0.0,
+            "max": 39.3,
+            "p50": 0.0,
+            "p90": 22.720000000000002,
+            "p95": 29.204999999999995,
+            "p99": 36.02299999999999
+          },
+          "waiting_time_s": 2716.9,
+          "insertion_delay_s": 18887.8,
+          "throughput_vehicles_per_hour": 1344.0,
+          "scheduled": 560,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        }
+      }
+    },
+    {
+      "session": "f026ec93743b473d8e2fad401985f7d1",
+      "receipt": "results\\live\\f026ec93743b473d8e2fad401985f7d1\\receipt.json",
+      "created_at_utc": "2026-10-10T17:18:17.997184+00:00",
+      "finished_at_utc": "2026-10-10T17:21:13.088432+00:00",
+      "journey_s": {
+        "baseline": 474.70000000000005,
+        "zelvo": 245.5
+      },
+      "red_wait_s": {
+        "baseline": 207.8999999999999,
+        "zelvo": 0.0
+      },
+      "saved_percent": 48.283126184958924,
+      "ordinary_completed_each": 560,
+      "collisions_each": 0,
+      "teleports_each": 0,
+      "signal_audit_errors_each": 0,
+      "input_hashes": {
+        "baseline": {
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\scenario.json": "ceac8b93e955e05794755ba96de26580a61cd029222cc6eaed39c01f9034249f",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\demand.rou.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\scenarios\\bengaluru-curated-demo\\district.net.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+          "engine_source_sha256": "b738978c931685df31c168142c4162d4185a5613ef9262ccdbecd540ada1aa27",
+          "dependency_lock_sha256": "aec60a8e605f0c3cfca0cf3683c014772143c2fa23f712b55358f3114291790f",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\inputs\\66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\inputs\\d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc"
+        },
+        "zelvo": {
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\scenario.json": "ceac8b93e955e05794755ba96de26580a61cd029222cc6eaed39c01f9034249f",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\demand.rou.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\scenarios\\bengaluru-curated-demo\\district.net.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+          "engine_source_sha256": "b738978c931685df31c168142c4162d4185a5613ef9262ccdbecd540ada1aa27",
+          "dependency_lock_sha256": "aec60a8e605f0c3cfca0cf3683c014772143c2fa23f712b55358f3114291790f",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\models\\predictor.joblib": "394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\inputs\\66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e.xml": "66976a7f338cbab9253271c748432691ec4eccd073daffe71cd129a6c1cf246e",
+          "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\live\\f026ec93743b473d8e2fad401985f7d1\\inputs\\d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc.xml": "d9354a4a3f819a12cb1d08c90f7c6f16965ee02f4d4311d87f4d40f581a89acc"
+        }
+      },
+      "ordinary_metrics": {
+        "baseline": {
+          "inserted": 560,
+          "arrived": 560,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 7339.92,
+          "time_loss_distribution_s": {
+            "count": 560,
+            "mean": 13.107,
+            "min": 2.08,
+            "max": 71.22,
+            "p50": 5.880000000000001,
+            "p90": 39.251000000000005,
+            "p95": 43.841,
+            "p99": 47.936099999999996
+          },
+          "waiting_distribution_s": {
+            "count": 560,
+            "mean": 4.590892857142857,
+            "min": 0.0,
+            "max": 47.8,
+            "p50": 0.0,
+            "p90": 23.21,
+            "p95": 29.40999999999999,
+            "p99": 36.332999999999956
+          },
+          "waiting_time_s": 2570.9,
+          "insertion_delay_s": 18287.0,
+          "throughput_vehicles_per_hour": 1344.0,
+          "scheduled": 560,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        },
+        "zelvo": {
+          "inserted": 560,
+          "arrived": 560,
+          "unfinished_inserted": 0,
+          "observed_time_loss_s": 8206.75,
+          "time_loss_distribution_s": {
+            "count": 560,
+            "mean": 14.654910714285714,
+            "min": 2.18,
+            "max": 48.98,
+            "p50": 8.7,
+            "p90": 37.998000000000005,
+            "p95": 43.64549999999999,
+            "p99": 47.89249999999999
+          },
+          "waiting_distribution_s": {
+            "count": 560,
+            "mean": 4.8516071428571435,
+            "min": 0.0,
+            "max": 39.3,
+            "p50": 0.0,
+            "p90": 22.720000000000002,
+            "p95": 29.204999999999995,
+            "p99": 36.02299999999999
+          },
+          "waiting_time_s": 2716.9,
+          "insertion_delay_s": 18887.8,
+          "throughput_vehicles_per_hour": 1344.0,
+          "scheduled": 560,
+          "uninserted_at_end": 0,
+          "uninserted_delay_lower_bound_s": 0
+        }
+      }
+    }
+  ],
+  "development_history": "reports/curated-development-index.json",
+  "verification": {
+    "backend": "31 passed, 1 integration deselected",
+    "production_build": "TypeScript and Vite passed",
+    "browser": [
+      "changed-scenario/cancellation passed",
+      "expanded selector and desktop/mobile cameras passed",
+      "actual curated replay passed"
+    ],
+    "screenshots": [
+      "reports/curated-comparison-desktop.png",
+      "reports/curated-comparison-mobile.png"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "selection_rule": "Geometry only: hospital-bound route, receiving lanes >=10m, rank by controlled movements then path length; no outcome filtering.",
+  "background_source": "seed-42-demand-300-ev-2-od-0.rou.xml",
+  "background_source_sha256": "a599139a94171bc354b76b0fba496d8199a6084070c6ce68963095dc74ada6bb",
+  "geometry_source": "seed-42-demand-0-ev-2-od-0-storage-10.metadata.json",
+  "route_edges": [
+    "165730361",
+    "-173571346#1",
+    "-173571346#0",
+    "525778226#7",
+    "373574994#0",
+    "373574994#1",
+    "373574994#2",
+    "373574994#4",
+    "373574994#5",
+    "373574994#6",
+    "373574994#8",
+    "373574994#9",
+    "373574994#10",
+    "1312170204#0",
+    "525778223#1",
+    "525778223#2",
+    "525778223#4",
+    "525778223#5",
+    "525778223#6",
+    "190144809#1",
+    "190144809#2"
+  ],
+  "controlled_movements": [
+    {
+      "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+      "index": 3,
+      "incoming": "1312170204#0_0",
+      "outgoing": "525778223#1_0",
+      "via": ":cluster_11200429867_12145575442_12466459994_12466459995_#11more_3_0",
+      "from_edge": "1312170204#0",
+      "to_edge": "525778223#1",
+      "length_m": 13.22,
+      "direction": "l",
+      "protected_phases": [
+        0
+      ]
+    },
+    {
+      "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+      "index": 11,
+      "incoming": "373574994#6_0",
+      "outgoing": "373574994#8_0",
+      "via": ":cluster_10839396276_14127615263_14127615264_14127615265_#2more_11_0",
+      "from_edge": "373574994#6",
+      "to_edge": "373574994#8",
+      "length_m": 184.35,
+      "direction": "s",
+      "protected_phases": [
+        0
+      ]
+    },
+    {
+      "tls": "cluster_12638024056_249086438",
+      "index": 3,
+      "incoming": "525778226#7_0",
+      "outgoing": "373574994#0_0",
+      "via": ":cluster_12638024056_249086438_3_0",
+      "from_edge": "525778226#7",
+      "to_edge": "373574994#0",
+      "length_m": 76.2,
+      "direction": "l",
+      "protected_phases": [
+        0,
+        3
+      ]
+    }
+  ],
+  "ordinary_vehicles": 300,
+  "queue_cohort": 0,
+  "cross_traffic_cohort": 60,
+  "cross_traffic_intervention": "Next N ordinary trips become cars on the opposing controlled left turn, departing 60+i*1.5s; identical for both controllers.",
+  "queue_intervention": "First N saved ordinary trips become cars on the emergency corridor, departing 45+i*0.6s; identical for both controllers.",
+  "target": "Zero measured stopped-on-red seconds; a target, not a guaranteed outcome.",
+  "note": "Curated demo, separate from population evaluation; OSM-derived signal plans are not field calibrated."
+}

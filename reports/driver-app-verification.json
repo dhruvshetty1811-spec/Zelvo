@@ -1,0 +1,38 @@
+{
+  "app": "ZELVO Driver interactive prototype",
+  "entry": "frontend/driver.html",
+  "preview_url": "http://127.0.0.1:8037/driver.html",
+  "scope": "Standalone browser driver experience. Simulated location, destination route, ETA and priority. No SUMO or real controller connection.",
+  "verification": {
+    "production_build": "TypeScript and dual-entry Vite build passed",
+    "driver_browser_flow": "passed",
+    "existing_landing_control_mobile_regression": "passed",
+    "viewport_widths_px": [
+      1440,
+      390,
+      360
+    ],
+    "browser_errors": 0,
+    "backend_api_requests": 0
+  },
+  "covered": [
+    "Suggested and custom hospital destinations",
+    "Keyboard search submission",
+    "Route preview and start trip",
+    "Simulated location and trip progress",
+    "Pause/resume and follow/overview",
+    "End-trip confirmation focus trap and Escape",
+    "Arrival and new trip",
+    "Cancellation and reset",
+    "Mobile overflow"
+  ],
+  "screenshots": [
+    "reports/driver-home-desktop.png",
+    "reports/driver-route-desktop.png",
+    "reports/driver-trip-desktop.png",
+    "reports/driver-trip-mobile-390.png",
+    "reports/driver-trip-mobile-360.png",
+    "reports/driver-home-mobile-360.png",
+    "reports/driver-arrival-mobile.png"
+  ]
+}

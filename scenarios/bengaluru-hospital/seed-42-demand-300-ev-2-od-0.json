@@ -1,0 +1,22 @@
+{
+  "scenario_id": "seed-42-demand-300-ev-2-od-0",
+  "seed": 42,
+  "controller": "actuated",
+  "network_file": "district.net.xml",
+  "route_files": [
+    "seed-42-demand-300-ev-2-od-0.rou.xml"
+  ],
+  "step_length_s": 0.1,
+  "horizon_s": 700.0,
+  "wall_timeout_s": 600,
+  "expected_journeys": [
+    {
+      "vehicle_id": "ambulance-0",
+      "scheduled_departure_s": 60
+    },
+    {
+      "vehicle_id": "ambulance-1",
+      "scheduled_departure_s": 68
+    }
+  ]
+}

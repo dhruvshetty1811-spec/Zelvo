@@ -1,0 +1,158 @@
+{
+  "prediction_source": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\results\\demo-long-links-cross-60-depart-20\\run-3f40f05472f84f71927b3580abad1a57\\predictions.jsonl",
+  "model": "C:\\Users\\shett\\OneDrive\\Desktop\\Zelvo-Signal preemption\\models\\predictor.joblib",
+  "planning_ticks_replayed": 50,
+  "inference_calls": 118,
+  "inference_fallbacks": 0,
+  "ticks_with_changed_requests": 9,
+  "changes": [
+    {
+      "time_s": 56.1,
+      "analytical_requests": [],
+      "learned_requests": [
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ]
+    },
+    {
+      "time_s": 58.1,
+      "analytical_requests": [],
+      "learned_requests": [
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ]
+    },
+    {
+      "time_s": 60.1,
+      "analytical_requests": [],
+      "learned_requests": [
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ]
+    },
+    {
+      "time_s": 62.1,
+      "analytical_requests": [],
+      "learned_requests": [
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ]
+    },
+    {
+      "time_s": 64.1,
+      "analytical_requests": [],
+      "learned_requests": [
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ]
+    },
+    {
+      "time_s": 66.1,
+      "analytical_requests": [],
+      "learned_requests": [
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ]
+    },
+    {
+      "time_s": 70.1,
+      "analytical_requests": [
+        [
+          "ambulance-0",
+          "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+          11,
+          true
+        ],
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ],
+      "learned_requests": [
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ]
+    },
+    {
+      "time_s": 72.1,
+      "analytical_requests": [
+        [
+          "ambulance-0",
+          "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+          11,
+          true
+        ],
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ],
+      "learned_requests": [
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ]
+    },
+    {
+      "time_s": 74.1,
+      "analytical_requests": [
+        [
+          "ambulance-0",
+          "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+          11,
+          true
+        ],
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ],
+      "learned_requests": [
+        [
+          "ambulance-0",
+          "cluster_12638024056_249086438",
+          3,
+          true
+        ]
+      ]
+    }
+  ],
+  "limitation": "Same observed AI trajectory; request differences do not establish causal travel-time benefit."
+}

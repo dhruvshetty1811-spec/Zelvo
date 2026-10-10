@@ -1,0 +1,19 @@
+{
+  "scenario_id": "long-corridor-s2026-d2400",
+  "seed": 2026,
+  "controller": "actuated",
+  "network_file": "district.net.xml",
+  "route_files": [
+    "long-corridor-s2026-d2400.rou.xml"
+  ],
+  "step_length_s": 0.1,
+  "horizon_s": 4200,
+  "wall_timeout_s": 1200,
+  "backend": "libsumo",
+  "expected_journeys": [
+    {
+      "vehicle_id": "ambulance-0",
+      "scheduled_departure_s": 600
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "features": 11,
+  "estimators": {
+    "eta": {
+      "trees": 100,
+      "nodes": 2900,
+      "leaves": 1500,
+      "splits": 1400,
+      "baseline": -26.798597289639353
+    },
+    "eta_lower": {
+      "trees": 100,
+      "nodes": 2890,
+      "leaves": 1495,
+      "splits": 1395,
+      "baseline": -117.75939854031358
+    },
+    "eta_upper": {
+      "trees": 100,
+      "nodes": 2900,
+      "leaves": 1500,
+      "splits": 1400,
+      "baseline": 22.50617210977495
+    },
+    "queue": {
+      "trees": 100,
+      "nodes": 1708,
+      "leaves": 904,
+      "splits": 804,
+      "baseline": -4.469385173618048
+    }
+  },
+  "total_trees": 400,
+  "total_leaves": 5399,
+  "total_splits": 4999,
+  "learned_output_values_including_baselines": 5403
+}

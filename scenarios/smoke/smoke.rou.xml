@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+  <!-- Runtime verification only. Not the final district or an improvement claim. -->
+  <vType id="ambulance" guiShape="emergency" accel="2.6" decel="4.5" length="6.5" maxSpeed="13.89" sigma="0"/>
+  <vType id="car" accel="2.6" decel="4.5" sigma="0"/>
+  <route id="hospital" edges="wc ce"/>
+  <route id="cross" edges="nc cs"/>
+  <vehicle id="ambulance-0" type="ambulance" route="hospital" depart="0"/>
+  <vehicle id="cross-0" type="car" route="cross" depart="0"/>
+</routes>

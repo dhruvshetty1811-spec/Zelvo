@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0",
+  "left_controller": "actuated",
+  "right_controller": "zelvo_ai",
+  "statuses": [
+    "completed",
+    "completed"
+  ],
+  "run_ids": [
+    "run-dfcaff07d82e45679a180a29d7fb2c4a",
+    "run-a5d312efff474d53b32dd6044bc32d36"
+  ],
+  "journeys": [
+    {
+      "vehicle": "ambulance-0",
+      "paired_completed": true,
+      "without_s": 113.30000000000001,
+      "with_s": 113.30000000000001,
+      "saved_s": 0.0,
+      "stopped_time_without_s": 0.1,
+      "stopped_time_with_s": 0.1,
+      "stops_without": 0,
+      "stops_with": 0
+    }
+  ],
+  "approaches": [
+    {
+      "vehicle": "ambulance-0",
+      "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+      "link": 11,
+      "without_signal_response_s": 4.8999999999999915,
+      "with_signal_response_s": 4.8999999999999915,
+      "without_passage_wait_s": 8.999999999999986,
+      "with_passage_wait_s": 8.999999999999986
+    },
+    {
+      "vehicle": "ambulance-0",
+      "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+      "link": 3,
+      "without_signal_response_s": 0.799999999999983,
+      "with_signal_response_s": 0.799999999999983,
+      "without_passage_wait_s": 9.299999999999983,
+      "with_passage_wait_s": 9.299999999999983
+    },
+    {
+      "vehicle": "ambulance-0",
+      "tls": "cluster_12638024056_249086438",
+      "link": 3,
+      "without_signal_response_s": 0.0,
+      "with_signal_response_s": 0.0,
+      "without_passage_wait_s": 10.799999999999997,
+      "with_passage_wait_s": 10.799999999999997
+    }
+  ],
+  "ordinary": [
+    {
+      "inserted": 300,
+      "arrived": 300,
+      "unfinished_inserted": 0,
+      "observed_time_loss_s": 10363.57,
+      "time_loss_distribution_s": {
+        "count": 300,
+        "mean": 34.545233333333336,
+        "min": 4.85,
+        "max": 183.58,
+        "p50": 29.424999999999997,
+        "p90": 60.97400000000002,
+        "p95": 92.20750000000001,
+        "p99": 154.39969999999994
+      },
+      "waiting_distribution_s": {
+        "count": 300,
+        "mean": 7.458666666666667,
+        "min": 0.0,
+        "max": 112.7,
+        "p50": 0.0,
+        "p90": 24.370000000000015,
+        "p95": 39.77000000000004,
+        "p99": 94.41499999999999
+      },
+      "waiting_time_s": 2237.6,
+      "insertion_delay_s": 2723.3,
+      "throughput_vehicles_per_hour": 1542.857142857143,
+      "scheduled": 300,
+      "uninserted_at_end": 0,
+      "uninserted_delay_lower_bound_s": 0
+    },
+    {
+      "inserted": 300,
+      "arrived": 300,
+      "unfinished_inserted": 0,
+      "observed_time_loss_s": 10339.88,
+      "time_loss_distribution_s": {
+        "count": 300,
+        "mean": 34.46626666666666,
+        "min": 4.85,
+        "max": 183.55,
+        "p50": 29.235,
+        "p90": 61.496,
+        "p95": 90.18150000000001,
+        "p99": 154.56769999999997
+      },
+      "waiting_distribution_s": {
+        "count": 300,
+        "mean": 7.405666666666666,
+        "min": 0.0,
+        "max": 112.5,
+        "p50": 0.0,
+        "p90": 24.350000000000012,
+        "p95": 39.48500000000004,
+        "p99": 94.41499999999999
+      },
+      "waiting_time_s": 2221.7,
+      "insertion_delay_s": 2723.3,
+      "throughput_vehicles_per_hour": 1542.857142857143,
+      "scheduled": 300,
+      "uninserted_at_end": 0,
+      "uninserted_delay_lower_bound_s": 0
+    }
+  ],
+  "collisions": [
+    0,
+    0
+  ],
+  "teleports": [
+    0,
+    0
+  ],
+  "note": "Positive saved_s favours the right controller; this pair is not a statistical campaign.",
+  "stopped_on_red": {
+    "without": {
+      "seconds": 0.0,
+      "definition": "Speed below 0.1m/s, nearest upcoming signal red, within the common 150m approach zone; includes queue effects and is not a causal attribution.",
+      "per_approach": [
+        {
+          "tls": "cluster_12638024056_249086438",
+          "link": 3,
+          "seconds": 0.0
+        },
+        {
+          "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+          "link": 11,
+          "seconds": 0.0
+        },
+        {
+          "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+          "link": 3,
+          "seconds": 0.0
+        }
+      ]
+    },
+    "with": {
+      "seconds": 0.0,
+      "definition": "Speed below 0.1m/s, nearest upcoming signal red, within the common 150m approach zone; includes queue effects and is not a causal attribution.",
+      "per_approach": [
+        {
+          "tls": "cluster_12638024056_249086438",
+          "link": 3,
+          "seconds": 0.0
+        },
+        {
+          "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+          "link": 11,
+          "seconds": 0.0
+        },
+        {
+          "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+          "link": 3,
+          "seconds": 0.0
+        }
+      ]
+    }
+  },
+  "selection": {
+    "selection_rule": "Geometry only: hospital-bound route, receiving lanes >=10m, rank by controlled movements then path length; no outcome filtering.",
+    "background_source": "seed-42-demand-300-ev-2-od-0.rou.xml",
+    "background_source_sha256": "a599139a94171bc354b76b0fba496d8199a6084070c6ce68963095dc74ada6bb",
+    "geometry_source": "seed-42-demand-0-ev-2-od-0-storage-10.metadata.json",
+    "route_edges": [
+      "165730361",
+      "-173571346#1",
+      "-173571346#0",
+      "525778226#7",
+      "373574994#0",
+      "373574994#1",
+      "373574994#2",
+      "373574994#4",
+      "373574994#5",
+      "373574994#6",
+      "373574994#8",
+      "373574994#9",
+      "373574994#10",
+      "1312170204#0",
+      "525778223#1",
+      "525778223#2",
+      "525778223#4",
+      "525778223#5",
+      "525778223#6",
+      "190144809#1",
+      "190144809#2"
+    ],
+    "controlled_movements": [
+      {
+        "tls": "cluster_11200429867_12145575442_12466459994_12466459995_#11more",
+        "index": 3,
+        "incoming": "1312170204#0_0",
+        "outgoing": "525778223#1_0",
+        "via": ":cluster_11200429867_12145575442_12466459994_12466459995_#11more_3_0",
+        "from_edge": "1312170204#0",
+        "to_edge": "525778223#1",
+        "length_m": 13.22,
+        "direction": "l",
+        "protected_phases": [
+          0
+        ]
+      },
+      {
+        "tls": "cluster_10839396276_14127615263_14127615264_14127615265_#2more",
+        "index": 11,
+        "incoming": "373574994#6_0",
+        "outgoing": "373574994#8_0",
+        "via": ":cluster_10839396276_14127615263_14127615264_14127615265_#2more_11_0",
+        "from_edge": "373574994#6",
+        "to_edge": "373574994#8",
+        "length_m": 184.35,
+        "direction": "s",
+        "protected_phases": [
+          0
+        ]
+      },
+      {
+        "tls": "cluster_12638024056_249086438",
+        "index": 3,
+        "incoming": "525778226#7_0",
+        "outgoing": "373574994#0_0",
+        "via": ":cluster_12638024056_249086438_3_0",
+        "from_edge": "525778226#7",
+        "to_edge": "373574994#0",
+        "length_m": 76.2,
+        "direction": "l",
+        "protected_phases": [
+          0,
+          3
+        ]
+      }
+    ],
+    "ordinary_vehicles": 300,
+    "queue_cohort": 0,
+    "cross_traffic_cohort": 60,
+    "cross_traffic_intervention": "Next N ordinary trips become cars on the opposing controlled left turn, departing 60+i*1.5s; identical for both controllers.",
+    "queue_intervention": "First N saved ordinary trips become cars on the emergency corridor, departing 45+i*0.6s; identical for both controllers.",
+    "target": "Zero measured stopped-on-red seconds; a target, not a guaranteed outcome.",
+    "note": "Curated demo, separate from population evaluation; OSM-derived signal plans are not field calibrated."
+  },
+  "safety_audit_errors": [
+    0,
+    0
+  ]
+}

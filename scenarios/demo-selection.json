@@ -1,0 +1,29 @@
+{
+  "name": "demo-long-links-cross-60-start-3-second-60-second-at-120",
+  "config": "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.json",
+  "comparison": "reports\\demo-long-links-cross-60-start-3-second-60-second-at-120.json",
+  "replay": "reports\\demo-target-replay.json",
+  "target_met": true,
+  "acceptance": {
+    "journey_time_saved_percent": [
+      45,
+      55
+    ],
+    "maximum_wait_s": 2
+  },
+  "measured": {
+    "journey_time_saved_percent": 46.87933425797503,
+    "red_stop_without_s": 58.700000000000294,
+    "red_stop_with_s": 0.0
+  },
+  "curated_demo_not_population_benchmark": true,
+  "engine_source_sha256": "d963b616e8d39d9fe7a655706c7699bae89431d9457891a049dfa141a3480807",
+  "sha256": {
+    "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.json": "53a144f4f965197427b51f6658ee1d3ba0a7bb7d5289f6e9283d817d374d0066",
+    "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.rou.xml": "ddda1abec8ce3a72d9a968f33827c0a72fdcb960479824d4f59a3720c8a7be14",
+    "scenarios\\bengaluru-hospital\\demo-long-links-cross-60-start-3-second-60-second-at-120.metadata.json": "67824d8dbc25b960fb31b2b539d3ba6547e82fdb8f33c7ff7056783292c7b7ce",
+    "scenarios\\bengaluru-hospital\\district.net.xml": "ea0b09ba2f8054caad51dd400ec32e43fc12f3a878bd050ad198911ae9f2a487",
+    "models\\predictor.joblib": "394184a9349d8b458b1e1214d1168ec34134e6c4df1f19d50b442612a312e0d7",
+    "models\\predictor.json": "46c073c501234b2e838e954203d8f89c2a63824141570fc78614d8f7b0b813be"
+  }
+}
