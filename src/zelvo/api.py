@@ -1,21 +1,32 @@
-"""Loopback-only web entry point: python -m zelvo.api. No cloud services."""
+"""Live SUMO API and optional same-origin frontend."""
 from contextlib import asynccontextmanager
 import asyncio
 import json
+import os
 import time
 from typing import Literal
 
 from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
 
 from zelvo.live import DemoSettings, SessionManager, ROOT
+
+
+def allowed_deployment_origins():
+    configured = {item.strip().rstrip('/') for item in os.environ.get('ZELVO_ALLOWED_ORIGINS','').split(',') if item.strip()}
+    # Render supplies the canonical HTTPS origin; never infer trust from Host.
+    if external := os.environ.get('RENDER_EXTERNAL_URL'):
+        configured.add(external.rstrip('/'))
+    return configured
 
 
 def origin_allowed(origin, url):
     # Also support a separately bound local preview port. Never trust an
     # arbitrary Host header as an allowed origin: require a loopback hostname.
-    return not origin or origin in ('http://127.0.0.1:5173','http://localhost:5173',
+    configured = allowed_deployment_origins()
+    return not origin or origin in configured or origin in ('http://127.0.0.1:5173','http://localhost:5173',
                                     'http://127.0.0.1:8000','http://localhost:8000') or (
         url.hostname in ('127.0.0.1','localhost') and origin == f'http://{url.netloc}')
 
@@ -30,19 +41,22 @@ def create_app(manager=None):
         yield
         await manager.close()
 
-    app = FastAPI(title='ZELVO local live comparison',lifespan=lifespan)
+    app = FastAPI(title='ZELVO live comparison',lifespan=lifespan)
     app.state.manager = manager
+    configured = list(allowed_deployment_origins())
+    app.add_middleware(CORSMiddleware, allow_origins=configured,
+                       allow_methods=['GET','POST','DELETE'], allow_headers=['Content-Type'])
 
     @app.middleware('http')
     async def local_origin(request: Request, call_next):
         origin = request.headers.get('origin')
         if not origin_allowed(origin,request.url):
-            return JSONResponse({'detail':'Use the local ZELVO page to control simulations.'},status_code=403)
+            return JSONResponse({'detail':'Use an authorized ZELVO page to control simulations.'},status_code=403)
         return await call_next(request)
 
     @app.get('/api/health')
     def health():
-        return {'status':'ok','engine':'SUMO 1.26.0','mode':'local','model':'400-tree predictor'}
+        return {'status':'ok','engine':'SUMO 1.26.0','mode':'live','model':'400-tree predictor'}
 
     @app.get('/api/network')
     def network(corridor: Literal['reference','expanded','curated'] = 'reference'):
@@ -127,4 +141,5 @@ app = create_app()
 
 if __name__=='__main__':
     import uvicorn
-    uvicorn.run('zelvo.api:app',host='127.0.0.1',port=8000,workers=1)
+    uvicorn.run('zelvo.api:app',host=os.environ.get('ZELVO_HOST','127.0.0.1'),
+                port=int(os.environ.get('PORT','8000')),workers=1)

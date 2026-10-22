@@ -1,0 +1,21 @@
+# Deploy the site and native SUMO API together; no paid resources.
+services:
+  - type: web
+    name: zelvo-live
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: ZELVO_HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: "10000"
+      - key: ZELVO_FRAME_INTERVAL_S
+        value: "1"
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: OPENBLAS_NUM_THREADS
+        value: "1"
+      - key: MKL_NUM_THREADS
+        value: "1"

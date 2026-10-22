@@ -4,6 +4,7 @@ from __future__ import annotations
 import asyncio
 from datetime import datetime, timezone
 import json
+import math
 from pathlib import Path
 import random
 import subprocess
@@ -28,6 +29,7 @@ CURATED = ROOT / 'scenarios/bengaluru-curated-demo/expanded.json'
 class DemoSettings(BaseModel):
     model_config = ConfigDict(extra='forbid', allow_inf_nan=False)
     density: Literal['light', 'moderate', 'heavy'] = 'moderate'
+    density_percent: int | None = Field(default=None, ge=0, le=200)
     corridor: Literal['reference', 'expanded', 'curated'] = 'reference'
     seed: int = Field(default=42, ge=0, le=2**31-1)
     dispatch_s: int = Field(default=60, ge=30, le=180)
@@ -43,15 +45,22 @@ def prepare_inputs(settings: DemoSettings, directory: Path, source=None) -> dict
     root = tree.getroot()
     ordinary = [v for v in root.findall('vehicle') if v.get('id') != 'ambulance-0']
     rng = random.Random(settings.seed)
-    if settings.density == 'light':
-        selected = set(rng.sample(range(len(ordinary)), len(ordinary)//2))
+    percent = settings.density_percent
+    if percent is None:
+        percent = {'light':50, 'moderate':100, 'heavy':200}[settings.density]
+    target = len(ordinary) * percent // 100
+    if target < len(ordinary):
+        selected = set(rng.sample(range(len(ordinary)), target))
         for index, vehicle in enumerate(ordinary):
             if index not in selected:
                 root.remove(vehicle)
-    elif settings.density == 'heavy':
-        # Clone each existing OD departure once with a bounded, seeded offset.
+    elif target > len(ordinary):
+        # Add a seeded sample of OD departures with bounded departure offsets.
         # Preserve every original route and type; both policies receive this same file.
-        for index, vehicle in enumerate(ordinary):
+        extra = target - len(ordinary)
+        indices = range(len(ordinary)) if extra == len(ordinary) else rng.sample(range(len(ordinary)), extra)
+        for index in indices:
+            vehicle = ordinary[index]
             clone = ET.fromstring(ET.tostring(vehicle))
             clone.set('id', 'extra-'+str(index))
             clone.set('depart', str(round(float(vehicle.get('depart'))+rng.uniform(.5,5),3)))
@@ -72,6 +81,7 @@ def prepare_inputs(settings: DemoSettings, directory: Path, source=None) -> dict
                 wall_timeout_s=900)
     atomic_json(directory/'scenario.json',json.dumps(data,indent=2))
     receipt = {'schema_version':'1.0','settings':settings.model_dump(),
+               'density_percent':percent,
                'created_at_utc':datetime.now(timezone.utc).isoformat(),
                'ordinary_vehicle_count':len(vehicles)-1,'demand_sha256':sha256(routes),
                'network_sha256':sha256(config.network_file),'model_sha256':sha256(MODEL),
@@ -130,7 +140,10 @@ def geometry(source=DEMO) -> dict:
 
 
 class LiveTelemetry:
-    def __init__(self, stream, signals, dispatch):
+    def __init__(self, stream, signals, dispatch, interval_s=.2):
+        if not math.isfinite(interval_s) or not .2 <= interval_s <= 2:
+            raise ValueError('Telemetry interval must be between 0.2 and 2 seconds.')
+        self.interval_s = interval_s
         self.stream, self.signals, self.dispatch = stream, signals, dispatch
         self.next_frame = dispatch
         self.types = {}
@@ -145,7 +158,7 @@ class LiveTelemetry:
         if now+1e-8<self.next_frame or self.finished:
             return
         import traci.constants as tc
-        self.next_frame = now+.2
+        self.next_frame = now+self.interval_s
         vehicles = []
         for vid,data in snapshots.items():
             if vid not in self.types:

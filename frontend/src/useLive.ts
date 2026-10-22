@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { apiUrl, streamUrl } from './api';
 import type { Frame, Receipt, Settings, Side } from './types';
 
 export type Buffers = Record<Side, Frame[]>;
@@ -53,12 +54,12 @@ export function useLive() {
     playhead.current=settings.dispatch_s;setClock(settings.dispatch_s);setViews({});
     setError('');setReceipt(null);setStatus('starting');setPlaying(true);playingRef.current=true;
     try {
-      const response=await fetch('/api/sessions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(settings)});
-      const body=response.headers.get('content-type')?.includes('application/json')?await response.json():{detail:'The local engine could not start this comparison. Check the server log, then try again.'};
+      const response=await fetch(apiUrl('/api/sessions'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(settings)});
+      const body=response.headers.get('content-type')?.includes('application/json')?await response.json():{detail:'The simulation engine could not start this comparison. Check the server log, then try again.'};
       if(!response.ok) throw new Error(typeof body.detail==='string'?body.detail:'Check the scenario settings and try again.');
-      if(token!==generation.current) { await fetch(`/api/sessions/${body.id}`,{method:'DELETE'}); return; }
+      if(token!==generation.current) { await fetch(apiUrl(`/api/sessions/${body.id}`),{method:'DELETE'}); return; }
       sessionRef.current=body.id;setSession(body.id);setStatus('running');
-      const ws=new WebSocket(`${location.protocol==='https:'?'wss:':'ws:'}//${location.host}/api/sessions/${body.id}/stream`);
+      const ws=new WebSocket(streamUrl(`/api/sessions/${body.id}/stream`));
       socket.current=ws;
       ws.onmessage=(event)=>{
         if(token!==generation.current)return;
@@ -69,13 +70,13 @@ export function useLive() {
       ws.onopen=()=>{heartbeat.current=setInterval(()=>{if(ws.readyState===WebSocket.OPEN)ws.send('ping');},5000);};
       ws.onerror=()=>{if(token===generation.current)setError('The live connection was interrupted. Stop this comparison, then start a new one.');};
       ws.onclose=()=>{clearInterval(heartbeat.current);if(token===generation.current&&!terminalRef.current){setStatus('disconnected');setError('The live connection closed. Stop this comparison before trying again. Its recorded data stays in the run folder.');}};
-    } catch(e) {if(token===generation.current){terminalRef.current=true;setStatus('failed');setError(e instanceof TypeError?'Could not reach the local engine. Restart the ZELVO server, refresh this page, and try again.':e instanceof Error?e.message:'Could not start the comparison. Start the local ZELVO server and try again.');}}
+    } catch(e) {if(token===generation.current){terminalRef.current=true;setStatus('failed');setError(e instanceof TypeError?'Could not reach the simulation engine. Refresh the page and try again when the service is available.':e instanceof Error?e.message:'Could not start the comparison. Check the simulation service and try again.');}}
   },[]);
   const cancel=useCallback(async()=>{
     if(!sessionRef.current){++generation.current;terminalRef.current=true;setStatus('cancelled');return;}
     setStatus('stopping');
     try {
-      const response=await fetch(`/api/sessions/${sessionRef.current}`,{method:'DELETE'});
+      const response=await fetch(apiUrl(`/api/sessions/${sessionRef.current}`),{method:'DELETE'});
       if(!response.ok)throw new Error('Could not reach the server to stop this comparison.');
       if(socket.current?.readyState!==WebSocket.OPEN){terminalRef.current=true;setStatus('cancelled');}
     }catch(e){setError(e instanceof Error?e.message:'Stop failed. Try again.');setStatus('disconnected');}
@@ -83,6 +84,6 @@ export function useLive() {
   const toggle=()=>{playingRef.current=!playingRef.current;setPlaying(playingRef.current);};
   const changeSpeed=(value:number)=>{speedRef.current=value;setSpeed(value);};
   const replay=()=>{const first=buffers.current.baseline[0];if(first){playhead.current=first.time_s;playingRef.current=true;setPlaying(true);}};
-  useEffect(()=>()=>{++generation.current;clearInterval(heartbeat.current);socket.current?.close();if(sessionRef.current&&!terminalRef.current)void fetch(`/api/sessions/${sessionRef.current}`,{method:'DELETE',keepalive:true});},[]);
+  useEffect(()=>()=>{++generation.current;clearInterval(heartbeat.current);socket.current?.close();if(sessionRef.current&&!terminalRef.current)void fetch(apiUrl(`/api/sessions/${sessionRef.current}`),{method:'DELETE',keepalive:true});},[]);
   return {buffers,playhead,status,error,session,receipt,clock,buffering,playing,speed,views,start,cancel,toggle,changeSpeed,replay};
 }

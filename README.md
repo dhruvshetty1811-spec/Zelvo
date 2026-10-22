@@ -19,7 +19,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-web.ps1
 
 Open **http://127.0.0.1:8000**. The helper builds the React/TypeScript site and serves it with the API. On later starts, use `scripts/start-web.ps1 -NoBuild` to reuse the built UI. Keep the terminal running; Ctrl+C stops the server and its owned simulations. Fonts and vector roads are local; no map subscription, LLM API, cloud account, or paid hosting is required.
 
-The default **curated rush-hour preset** runs a 2.44 km journey through 10 signal controllers: **474.7 s without ZELVO / 245.5 s with ZELVO (48.28% saved)**. It uses real OSM roads, a disclosed synthetic peak timing/demand profile, and a simulated hospital destination. Choose light/moderate/heavy traffic (280/560/1,120 ordinary vehicles), random seed, dispatch time, and optional sensor delay. The 6.15 km / 13-controller exploration route and original 913 m / 3-controller reference are also selectable. This preset was selected during development to meet the 45-55% demo target; it is not a general expected improvement. See [curated verification](reports/curated-demo-verification.json) and [selection history](reports/curated-development-index.json). Other settings generate fresh matched inputs and can produce different or worse results. Playback speed, pause, and replay affect presentation only. Stop cancels the actual workers; receipts and partial measurements remain under `results/live/<session-id>/`, separate from campaign counts.
+The default **curated rush-hour preset** runs a 2.44 km journey through 10 signal controllers: **474.7 s without ZELVO / 245.5 s with ZELVO (48.28% saved)**. It uses real OSM roads, a disclosed synthetic peak timing/demand profile, and a simulated hospital destination. Choose traffic demand with the 0-200% slider (0-1,120 ordinary vehicles), random seed, dispatch time, and optional sensor delay. The 6.15 km / 13-controller exploration route and original 913 m / 3-controller reference are also selectable. This preset was selected during development to meet the 45-55% demo target; it is not a general expected improvement. See [curated verification](reports/curated-demo-verification.json) and [selection history](reports/curated-development-index.json). Other settings generate fresh matched inputs and can produce different or worse results. Playback speed, pause, and replay affect presentation only. Stop cancels the actual workers; receipts and partial measurements remain under `results/live/<session-id>/`, separate from campaign counts.
 
 For frontend development, run `npm.cmd ci` and `npm.cmd run dev` from `frontend`. Vite serves port 5173 and proxies `/api` and its WebSocket to the backend on 8000. Node 24 is required by the native TypeScript config loader. `npm.cmd run build` checks TypeScript and builds the site. `npm.cmd run test:e2e` uses installed Microsoft Edge through Playwright against the built site on port 8000; the live browser test executes actual SUMO episodes.
 
@@ -76,6 +76,29 @@ The demo now defaults to a 6.15 km Bengaluru journey through 13 signalized contr
 The maps fill the viewport. Use **Follow ambulance**, **Entire route**, zoom buttons or drag to inspect each journey. The inset shows the whole corridor; playback supports up to 32x. Playback speed changes presentation only; simulation physics remains 0.1 seconds.
 
 The expanded moderate/seed42 validation measured 917.2s without ZELVO and 887.6s with ZELVO (3.23% saved), with all 600 ordinary trips completed in both worlds and no recorded collisions, teleports or signal-audit errors. It is separate from the short reference result. See `reports/expanded-demo-verification.json`; timestamped raw evidence is under `results/expanded-validation/`. Signal import warnings and synthetic demand remain limitations.
+
+### Hosted live simulation
+
+`render.yaml` prepares one Docker web service on Render's **Free** compute plan. Connect this repository in Render through **New > Blueprint** and review that `plan: free` is selected. No database, persistent disk or paid service is defined. The same service serves the website and live SUMO API; use its HTTPS `onrender.com` URL. Its canonical origin is allowed using Render's `RENDER_EXTERNAL_URL` environment variable. For an existing Vercel frontend, configure its API origin as described below after the backend is deployed.
+
+Render's free service sleeps after 15 minutes of inactivity and wakes on a visit; waking can take about one minute. It is independent of this computer, but is not guaranteed uninterrupted availability. The plan provides 512 MB RAM and 0.1 CPU, so Linux deployment and a complete simulation must be validated on the host before claiming this configuration fits. One-second streamed snapshots reduce telemetry memory and bandwidth; the SUMO physics step and measured outcome are unchanged. Without a payment method, exceeding free allowances suspends service instead of billing overages. See [free-plan limits](https://render.com/docs/free), [compute specifications](https://render.com/docs/compute-plans), and [billing FAQ](https://render.com/docs/faq).
+
+Every comparison creates two fresh SUMO workers from the selected corridor, percentage demand, seed, dispatch time and sensor delay. The frontend streams vehicle positions and computes the result from measured arrival and departure times. There is no recorded-scenario fallback. If the engine is unavailable, starting a comparison is disabled.
+
+The percentage slider ranges from 0 to 200% of the corridor's standard scheduled traffic. It changes vehicle demand, not road occupancy. The default curated corridor schedules 560 vehicles at 100%; both signal policies receive the same generated demand file.
+
+A Docker image can serve the frontend and Python/SUMO backend together:
+
+```sh
+docker build -t zelvo-live .
+docker run --rm -p 8000:8000 -e ZELVO_ALLOWED_ORIGINS=https://your-live-domain.example zelvo-live
+```
+
+Deploy this as one persistent Linux x86_64 container with HTTPS and WebSocket support. Set `PORT` if the host requires another listening port. Use a single process/replica: sessions and live worker ownership reside in that process. The demo currently runs one comparison pair at a time; a second request receives a busy response. Session receipts are written under `/app/results/live`; mount a writable persistent volume there if receipts must survive restarts. The container pins SUMO binaries and Python bindings to 1.26.0.
+
+For an existing separately hosted frontend, set `VITE_ZELVO_API_URL=https://your-sumo-service.example` in its build environment and rebuild. Set `ZELVO_ALLOWED_ORIGINS=https://your-frontend.example` on the backend (comma-separated explicit origins). Both HTTP API requests and WebSocket streams use that configured backend. No secret belongs in `VITE_` variables. A static frontend deployment alone cannot execute this project's native SUMO workers.
+
+The container configuration is prepared but needs a deployment host and an end-to-end check on that host. Historical landing-page evidence remains labelled as a selected measured scenario; it is never used as a new live run's result.
 
 Rebuild the larger scenario with `.venv\Scripts\python.exe scripts\prepare-expanded-demo.py` when no simulations are active. The source district and geometry inventory must already be present. Start the built application with `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-web.ps1`.
 
