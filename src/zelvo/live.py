@@ -5,6 +5,7 @@ import asyncio
 from datetime import datetime, timezone
 import json
 import math
+import os
 import re
 from pathlib import Path
 import random
@@ -233,20 +234,25 @@ class LiveSession:
         self.finished_at = None
         self.clients = 0
         self.task = None
+        self.sequential = os.environ.get('ZELVO_WORKER_MODE','parallel') == 'sequential'
+
+    def start_worker(self, side, policy):
+        work = self.directory/side
+        work.mkdir()
+        atomic_json(work/'signals.json',json.dumps(self.signals))
+        log = (work/'worker.log').open('w',encoding='utf-8')
+        self.logs.append(log)
+        command = [sys.executable,'-m','zelvo.live_worker',str(self.directory/'scenario.json'),
+                   str(work),policy,str(MODEL),str(self.settings.dispatch_s)]
+        self.processes[side] = subprocess.Popen(command,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,
+            creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
 
     def start(self):
         self.status = 'running'
         try:
-            for side,policy in [('baseline','actuated'),('zelvo','zelvo_ai')]:
-                work = self.directory/side
-                work.mkdir()
-                atomic_json(work/'signals.json',json.dumps(self.signals))
-                log = (work/'worker.log').open('w',encoding='utf-8')
-                self.logs.append(log)
-                command = [sys.executable,'-m','zelvo.live_worker',str(self.directory/'scenario.json'),
-                           str(work),policy,str(MODEL),str(self.settings.dispatch_s)]
-                self.processes[side] = subprocess.Popen(command,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,
-                    creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
+            self.start_worker('baseline','actuated')
+            if not self.sequential:
+                self.start_worker('zelvo','zelvo_ai')
         except Exception:
             self.cancel()
             raise
@@ -280,6 +286,12 @@ class LiveSession:
         if self.status in ('running','starting'):
             if self.errors:
                 self.cancel('failed')
+            elif self.sequential and 'baseline' in self.results and 'zelvo' not in self.processes:
+                try:
+                    self.start_worker('zelvo','zelvo_ai')
+                except Exception:
+                    self.errors['zelvo'] = 'Could not start the ZELVO simulation worker.'
+                    self.cancel('failed')
             elif len(self.results)==2:
                 self.status = 'complete'
                 self.finish()
@@ -327,6 +339,7 @@ class LiveSession:
 
     def summary(self):
         return {'id':self.id,'status':self.status,'inputs':self.receipt,'errors':self.errors,
+                'execution_mode':'sequential' if self.sequential else 'parallel',
                 'finished_at_utc':self.finished_at,
                 'worker_exit_codes':{k:p.poll() for k,p in self.processes.items()},
                 'partial_run':self.status!='complete',

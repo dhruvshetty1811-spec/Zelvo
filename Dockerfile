@@ -6,7 +6,7 @@ COPY frontend/ ./
 RUN npm run build
 
 FROM python:3.12-slim-bookworm
-ENV PYTHONUNBUFFERED=1 PYTHONPATH=/app/src ZELVO_HOST=0.0.0.0 PORT=8000
+ENV PYTHONUNBUFFERED=1 PYTHONPATH=/app/src ZELVO_HOST=0.0.0.0 PORT=8000 ZELVO_WORKER_MODE=sequential
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends libgomp1 libgl1 libglu1-mesa libxrender1 libatomic1 libstdc++6 libexpat1 && rm -rf /var/lib/apt/lists/*
 COPY pyproject.toml README.md ./

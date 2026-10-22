@@ -7,15 +7,18 @@ from zelvo.live import DemoSettings, SessionManager
 
 
 @pytest.mark.integration
-def test_fresh_percentage_comparison_completes_with_measured_results(tmp_path):
+def test_fresh_percentage_comparison_completes_with_measured_results(tmp_path,monkeypatch):
+    monkeypatch.setenv('ZELVO_WORKER_MODE','sequential')
     async def compare():
         manager = SessionManager(tmp_path / 'live')
         try:
             session = manager.create(DemoSettings(corridor='reference', density_percent=37, seed=17))
+            assert list(session.processes) == ['baseline']
             session.clients = 1
             await asyncio.wait_for(session.task, timeout=930)
             receipt = session.summary()
             assert receipt['status'] == 'complete', receipt['errors']
+            assert receipt['execution_mode'] == 'sequential'
             assert receipt['inputs']['ordinary_vehicle_count'] == 111
             assert receipt['inputs']['settings']['density_percent'] == 37
             assert receipt['frames']['baseline'] > 0

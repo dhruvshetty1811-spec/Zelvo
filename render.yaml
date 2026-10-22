@@ -13,6 +13,8 @@ services:
         value: "10000"
       - key: ZELVO_FRAME_INTERVAL_S
         value: "1"
+      - key: ZELVO_WORKER_MODE
+        value: sequential
       - key: OMP_NUM_THREADS
         value: "1"
       - key: OPENBLAS_NUM_THREADS
