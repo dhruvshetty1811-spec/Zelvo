@@ -7,10 +7,15 @@ test('percentage slider submits real demand settings and fits mobile', async ({ 
   await page.route('**/api/sessions', route => route.fulfill({ status: 422, json: { detail: 'Test completed' } }));
   await page.goto('/#demo');
   await expect(page.getByText('Local engine connected')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Rush-hour preset selected' })).toBeDisabled();
   const slider = page.getByRole('slider', { name: 'Traffic density' });
   await expect(slider).toHaveValue('100');
   await slider.fill('137');
   await expect(page.getByText('767 ordinary vehicles scheduled')).toBeVisible();
+  await page.getByRole('button', { name: 'Use rush-hour preset' }).click();
+  await expect(slider).toHaveValue('100');
+  await expect(page.getByText('560 ordinary vehicles scheduled')).toBeVisible();
+  await slider.fill('137');
   await page.setViewportSize({ width: 360, height: 800 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
   await page.screenshot({ path: '../reports/density-slider-mobile.png' });

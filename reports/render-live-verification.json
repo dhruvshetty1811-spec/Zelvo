@@ -1,0 +1,86 @@
+[
+  {
+    "url": "https://zelvo-live.onrender.com",
+    "session": "d5394202cdc240fcb822336dfeb0fe30",
+    "settings": {
+      "corridor": "reference",
+      "density_percent": 37,
+      "seed": 17,
+      "dispatch_s": 60,
+      "observation_delay_s": 0
+    },
+    "ordinary_vehicle_count": 111,
+    "baseline_time_s": 77.19999999999999,
+    "zelvo_time_s": 77.0,
+    "reduction_percent": 0.2590673575129387,
+    "frames_received": {
+      "baseline": 80,
+      "zelvo": 80
+    },
+    "wall_duration_s": 201,
+    "verified_shared_inputs": true,
+    "collision_events": 0,
+    "teleport_events": 0,
+    "signal_audit_errors": 0,
+    "finished_at_utc": "2026-10-22T13:08:23.555173+00:00",
+    "execution_mode": "sequential",
+    "demand_sha256": "facaf545058fbaabb5296f0ed7e99f2598fe73f70c535844bdabca85555394d0",
+    "network_sha256": "1a4cc1aa7227dc36dd0e70afa9187c3b0f15522775a5c84237711cbb0bd540ef",
+    "engine_source_sha256": "0f7e6dfbdc638d7790fe172ad1685d11d46a10efa54d2be3fb6ddd0a99a2ab13",
+    "run_ids": {
+      "baseline": "run-ce920b89549b40a5932badcc5c3aa9a3",
+      "zelvo": "run-a3a0aa5b09b74b7eaab66afcdc5c10de"
+    },
+    "runtime_versions": {
+      "python": "3.12.15",
+      "sumo": "1.26.0",
+      "netconvert": "1.26.0",
+      "traci": "1.26.0",
+      "sumolib": "1.26.0",
+      "pydantic": "2.14.1",
+      "libsumo": "1.26.0"
+    }
+  },
+  {
+    "url": "https://zelvo-live.onrender.com",
+    "session": "ab45933905f142adbe1e60ceddef1425",
+    "settings": {
+      "corridor": "curated",
+      "density_percent": 100,
+      "seed": 42,
+      "dispatch_s": 60,
+      "observation_delay_s": 0
+    },
+    "ordinary_vehicle_count": 560,
+    "baseline_time_s": 474.70000000000005,
+    "zelvo_time_s": 245.5,
+    "reduction_percent": 48.283126184958924,
+    "frames_received": {
+      "baseline": 477,
+      "zelvo": 248
+    },
+    "wall_duration_s": 337,
+    "verified_shared_inputs": true,
+    "collision_events": 0,
+    "teleport_events": 0,
+    "signal_audit_errors": 0,
+    "finished_at_utc": "2026-10-22T13:14:04.150092+00:00",
+    "execution_mode": "sequential",
+    "demand_sha256": "1ee09a289cf41af7533470c8731d7f3a7d2a1e6e69eac9f595604e892ef7b555",
+    "network_sha256": "0c68510fddd203bc422d5e12830ac221839a773c5c5a6508d030b3db14ef1f6d",
+    "engine_source_sha256": "0f7e6dfbdc638d7790fe172ad1685d11d46a10efa54d2be3fb6ddd0a99a2ab13",
+    "run_ids": {
+      "baseline": "run-abba6289b3b541a182eabf8b9db01e1c",
+      "zelvo": "run-49611ecc25614505a6c781a6cdeeaae0"
+    },
+    "runtime_versions": {
+      "python": "3.12.15",
+      "sumo": "1.26.0",
+      "netconvert": "1.26.0",
+      "traci": "1.26.0",
+      "sumolib": "1.26.0",
+      "pydantic": "2.14.1",
+      "libsumo": "1.26.0"
+    }
+  }
+]
