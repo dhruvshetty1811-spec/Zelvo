@@ -6,7 +6,7 @@ import os
 import time
 from typing import Literal
 
-from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, HTTPException, Query, Request, WebSocket, WebSocketDisconnect
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
@@ -86,6 +86,20 @@ def create_app(manager=None):
     def receipt(session_id: str):
         return JSONResponse(get(session_id).summary(),headers={
             'Content-Disposition':f'attachment; filename="zelvo-{session_id[:8]}-receipt.json"'})
+
+    @app.get('/api/sessions/{session_id}/updates')
+    async def updates(session_id: str, baseline_after: int = Query(default=0,ge=0),
+                      zelvo_after: int = Query(default=0,ge=0)):
+        session = get(session_id)
+        offsets = {'baseline':baseline_after,'zelvo':zelvo_after}
+        if any(offsets[side]>len(session.frames[side]) for side in offsets):
+            raise HTTPException(409,'The available frames do not match this playback. Stop this comparison and start another.')
+        session.last_client = time.monotonic()
+        batches = {side:session.frames[side][offsets[side]:offsets[side]+100] for side in offsets}
+        caught_up = all(offsets[side]+len(batches[side])==len(session.frames[side]) for side in offsets)
+        terminal = session.status not in ('running','starting') and session.task.done()
+        return JSONResponse({'frames':batches,'status':session.status,
+                'finished':session.summary() if terminal and caught_up else None},headers={'Cache-Control':'no-store'})
 
     @app.delete('/api/sessions/{session_id}',status_code=202)
     async def cancel(session_id: str):

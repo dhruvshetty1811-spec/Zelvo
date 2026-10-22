@@ -127,6 +127,35 @@ def test_failed_worker_reports_final_exception_without_full_log(tmp_path):
     assert 'Check its worker.log' in worker_startup_error(tmp_path/'missing.log')
 
 
+def test_http_updates_resume_frames_and_keep_live_session_alive(tmp_path):
+    from types import SimpleNamespace
+    manager=SessionManager(tmp_path/'live')
+    manager.map_data={'roads':[],'signals':[]}
+    session=SimpleNamespace(status='running',last_client=0,
+        frames={'baseline':[{'time_s':i} for i in range(205)],'zelvo':[{'time_s':i} for i in range(5)]},
+        task=SimpleNamespace(done=lambda:True),summary=lambda:{'id':'resume','status':'complete'})
+    manager.sessions={'resume':session}
+    with TestClient(create_app(manager)) as client:
+        response=client.get('/api/sessions/resume/updates')
+        assert response.headers['cache-control']=='no-store'
+        first=response.json()
+        assert len(first['frames']['baseline'])==100
+        assert len(first['frames']['zelvo'])==5
+        assert first['finished'] is None
+        assert session.last_client>0
+        second=client.get('/api/sessions/resume/updates?baseline_after=100&zelvo_after=5').json()
+        assert second['frames']['baseline'][0]['time_s']==100
+        assert second['finished'] is None
+        session.status='complete'
+        last=client.get('/api/sessions/resume/updates?baseline_after=200&zelvo_after=5').json()
+        assert [f['time_s'] for f in last['frames']['baseline']]==list(range(200,205))
+        assert last['frames']['zelvo']==[]
+        assert last['finished']=={'id':'resume','status':'complete'}
+        assert client.get('/api/sessions/resume/updates?baseline_after=-1').status_code==422
+        assert client.get('/api/sessions/resume/updates?baseline_after=999').status_code==409
+        assert client.get('/api/sessions/missing/updates').status_code==404
+
+
 @pytest.mark.integration
 def test_position_telemetry_does_not_change_journeys_or_phase_audits(tmp_path):
     source=Path('scenarios/smoke/smoke.json')
