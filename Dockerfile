@@ -8,10 +8,11 @@ RUN npm run build
 FROM python:3.12-slim-bookworm
 ENV PYTHONUNBUFFERED=1 PYTHONPATH=/app/src ZELVO_HOST=0.0.0.0 PORT=8000
 WORKDIR /app
-RUN apt-get update && apt-get install -y --no-install-recommends libgomp1 libgl1 libglu1-mesa && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends libgomp1 libgl1 libglu1-mesa libxrender1 libatomic1 libstdc++6 libexpat1 && rm -rf /var/lib/apt/lists/*
 COPY pyproject.toml README.md ./
 COPY src/ ./src/
 RUN pip install --no-cache-dir . eclipse-sumo==1.26.0
+RUN python -c "import libsumo; from zelvo.runtime import discover_tools; print(discover_tools().versions)"
 COPY models/ ./models/
 COPY scenarios/ ./scenarios/
 COPY --from=frontend /web/dist/ ./frontend/dist/
