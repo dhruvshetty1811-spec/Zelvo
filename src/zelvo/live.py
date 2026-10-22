@@ -5,6 +5,7 @@ import asyncio
 from datetime import datetime, timezone
 import json
 import math
+import re
 from pathlib import Path
 import random
 import subprocess
@@ -24,6 +25,21 @@ DEMO = ROOT / 'scenarios/bengaluru-hospital/demo-long-links-cross-60-start-3-sec
 MODEL = ROOT / 'models/predictor.joblib'
 EXPANDED = ROOT / 'scenarios/bengaluru-expanded/expanded.json'
 CURATED = ROOT / 'scenarios/bengaluru-curated-demo/expanded.json'
+
+
+def worker_startup_error(path: Path) -> str:
+    """Expose the final startup exception, without returning an entire worker log."""
+    fallback = 'The simulation worker exited before saving a result. Check its worker.log in the run folder.'
+    if not path.is_file():
+        return fallback
+    with path.open('rb') as stream:
+        stream.seek(0,2)
+        stream.seek(max(0,stream.tell()-8192))
+        lines = stream.read().decode('utf-8',errors='replace').splitlines()
+    for line in reversed(lines):
+        if re.match(r'^(ImportError|ModuleNotFoundError|PermissionError|FileNotFoundError|RuntimeError|OSError): ',line):
+            return 'Simulation worker startup failed: '+line[:500]
+    return fallback
 
 
 class DemoSettings(BaseModel):
@@ -260,7 +276,7 @@ class LiveSession:
                     if self.results[side]['failure'] and self.status in ('starting','running'):
                         self.errors[side] = self.results[side]['failure']['message']
                 elif self.status in ('starting','running'):
-                    self.errors[side] = 'The simulation worker exited before saving a result. Check its worker.log in the run folder.'
+                    self.errors[side] = worker_startup_error(self.directory/side/'worker.log')
         if self.status in ('running','starting'):
             if self.errors:
                 self.cancel('failed')

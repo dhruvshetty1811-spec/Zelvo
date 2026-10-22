@@ -9,7 +9,7 @@ import pytest
 
 from zelvo.api import create_app, origin_allowed
 from zelvo.config import load_scenario
-from zelvo.live import DemoSettings, LiveTelemetry, SessionManager, prepare_inputs
+from zelvo.live import DemoSettings, LiveTelemetry, SessionManager, prepare_inputs, worker_startup_error
 from zelvo.simulation.runner import run_episode
 
 
@@ -103,6 +103,15 @@ def test_render_trusts_deployment_origin_not_request_hostname(monkeypatch):
 def test_telemetry_rejects_invalid_sampling_interval(interval):
     with pytest.raises(ValueError,match='Telemetry interval'):
         LiveTelemetry(io.StringIO(),[],60,interval_s=interval)
+
+
+def test_failed_worker_reports_final_exception_without_full_log(tmp_path):
+    log=tmp_path/'worker.log'
+    log.write_text('Traceback (most recent call last):\n  internal traceback detail\nImportError: missing native library.so\n',encoding='utf-8')
+    message=worker_startup_error(log)
+    assert 'ImportError: missing native library.so' in message
+    assert 'internal traceback detail' not in message
+    assert 'Check its worker.log' in worker_startup_error(tmp_path/'missing.log')
 
 
 @pytest.mark.integration
