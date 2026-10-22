@@ -13,9 +13,12 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from zelvo.live import DemoSettings, SessionManager, ROOT
 
+PUBLIC_DEPLOYMENT = json.loads((ROOT/'frontend/src/deployment.json').read_text(encoding='utf-8'))
+
 
 def allowed_deployment_origins():
     configured = {item.strip().rstrip('/') for item in os.environ.get('ZELVO_ALLOWED_ORIGINS','').split(',') if item.strip()}
+    configured.add(PUBLIC_DEPLOYMENT['frontend_origin'])
     # Render supplies the canonical HTTPS origin; never infer trust from Host.
     if external := os.environ.get('RENDER_EXTERNAL_URL'):
         configured.add(external.rstrip('/'))

@@ -15,6 +15,7 @@ RUN pip install --no-cache-dir . eclipse-sumo==1.26.0
 RUN python -c "import libsumo; from zelvo.runtime import discover_tools; print(discover_tools().versions)"
 COPY models/ ./models/
 COPY scenarios/ ./scenarios/
+COPY frontend/src/deployment.json ./frontend/src/deployment.json
 COPY --from=frontend /web/dist/ ./frontend/dist/
 RUN useradd --create-home zelvo && mkdir -p results/live && chown -R zelvo:zelvo results
 USER zelvo

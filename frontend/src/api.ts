@@ -1,5 +1,9 @@
-// Set this when the frontend and the live SUMO service use different origins.
-const configuredOrigin = (import.meta.env.VITE_ZELVO_API_URL ?? '').trim().replace(/\/$/, '');
+import deployment from './deployment.json';
+
+// The public Vercel frontend uses Render; local and same-origin deployments
+// retain /api. An explicit build environment setting overrides this mapping.
+const configuredOrigin = (import.meta.env.VITE_ZELVO_API_URL?.trim() ||
+  (location.origin === deployment.frontend_origin ? deployment.simulation_origin : '')).replace(/\/$/, '');
 export function apiUrl(path: string): string {
   return `${configuredOrigin}${path}`;
 }

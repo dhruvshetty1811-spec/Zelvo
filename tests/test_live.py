@@ -99,6 +99,19 @@ def test_render_trusts_deployment_origin_not_request_hostname(monkeypatch):
     assert not origin_allowed('https://untrusted.example',target)
 
 
+def test_public_vercel_frontend_can_use_render_api(tmp_path):
+    manager=SessionManager(tmp_path/'live')
+    manager.map_data={'roads':[],'signals':[]}
+    with TestClient(create_app(manager)) as client:
+        response=client.get('/api/network',headers={'Origin':'https://zelvo-wine.vercel.app'})
+        assert response.status_code==200
+        assert response.headers['access-control-allow-origin']=='https://zelvo-wine.vercel.app'
+        response=client.options('/api/sessions',headers={
+            'Origin':'https://zelvo-wine.vercel.app','Access-Control-Request-Method':'POST',
+            'Access-Control-Request-Headers':'content-type'})
+        assert response.status_code==200
+
+
 @pytest.mark.parametrize('interval', [0, float('inf'), float('nan'), 10])
 def test_telemetry_rejects_invalid_sampling_interval(interval):
     with pytest.raises(ValueError,match='Telemetry interval'):
